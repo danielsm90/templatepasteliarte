@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 602">
+	<defs>
+		<style>
+			.n3cls-1{fill:none;}
+			.n3cls-2{fill:#c0be98;}
+			.n3cls-3{fill:#fbfbe2;stroke:#c0be98;stroke-miterlimit:10;stroke-width:1.36px;}
+		</style>
+	</defs>
+	<title>
+		Recurso 34
+	</title>
+	<g id="Capa_2" data-name="Capa 2">
+		<g id="Capa_3" data-name="Capa 3">
+			<rect class="n3cls-1" width="576" height="602"/>
+			<rect class="n3cls-2" x="200.77" y="255.56" width="182.9" height="148.64" rx="66.43" ry="66.43"/>
+			<rect class="n3cls-3" x="191.77" y="243.56" width="182.9" height="148.64" rx="66.43" ry="66.43"/>
+			<ellipse class="n3cls-2" cx="250.33" cy="322.65" rx="28.89" ry="36.59" transform="translate(-72.25 72.23) rotate(-14.37)"/>
+			<ellipse class="n3cls-2" cx="330.74" cy="319.67" rx="28.89" ry="20.08" transform="translate(-128.03 352.87) rotate(-48.16)"/>
+		</g>
+	</g>
+</svg>

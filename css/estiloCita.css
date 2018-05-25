@@ -1,0 +1,73 @@
+#fondoCita
+{
+	width: 100%;
+	height: 30vw;
+	background-image: url('../imagenes/Pasteliarte/fondoCita.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	position: relative;
+	background-attachment: fixed;
+}
+#fondoCita #txt_cita
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #5CA3A1;
+	width: 100%;
+	padding: 45px 130px;
+	clip-path: polygon(0 0, 100% 0, 100% 72%, 0 100%);
+}
+
+#fondoCita #txt_cita img
+{
+	height: 90px;
+}
+
+#formularioCampos
+{
+	width: 60%;
+	padding: 45px 70px;
+	margin-left: 10px;
+}
+.campos
+{
+	font-weight: bolder;
+	font-size: 25px;
+}
+
+.form-group
+{
+	margin-top: 30px;
+}
+
+#formulario
+{
+	border-top: 4px solid red;
+	margin-top: 60px;
+	margin-right: 8%;
+	margin-left: 8%;
+}
+
+.radio label
+{
+	font-size: 20px;
+	
+}
+
+.radio
+{
+	margin-left: 50px;
+}
+
+.inputRadio
+{
+    border: 2px solid #dedede;
+    border-radius: 50%;
+    height: 20px;
+    display: inline-block;
+    left: 0px;
+    width: 21px;
+    z-index: 2;
+}

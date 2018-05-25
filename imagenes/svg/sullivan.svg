@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 576.1 601.6"
+	 style="enable-background:new 0 0 576.1 601.6;" xml:space="preserve">
+<style type="text/css">
+	.ust0{fill:#56B3CC;}
+	.ust1{fill:#F8F9D2;}
+	.ust2{fill:none;stroke:#000000;stroke-width:14;stroke-linecap:round;stroke-miterlimit:10;}
+	.ust3{fill:#DFDEB5;}
+	.ust4{fill:#662D90;}
+	.ust5{fill:#D60028;}
+	.ust6{clip-path:url(#USVGID_2_);fill:#F8F9D2;}
+	.ust7{fill:#FDC325;}
+	.ust8{fill:#FDC325;stroke:#D09B18;stroke-width:9;stroke-miterlimit:10;}
+	.ust9{fill:#E1E1B4;}
+	.ust10{clip-path:url(#USVGID_4_);fill:#F8F9D2;}
+	.ust11{fill:#B68313;}
+	.ust12{fill:#FFFF00;}
+	.ust13{clip-path:url(#USVGID_6_);fill:#F8F9D2;}
+	.ust14{fill:#924A09;}
+	.ust15{fill:#FFF133;}
+	.ust16{clip-path:url(#USVGID_8_);fill:#F8F9D2;}
+	.ust17{clip-path:url(#USVGID_8_);}
+	.ust18{fill:#3D8090;}
+	.ust19{fill:#F05A24;}
+	.ust20{fill:#CB461D;}
+	.ust21{fill:#7EF13B;}
+	.ust22{fill:#8AD300;stroke:#6F9F04;stroke-width:6;stroke-miterlimit:10;}
+	.ust23{fill:#0C5B00;}
+	.ust24{fill:#71D530;}
+	.ust25{opacity:0.5;fill:#0C5B00;}
+	.ust26{fill:#DADAA8;}
+	.ust27{fill:#8AD300;}
+	.ust28{fill:#FBFBE2;}
+	.ust29{fill:#FBFBE2;stroke:#C0BE98;stroke-width:4;stroke-miterlimit:10;}
+	.ust30{fill:#FF7BAB;}
+	.ust31{fill:#C0BE98;}
+	.ust32{fill:#F8F9D2;stroke:#D2D2A0;stroke-width:6;stroke-miterlimit:10;}
+	.ust33{fill:#009145;}
+	.ust34{fill:#F6921E;}
+	.ust35{fill:none;stroke:#D09B18;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.ust36{fill:#8B5A2D;}
+	.ust37{fill:#A57C52;}
+	.ust38{fill:#603813;}
+	.ust39{fill:#664326;}
+	.ust40{fill:#6C9D96;}
+	.ust41{fill:#4F7A73;}
+	.ust42{fill:#699088;}
+	.ust43{fill:#355952;}
+	.ust44{fill:#668D85;}
+	.ust45{fill:#395B55;}
+	.ust46{fill:#8BC53F;}
+	.ust47{fill:#7A4C26;}
+	.ust48{fill:#563318;}
+	.ust49{fill:#54331C;}
+	.ust50{clip-path:url(#USVGID_16_);}
+	.ust51{fill:#FFFFFF;}
+	.ust52{fill:#64CC21;}
+	.ust53{fill:#29AAE1;}
+	.ust54{fill:#F9F9E5;}
+	.ust55{fill:#232D1C;}
+	.ust56{clip-path:url(#USVGID_18_);}
+	.ust57{fill:#C98FC1;}
+	.ust58{fill:#E0AAD6;}
+	.ust59{fill:#FFD4F5;}
+	.ust60{fill:#B276AC;}
+	.ust61{fill:none;stroke:#D37313;stroke-width:8;stroke-miterlimit:10;}
+	.ust62{fill:#FF3960;}
+	.ust63{fill:#FAAF3B;}
+	.ust64{fill:#C98224;}
+	.ust65{fill:#C61A4B;}
+	.ust66{fill:#FF97B0;}
+	.ust67{fill:#E57393;}
+	.ust68{fill:none;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-miterlimit:10;}
+	.ust69{fill:none;stroke:#000000;stroke-width:12;stroke-linecap:round;stroke-miterlimit:10;}
+	.ust70{fill:#F4EEC6;}
+	.ust71{fill:#FCFCF5;}
+	.ust72{fill:#E2D9AF;}
+	.ust73{fill:#B5AA7C;}
+	.ust74{fill:#1FB59F;}
+	.ust75{fill:#C6BB8D;}
+	.ust76{fill:#FBED21;}
+	.ust77{fill:#CCC27F;}
+	.ust78{clip-path:url(#USVGID_20_);}
+	.ust79{fill:#755031;}
+	.ust80{fill:#946843;}
+	.ust81{fill:#835937;}
+	.ust82{fill:#A3784B;}
+	.ust83{fill:#5E3D23;}
+	.ust84{fill:#8D6340;}
+	.ust85{fill:#70492B;}
+	.ust86{fill:#4E311D;}
+	.ust87{fill:#3A2219;}
+	.ust88{clip-path:url(#USVGID_22_);}
+</style>
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="Capa_2">
+		</g>
+		<g id="Capa_1">
+			<g>
+				<g>
+					<g>
+						<path class="ust1" d="M203.7,135.5c-2.7,0-36.5-11.6-31.1-16c5.3-4.4,24.6-13.3,24.6-13.3s-22-17.8-41.6-8
+							c-12.7,6.4-14.2,28.9-13.6,43.9c0.3,9.1,4.6,17.6,11.7,23.3c6.5,5.3,14.5,10.7,19.1,10.3C181.5,174.7,203.7,135.5,203.7,135.5
+							z"/>
+						<path class="ust1" d="M373.4,135.5c2.7,0,36.5-11.6,31.1-16c-5.3-4.4-24.6-13.3-24.6-13.3s22-17.8,41.6-8
+							c12.7,6.4,14.2,28.9,13.6,43.9c-0.3,9.1-4.6,17.6-11.7,23.3c-6.5,5.3-14.5,10.7-19.1,10.3
+							C395.6,174.7,373.4,135.5,373.4,135.5z"/>
+						<path class="ust3" d="M154.1,139c-0.5-14.9,0.9-37.3,13.5-43.8c-3.9,0.1-7.9,1-11.8,2.9c-12.7,6.4-14.2,28.9-13.6,43.9
+							c0.3,9.1,4.6,17.6,11.7,23.3c6.5,5.3,14.5,10.7,19.1,10.3c1.7-0.2,3.9-1.8,6.4-4.3c-4.2-1.9-9.1-5.4-13.4-8.9
+							C158.7,156.6,154.4,148.1,154.1,139z"/>
+						<path class="ust3" d="M423.1,139c0.5-14.9-0.9-37.3-13.5-43.8c3.9,0.1,7.9,1,11.8,2.9c12.7,6.4,14.2,28.9,13.6,43.9
+							c-0.3,9.1-4.6,17.6-11.7,23.3c-6.5,5.3-14.5,10.7-19.1,10.3c-1.7-0.2-3.9-1.8-6.4-4.3c4.2-1.9,9.1-5.4,13.4-8.9
+							C418.5,156.6,422.8,148.1,423.1,139z"/>
+					</g>
+					<g>
+						<g>
+							<path class="ust0" d="M503.7,289.9c0,100.7-96.5,77.7-215.6,77.7S72.4,390.5,72.4,289.9c0-100.7,96.5-182.3,215.6-182.3
+								S503.7,189.2,503.7,289.9z"/>
+						</g>
+					</g>
+					<path class="ust4" d="M135.4,284.5c18.8,19.9,34,35.5,18.8,49.9c-15.2,14.3-42.8,9.8-61.6-10.1c-18.8-19.9-21.7-47.7-6.5-62
+						C101.4,247.9,116.6,264.6,135.4,284.5z"/>
+					<g>
+						<g>
+							<ellipse class="ust1" cx="248.1" cy="160.4" rx="33.8" ry="25.8"/>
+							<ellipse cx="255.2" cy="161.3" rx="11.6" ry="8.8"/>
+						</g>
+						<g>
+							<ellipse class="ust1" cx="328.2" cy="160.4" rx="33.8" ry="25.8"/>
+							<ellipse cx="315.8" cy="161.3" rx="11.6" ry="8.8"/>
+						</g>
+					</g>
+					<path d="M248.8,198.4c12-9.8,44.5-30.5,79.6-0.7c3.7,3.1,3.8,8.7,0.4,12.2c-9.9,9.9-29.4,18.3-36.9,21.3c-1.9,0.8-4.1,0.8-6,0
+						c-7.8-3.1-28.7-11.7-37.7-20.6C244.8,207.1,245.1,201.5,248.8,198.4z"/>
+					<g>
+						<path class="ust1" d="M181,224.8L161,238.2l31,27.7l4.9-31C198.3,226.1,188.5,219.8,181,224.8z"/>
+						<path class="ust2" d="M156.6,231.9c0,0,119.8,153.1,267,0"/>
+					</g>
+					<path class="ust4" d="M421.6,278.4c27.9-21.6,49.8-39.2,66.4-17.9c16.5,21.3,7.3,56.1-20.6,77.8c-27.9,21.6-63.9,21.9-80.4,0.6
+						C370.4,317.5,393.7,300.1,421.6,278.4z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</switch>
+
+</svg>

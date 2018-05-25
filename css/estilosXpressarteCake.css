@@ -1,0 +1,844 @@
+button, input[type='radio'], input[type='check']
+{
+	cursor: pointer;
+}
+button:focus{
+	outline: 0;
+}
+
+
+
+.linea
+{
+	border-bottom: 6px solid #ff3960;
+	width: 48px;
+    height: 33px;
+    margin-left: -6%;
+
+}
+
+.container-fluid
+{
+	position: relative;
+}
+
+#paginaEntera
+{
+	padding-top: 123px;
+}
+
+#bodyExpressarte
+{
+	background: #45008ef2;
+}
+
+#menuPrincipalExpressarte ul li a
+{
+	text-decoration: none;
+	color: white;
+	
+}
+
+#menuPrincipalExpressarte
+{
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	z-index: 3;
+}
+#nav1
+{
+	background-color: #45008e;
+}
+
+#nav
+{
+	z-index: 1;
+	box-shadow: 0px -8px 50px black;
+}
+
+.xpressArte
+{
+	width: 100%;
+	height: 100%;
+	/*position: absolute;*/
+	right: 0;
+	
+}
+.tamanio
+{
+	margin-top: 5%;
+	margin-left: 5%;
+	width: 113%;
+	height: auto;
+	padding: 20px;
+	background: #eeeeee54;
+	border-radius: 8px;
+}
+
+.tamanio
+{
+	display: block;
+}
+
+.listo
+{
+    background: #eeeeee;
+    border: none;
+    border-radius: 30px;
+    color: #45008e;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 25px 50px;
+    font-size: 20px;
+}
+
+.listo#bt_sup_listo{
+	margin-left: 36%;
+}
+
+.listo#al_horno{
+	position: absolute;
+	bottom: -5%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.footerExp
+{
+	width: 100%;
+	display: block;
+	margin-top: 7%;
+	background-color: #45008e;
+}
+
+#pasteliarteEx, #tiendaEx, #citaEx
+{
+	/*position: absolute;*/
+    height: 73px;
+    width: 200px;
+    /*margin-top: 400px;*/
+    /*margin-left: 4%;*/
+   	border: 3px solid white;
+    border-radius: 30px;
+
+}
+
+#tiendaEx
+{
+    margin-left: 40%;
+}
+
+#citaEx
+{
+	margin-left: 80%;
+}
+
+.imgBtn
+{
+	margin-left: 9%;
+	margin-top: 2%;
+	/*width: 20%;
+	height: 20%;*/
+}
+
+
+
+.tamanioSeleccionado
+{
+	background: none;
+	border: 0;
+	color: white;
+	cursor: pointer;
+	padding: 0 5px;
+}
+
+.tamanioSeleccionado:first-child,  
+.tamanioSeleccionado:last-child
+{
+	padding: 0;
+}
+
+.tamanioSeleccionado:hover, 
+.tamanioSeleccionado:focus{
+	text-shadow: 2px 2px 0 black;
+}
+
+.contenedorinputs 
+{
+    position: relative;
+    padding-left: 20px;
+}
+
+.saboresRellenosCake div ul
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.saboresCake
+{
+	width: auto;
+	height: auto;
+	background: #eeeeee00;
+	border: 3px solid white;
+	border-radius: 8px;
+	display: inline-block;
+}
+
+
+
+.saboresCake h5
+{
+	background: #eeeeee54;
+}
+
+.xpressArte h5
+{
+	color: white;
+	font-weight: 600;
+}
+
+.xpressArte h6
+{
+	color: white;
+}
+
+.saboresCake label
+{
+	color: white;
+	font-size: 15px;
+}
+
+.saboresCake div
+{
+	height: auto;
+}
+
+/*h1
+{
+	text-align: center;
+	font-family: "Century Gothic";
+	font-size: 20px;
+}
+
+h2
+{
+	text-align: center;
+	font-family: "Century Gothic";
+	font-size: 20px;
+}*/
+
+ul li
+{
+	position: relative;
+	list-style: none;
+	display: inline-block;
+}
+
+.saboresRellenosCake div ul li
+{
+	width: 47%;
+	display: flex;
+}
+
+.saboresRellenosCake div ul li input[type='radio']
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	height: 100%;
+}
+
+.saboresRellenosCake div ul li span
+{
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.saboresRellenosCake div ul li span label
+{
+	margin-bottom: 0;
+}
+
+.inputradio
+{   
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.aplicar
+{
+	width: 150px;
+    height: 35px;
+    left: 31px;
+    background: #ff3960;
+    color: #eeeeee;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    transform: translateY(85%);
+}
+
+.inputradioPersonajeCake
+{   
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+
+.colores input[type="radio"]:checked + span {
+	border: 2px solid white;
+}
+
+.saboresRellenosCake input[type="radio"]:checked + span {
+	/*border: 2px solid white;*/
+	font-weight: bold;
+}
+
+.seleccionado
+{
+	width: 60px;
+	height: 60px;
+	top: 40%;
+	left: 30%;
+	position: absolute;
+}
+
+.cacke
+{
+	position: relative;
+}
+
+
+.cake #cake_1
+{
+	height: 360px;
+	/*position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);*/
+	margin-left: 30%;
+}
+
+
+
+.saborSeleccionado
+{
+	width: 60px;
+	height: 60px;
+	top: 18%;
+	left: 28%;
+	position: absolute;
+}
+
+.rellenosCake
+{
+	margin-top: 2%;
+	width: auto;
+	height: auto;
+	background: #eeeeee00;
+	border: 3px solid white;
+	border-radius: 8px;
+	display: block;
+}
+
+.rellenosCake h5
+{
+	color: white;
+	background: #eeeeee54;
+}
+
+.rellenosCake label
+{
+	color: white;
+}
+
+.contBandeja
+{
+	top: 100%;
+	left: 30%;
+	position: absolute;
+}
+
+.slider::-webkit-slider-thumb 
+{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+
+.slider 
+{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#cake1
+{
+	border-radius: 50px;
+	background: #45008eB3;
+	padding: 0 80px 80px 80px;
+	margin: 80px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#cake1 h1{
+	color: white;
+	padding: 10px 0;
+	font-size: 60px;
+	margin: 0;
+	text-align: center;
+	font-weight: bold;
+}
+
+#cake2
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border-radius: 50px;
+	background: #45008e;
+	padding: 50px;
+}
+
+#cakeSeleccionado
+{
+	height: 80%;
+	width: 80%;
+	/*height: auto;*/
+}
+
+#cantidadSel
+{
+	color: white;
+	font-size: 70px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#cont_cake_sel{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#cont_cake_img{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.txtCake
+{
+	color: white;
+	/*position: absolute;
+	left: 60%;*/
+}
+
+#cakeTxt
+{
+	top: 30%;
+	font-weight: bold;
+
+}
+
+#txtSabor
+{
+	top: 50%;
+	left: 67.5%;
+}
+
+#saborTxt
+{
+	top: 50%;
+}
+
+#rellenoTxt
+{
+	top: 55%;
+	
+}
+
+#txtRelleno
+{
+	top: 55%;
+	left: 73.5%;
+}
+
+#animacion
+{
+}
+
+#imagen
+{
+    background: #ff3960;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+}
+
+#imagen img
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+#imagen1
+{
+	position: absolute;
+    margin-top: 120%;
+    width: 100%;
+}
+
+#imagen1 img
+{
+	margin-left: 20%;
+	margin-top: 10%;
+}
+
+.cantidadCakes
+{
+	border-radius: 20px;
+	background: #eeeeee54;
+	height: auto;
+	width: auto;
+	text-align: center;
+	margin-top: 80px;
+	padding: 0 10px 10px 10px;
+}
+
+.numeroCake
+{
+	border-radius: 8px;
+	background: #eeeeee54;
+	height: auto;
+	width: auto;
+}
+
+.cantidad_cake 
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.cantidadCakes h5
+{
+	font-weight: bold;
+	color: #45008e;
+}
+
+.txt_dis
+{
+	color: #eeeeee;
+	font-weight: bold;
+	margin-top: 40px;
+}
+
+.cantidadCakes p
+{
+	color: #45008e;
+}
+
+.cakeAdorno
+{
+	position: relative;
+}
+
+.cakeAdorno #cakeSel
+{
+	height: auto;
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.seccionCake
+{
+	border-radius: 8px;
+	background: #eeeeee54;
+	height: auto;
+	width: auto;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.btn_adornos_cake
+{
+	background: transparent;
+	border: none;
+	width: 24%;
+}
+
+.seccionCake h6
+{
+	color: #45008e;
+	font-weight: bold;
+}
+
+.texto
+{
+	border-radius: 8px;
+	background: #eeeeee54;
+	height: auto;
+	width: auto;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.escribir
+{
+	border-radius: 8px;
+	background: #eeeeee54;
+	border: none;
+	height: 70px;
+	width: 80%;
+	font-size: 35px;
+	color: #45008ef2;
+}
+
+.texto h5
+{
+	color: #45008e;
+	font-weight: bold;
+}
+
+.texto p
+{
+	color: #45008e;
+	font-weight: bold;
+}
+
+.tamanioSeleccionado
+{
+	border-radius: 8px;
+	border: 1px solid white;
+}
+
+
+.sel_per_pie ul
+{
+	padding-left: 0%;
+	padding-bottom: 4%;
+	padding-right: 0;
+	justify-content: center;
+
+}
+
+.sel_per_pie ul.crema_adornos_cake{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sel_per_pie ul li span
+{
+	width: 35px;
+	height: 35px;
+}
+
+
+.inputPersonajeCake
+{
+	/*border-radius: 50%;*/
+    height: 20px;
+    position: absolute;
+    display: inline-block;
+    left: 0%;
+    width: 21px;
+    z-index: 2;
+    top: 0;
+}
+
+.inputPersonajeCake#sullivan
+{
+	background: url('../imagenes/Despiece/personaje_1.png');
+	background-repeat: no-repeat;
+}
+.inputPersonajeCake#wasauski
+{
+	background: url('../imagenes/Despiece/personaje_2.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#angry
+{
+	background: url('../imagenes/Despiece/personaje_3.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#angry1
+{
+	background: url('../imagenes/Despiece/personaje_4.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#angry2
+{
+	background: url('../imagenes/Despiece/personaje_5.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#marrano
+{
+	background: url('../imagenes/Despiece/personaje_6.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#conejo
+{
+	background: url('../imagenes/Despiece/personaje_7.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#gato
+{
+	background: url('../imagenes/Despiece/personaje_8.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#hello_kitty
+{
+	background: url('../imagenes/Despiece/personaje_9.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#gato1
+{
+	background: url('../imagenes/Despiece/personaje_10.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#pollo
+{
+	background: url('../imagenes/Despiece/personaje_11.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#gallo
+{
+	background: url('../imagenes/Despiece/personaje_12.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#emoji
+{
+	background: url('../imagenes/Despiece/personaje_13.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#emoji1
+{
+	background: url('../imagenes/Despiece/personaje_14.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#emoji2
+{
+	background: url('../imagenes/Despiece/personaje_15.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#emoji3
+{
+	background: url('../imagenes/Despiece/personaje_16.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#elmo
+{
+	background: url('../imagenes/Despiece/personaje_17.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#elmo1
+{
+	background: url('../imagenes/Despiece/personaje_18.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#castor
+{
+	background: url('../imagenes/Despiece/personaje_19.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#elefante
+{
+	background: url('../imagenes/Despiece/personaje_20.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#caballo
+{
+	background: url('../imagenes/Despiece/personaje_21.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#cerdo
+{
+	background: url('../imagenes/Despiece/personaje_22.png');
+	background-repeat: no-repeat;	
+}
+.inputPersonajeCake#unicornio
+{
+	background: url('../imagenes/Despiece/personaje_23.png');
+	background-repeat: no-repeat;	
+}
+
+.sel_per_pie
+{
+	border-radius: 8px;
+	background: #eeeeee54;
+	height: auto;
+	width: auto;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-top: 2%;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.btn_adornos_cake
+{
+	background: #eeeeee54;
+	border-radius: 10px;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.lst_piezas
+{
+	padding: 0 6px;
+}
+
+#mini
+{
+	width: 40%;
+}
+
+#stan
+{
+	width: 50%;
+	transform: translateX(25%);
+}
+
+.image-checkbox
+{
+	position: relative;
+}
+
+.txt
+{
+	position: absolute;
+	font-size: 11px;
+}

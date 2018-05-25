@@ -1,0 +1,96 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+h1
+{
+	color: maroon;
+	font-family: arial;
+	font-size: 35px;
+}
+
+.primera
+{
+	height: 700px;
+	width: 100%;
+	background-image: url('../imagenes/purty_wood.png');
+	position: relative;
+}
+
+.segunda
+{
+	height: 700px;
+	width: 100%;
+	background-image: url('../imagenes/purty_wood.png');;
+	position: relative;
+}
+
+.tercera
+{
+	height: 700px;
+	width: 100%;
+	background-image: url('../imagenes/purty_wood.png');;
+	position: relative;
+}
+
+.cuarta
+{
+	height: 700px;
+	width: 100%;
+	background-image: url('../imagenes/purty_wood.png');;
+	position: relative;
+}
+
+p
+{
+	font-size: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.contenedor
+{
+	margin: 0 auto;
+	text-align: center;
+}
+/*Opacar las imagenes del contenedor*/
+.thumb img
+{
+	opacity: 0.5;
+	-moz- opacity: 0.5;
+	filter: alpha(opacity=5);
+	box-shadow: 10px 10px 5px #888;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+}
+
+/*Que a las imagenes del contenedor se les quite lo opaco cuando pasa el mouse sobre ellas*/
+.thumb img:hover
+{
+	opacity: 1;
+	-moz- opacity: 1;
+	filter: alpha(opacity=1);
+}
+
+#titulo
+{
+	color: maroon;
+	background: transparent;
+	font-size: 24px;
+	font-family: arial;
+	height: 50px;
+}
+
+#foto
+{
+	box-shadow: 10px 10px 5px #888;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+}

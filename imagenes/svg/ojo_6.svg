@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 602">
+	<defs>
+		<style>
+			.o6cls-1{fill:#cb461d;}
+			.o6cls-2{fill:#f05a24;}
+			.o6cls-3{fill:#f8f9d2;}
+			.o6cls-4{fill:none;}
+		</style>
+	</defs>
+	<title>
+		Recurso 43
+	</title>
+	<g id="Capa_2" data-name="Capa 2">
+		<g id="Capa_3" data-name="Capa 3">
+			<ellipse class="o6cls-1" cx="226.9" cy="264.2" rx="45.34" ry="39.14"/>
+			<ellipse class="o6cls-1" cx="360.28" cy="262.7" rx="45.34" ry="37.64"/>
+			<ellipse class="o6cls-2" cx="226.9" cy="254.95" rx="45.34" ry="35.39"/>
+			<ellipse class="o6cls-2" cx="360.28" cy="253.45" rx="45.34" ry="33.89"/>
+			<ellipse class="o6cls-3" cx="230.9" cy="243.41" rx="45.34" ry="28.93"/>
+			<path d="M256,244.43c0,5.46-7,9.89-15.51,9.89s-15.51-4.43-15.51-9.89,6.94-9.9,15.51-9.9S256,239,256,244.43Z"/>
+			<ellipse class="o6cls-3" cx="354.28" cy="243.41" rx="45.34" ry="28.93"/>
+			<path d="M353.09,244.43c0,5.46-6.95,9.89-15.51,9.89s-15.51-4.43-15.51-9.89,6.94-9.9,15.51-9.9S353.09,239,353.09,244.43Z"/>
+			<rect class="o6cls-4" width="576" height="602"/>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 576.1 601.6"
+	 style="enable-background:new 0 0 576.1 601.6;" xml:space="preserve">
+<style type="text/css">
+	.ust0{fill:#56B3CC;}
+	.ust1{fill:#F8F9D2;}
+	.ust2{fill:none;stroke:#000000;stroke-width:14;stroke-linecap:round;stroke-miterlimit:10;}
+	.ust3{fill:#DFDEB5;}
+	.ust4{fill:#662D90;}
+	.ust5{fill:#D60028;}
+	.ust6{clip-path:url(#USVGID_2_);fill:#F8F9D2;}
+	.ust7{fill:#FDC325;}
+	.ust8{fill:#FDC325;stroke:#D09B18;stroke-width:9;stroke-miterlimit:10;}
+	.ust9{fill:#E1E1B4;}
+	.ust10{clip-path:url(#USVGID_4_);fill:#F8F9D2;}
+	.ust11{fill:#B68313;}
+	.ust12{fill:#FFFF00;}
+	.ust13{clip-path:url(#USVGID_6_);fill:#F8F9D2;}
+	.ust14{fill:#924A09;}
+	.ust15{fill:#FFF133;}
+	.ust16{clip-path:url(#USVGID_8_);fill:#F8F9D2;}
+	.ust17{clip-path:url(#USVGID_8_);}
+	.ust18{fill:#3D8090;}
+	.ust19{fill:#F05A24;}
+	.ust20{fill:#CB461D;}
+	.ust21{fill:#7EF13B;}
+	.ust22{fill:#8AD300;stroke:#6F9F04;stroke-width:6;stroke-miterlimit:10;}
+	.ust23{fill:#0C5B00;}
+	.ust24{fill:#71D530;}
+	.ust25{opacity:0.5;fill:#0C5B00;}
+	.ust26{fill:#DADAA8;}
+	.ust27{fill:#8AD300;}
+	.ust28{fill:#FBFBE2;}
+	.ust29{fill:#FBFBE2;stroke:#C0BE98;stroke-width:4;stroke-miterlimit:10;}
+	.ust30{fill:#FF7BAB;}
+	.ust31{fill:#C0BE98;}
+	.ust32{fill:#F8F9D2;stroke:#D2D2A0;stroke-width:6;stroke-miterlimit:10;}
+	.ust33{fill:#009145;}
+	.ust34{fill:#F6921E;}
+	.ust35{fill:none;stroke:#D09B18;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.ust36{fill:#8B5A2D;}
+	.ust37{fill:#A57C52;}
+	.ust38{fill:#603813;}
+	.ust39{fill:#664326;}
+	.ust40{fill:#6C9D96;}
+	.ust41{fill:#4F7A73;}
+	.ust42{fill:#699088;}
+	.ust43{fill:#355952;}
+	.ust44{fill:#668D85;}
+	.ust45{fill:#395B55;}
+	.ust46{fill:#8BC53F;}
+	.ust47{fill:#7A4C26;}
+	.ust48{fill:#563318;}
+	.ust49{fill:#54331C;}
+	.ust50{clip-path:url(#USVGID_16_);}
+	.ust51{fill:#FFFFFF;}
+	.ust52{fill:#64CC21;}
+	.ust53{fill:#29AAE1;}
+	.ust54{fill:#F9F9E5;}
+	.ust55{fill:#232D1C;}
+	.ust56{clip-path:url(#USVGID_18_);}
+	.ust57{fill:#C98FC1;}
+	.ust58{fill:#E0AAD6;}
+	.ust59{fill:#FFD4F5;}
+	.ust60{fill:#B276AC;}
+	.ust61{fill:none;stroke:#D37313;stroke-width:8;stroke-miterlimit:10;}
+	.ust62{fill:#FF3960;}
+	.ust63{fill:#FAAF3B;}
+	.ust64{fill:#C98224;}
+	.ust65{fill:#C61A4B;}
+	.ust66{fill:#FF97B0;}
+	.ust67{fill:#E57393;}
+	.ust68{fill:none;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-miterlimit:10;}
+	.ust69{fill:none;stroke:#000000;stroke-width:12;stroke-linecap:round;stroke-miterlimit:10;}
+	.ust70{fill:#F4EEC6;}
+	.ust71{fill:#FCFCF5;}
+	.ust72{fill:#E2D9AF;}
+	.ust73{fill:#B5AA7C;}
+	.ust74{fill:#1FB59F;}
+	.ust75{fill:#C6BB8D;}
+	.ust76{fill:#FBED21;}
+	.ust77{fill:#CCC27F;}
+	.ust78{clip-path:url(#USVGID_20_);}
+	.ust79{fill:#755031;}
+	.ust80{fill:#946843;}
+	.ust81{fill:#835937;}
+	.ust82{fill:#A3784B;}
+	.ust83{fill:#5E3D23;}
+	.ust84{fill:#8D6340;}
+	.ust85{fill:#70492B;}
+	.ust86{fill:#4E311D;}
+	.ust87{fill:#3A2219;}
+	.ust88{clip-path:url(#USVGID_22_);}
+</style>
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="Capa_2">
+		</g>
+		<g id="Capa_1">
+			<g>
+				<g>
+					<g>
+						<g>
+							<path class="ust7" d="M503.7,292.7c0,100.7-96.5,77.7-215.6,77.7S72.4,393.4,72.4,292.7c0-100.7,96.5-182.3,215.6-182.3
+								S503.7,192,503.7,292.7z"/>
+						</g>
+					</g>
+				</g>
+				<g>
+					<g>
+						<ellipse transform="matrix(0.9412 -0.3379 0.3379 0.9412 -45.6242 132.3031)" cx="357.2" cy="197.2" rx="20.7" ry="26.8"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M191.7,208.6c-1.1,0-2.2-0.2-3.2-0.7c-3.4-1.6-4.8-5.5-3-8.7c0.5-0.9,12-21,32.7-23c14.2-1.3,28.4,6,42.3,21.9
+							c2.4,2.8,2,6.9-1,9.1c-3,2.2-7.4,1.8-9.8-1c-10.7-12.3-20.8-18-30-17.2c-13.1,1.2-21.6,15.9-21.7,16.1
+							C196.6,207.3,194.2,208.6,191.7,208.6z"/>
+					</g>
+				</g>
+				<g>
+					<path d="M285.4,285.7c-3.4,0-6.4-1.9-6.9-4.5c-0.5-2.8,2.1-5.4,6-5.8c10.1-1,21.1-3.9,23-6c-2.2-1.9-13-4.2-22.7-4.9
+						c-3.5-0.2-6.3-2.4-6.4-5c-0.1-2.6,2.5-4.9,6-5.2c9.9-1,20.7-3.8,22.9-5.9c-2.9-1.8-14.1-3.6-24.3-3.9c-3.9-0.1-6.9-2.5-6.7-5.4
+						c0.1-2.8,3.4-5.1,7.3-5c0.3,0,8.6,0.3,16.9,1.6c14.2,2.2,21.3,6.5,21.1,12.7c-0.2,4.7-4.6,8.1-10.4,10.5
+						c6,2.3,10.6,5.7,10.4,10.6c-0.4,11.6-27.1,15.2-35.2,16C286.1,285.7,285.7,285.7,285.4,285.7z"/>
+				</g>
+				<g>
+					<path d="M164.7,178c-1.5,0-3.1-0.3-4.4-1c-3.7-1.8-4.7-5.5-2.2-8.2c16.5-18.3,55.5-28.5,71.8-30.6c6.9-0.9,11-0.6,13.9,1
+						c3.6,1.9,4.3,5.4,1.7,8c-2.2,2.2-6,2.8-9.2,1.8c0,0,0,0-0.1,0c-8.3,0-49.7,9.4-64.8,26.1C169.9,176.9,167.3,178,164.7,178z"/>
+				</g>
+				<g>
+					<path d="M398.5,166.5c-3.8,0-7.1-2-7.8-4.8c-4.7-17.9-47.3-31.2-63.3-34.9c-4.2-1-6.6-4.3-5.3-7.4c1.3-3.1,5.8-4.9,10-3.9
+						c2.7,0.6,66.8,15.5,74.3,43.9c0.8,3.2-2,6.3-6.3,6.9C399.5,166.5,399,166.5,398.5,166.5z"/>
+				</g>
+				<path class="ust62" d="M440,293.8c9.6-15.7-3-37.9-21.9-38.5c1-13.2-9.1-25.8-22.3-27.9c-13.8-2.1-22.7,6.9-26.6,18.9
+					c-5.2,16.1-3.5,35.5,0.3,52.4c0.1-0.1,0.3-0.2,0.4-0.3c-0.1,0.1-0.2,0.2-0.3,0.4c8.9,3.1,18.1,5.2,27.3,6.4
+					C410,306.8,433.8,307.8,440,293.8C445.4,284.9,439.3,295.4,440,293.8z"/>
+			</g>
+		</g>
+	</g>
+</switch>
+
+</svg>

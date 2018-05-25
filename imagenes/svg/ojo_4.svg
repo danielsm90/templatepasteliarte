@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 602">
+	<defs>
+		<style>
+			.o4cls-1{fill:#e1e1b4;}
+			.o4cls-2{fill:#f8f9d2;}
+			.o4cls-3{fill:none;}
+		</style>
+	</defs>
+	<title>
+		Recurso 45
+	</title>
+	<g id="Capa_2" data-name="Capa 2">
+		<g id="Capa_3" data-name="Capa 3">
+			<ellipse class="o4cls-1" cx="280.24" cy="249.69" rx="45.34" ry="28.93"/>
+			<ellipse class="o4cls-1" cx="387.61" cy="249.69" rx="45.34" ry="28.93"/>
+			<ellipse class="o4cls-2" cx="280.24" cy="243.69" rx="45.34" ry="28.93"/>
+			<path d="M305.29,244.71c0,5.46-6.94,9.89-15.51,9.89s-15.51-4.43-15.51-9.89,7-9.9,15.51-9.9S305.29,239.24,305.29,244.71Z"/>
+			<ellipse class="o4cls-2" cx="387.61" cy="243.69" rx="45.34" ry="28.93"/>
+			<path d="M386.42,244.71c0,5.46-6.94,9.89-15.51,9.89s-15.51-4.43-15.51-9.89,7-9.9,15.51-9.9S386.42,239.24,386.42,244.71Z"/>
+			<polygon points="333.65 243.77 236.39 217.07 249.03 198.31 343.93 228.53 333.65 243.77"/>
+			<polygon points="333.66 243.77 430.93 217.07 418.28 198.31 323.39 228.53 333.66 243.77"/>
+			<rect class="o4cls-3" width="576" height="602"/>
+		</g>
+	</g>
+</svg>

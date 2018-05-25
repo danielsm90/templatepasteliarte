@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 576.1 601.6"
+	 style="enable-background:new 0 0 576.1 601.6;" xml:space="preserve">
+<style type="text/css">
+	.crst0{fill:#56B3CC;}
+	.crst1{fill:#F8F9D2;}
+	.crst2{fill:none;stroke:#000000;stroke-width:14;stroke-linecap:round;stroke-miterlimit:10;}
+	.crst3{fill:#DFDEB5;}
+	.crst4{fill:#662D90;}
+	.crst5{fill:#D60028;}
+	.crst6{clip-path:url(#SVGID_2_);fill:#F8F9D2;}
+	.crst7{fill:#FDC325;}
+	.crst8{fill:#FDC325;stroke:#D09B18;stroke-width:9;stroke-miterlimit:10;}
+	.crst9{fill:#E1E1B4;}
+	.crst10{clip-path:url(#SVGID_4_);fill:#F8F9D2;}
+	.crst11{fill:#B68313;}
+	.crst12{fill:#FFFF00;}
+	.crst13{clip-path:url(#SVGID_6_);fill:#F8F9D2;}
+	.crst14{fill:#924A09;}
+	.crst15{fill:#FFF133;}
+	.crst16{clip-path:url(#SVGID_8_);fill:#F8F9D2;}
+	.crst17{clip-path:url(#SVGID_8_);}
+	.crst18{fill:#3D8090;}
+	.crst19{fill:#F05A24;}
+	.crst20{fill:#CB461D;}
+	.crst21{fill:#7EF13B;}
+	.crst22{fill:#8AD300;stroke:#6F9F04;stroke-width:6;stroke-miterlimit:10;}
+	.crst23{fill:#0C5B00;}
+	.crst24{fill:#71D530;}
+	.crst25{opacity:0.5;fill:#0C5B00;}
+	.crst26{fill:#DADAA8;}
+	.crst27{fill:#8AD300;}
+	.crst28{fill:#FBFBE2;}
+	.crst29{fill:#FBFBE2;stroke:#C0BE98;stroke-width:4;stroke-miterlimit:10;}
+	.crst30{fill:#FF7BAB;}
+	.crst31{fill:#C0BE98;}
+	.crst32{fill:#F8F9D2;stroke:#D2D2A0;stroke-width:6;stroke-miterlimit:10;}
+	.crst33{fill:#009145;}
+	.crst34{fill:#F6921E;}
+	.crst35{fill:none;stroke:#D09B18;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.crst36{fill:#8B5A2D;}
+	.crst37{fill:#A57C52;}
+	.crst38{fill:#603813;}
+	.crst39{fill:#664326;}
+	.crst40{fill:#6C9D96;}
+	.crst41{fill:#4F7A73;}
+	.crst42{fill:#699088;}
+	.crst43{fill:#355952;}
+	.crst44{fill:#668D85;}
+	.crst45{fill:#395B55;}
+	.crst46{fill:#8BC53F;}
+	.crst47{fill:#7A4C26;}
+	.crst48{fill:#563318;}
+	.crst49{fill:#54331C;}
+	.crst50{clip-path:url(#SVGID_16_);}
+	.crst51{fill:#FFFFFF;}
+	.crst52{fill:#64CC21;}
+	.crst53{fill:#29AAE1;}
+	.crst54{fill:#F9F9E5;}
+	.crst55{fill:#232D1C;}
+	.crst56{clip-path:url(#SVGID_18_);}
+	.crst57{fill:#C98FC1;}
+	.crst58{fill:#E0AAD6;}
+	.crst59{fill:#FFD4F5;}
+	.crst60{fill:#B276AC;}
+	.crst61{fill:none;stroke:#D37313;stroke-width:8;stroke-miterlimit:10;}
+	.crst62{fill:#FF3960;}
+	.crst63{fill:#FAAF3B;}
+	.crst64{fill:#C98224;}
+	.crst65{fill:#C61A4B;}
+	.crst66{fill:#FF97B0;}
+	.crst67{fill:#E57393;}
+	.crst68{fill:none;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-miterlimit:10;}
+	.crst69{fill:none;stroke:#000000;stroke-width:12;stroke-linecap:round;stroke-miterlimit:10;}
+	.crst70{fill:#F4EEC6;}
+	.crst71{fill:#FCFCF5;}
+	.crst72{fill:#E2D9AF;}
+	.crst73{fill:#B5AA7C;}
+	.crst74{fill:#1FB59F;}
+	.crst75{fill:#C6BB8D;}
+	.crst76{fill:#FBED21;}
+	.crst77{fill:#CCC27F;}
+	.crst78{clip-path:url(#SVGID_20_);}
+	.crst79{fill:#755031;}
+	.crst80{fill:#946843;}
+	.crst81{fill:#835937;}
+	.crst82{fill:#A3784B;}
+	.crst83{fill:#5E3D23;}
+	.crst84{fill:#8D6340;}
+	.crst85{fill:#70492B;}
+	.crst86{fill:#4E311D;}
+	.crst87{fill:#3A2219;}
+	.crst88{clip-path:url(#SVGID_22_);}
+	.crst89{fill:#FCF8A9;}
+</style>
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="Capa_2">
+		</g>
+		<g id="Capa_1">
+			<g>
+				<g>
+					<path class="crst12" d="M504.3,291.7c0,100-95.9,77.2-214.2,77.2S75.9,391.7,75.9,291.7s95.9-181.1,214.2-181.1
+						S504.3,191.7,504.3,291.7z"/>
+				</g>
+			</g>
+			<path class="crst89" d="M333.3,155.4l-75.7,6c-33.6,2.7-63.6-16.5-67-42.7l-1.5-11.8C185.7,80.7,257.2,9.2,290.7,6.5l28.7,42.1
+				c33.6-2.7,63.6,16.5,67,42.7l1.5,11.8C391.4,129.3,366.9,152.8,333.3,155.4z"/>
+			<path class="crst12" d="M414.5,214.6l-238.1,21.5c-33.6,3-63.6-18.8-67-48.8l-1.5-13.4c-3.4-30,21.1-56.7,54.7-59.8l238.1-21.5
+				c33.6-3,63.6,18.8,67,48.8l1.5,13.4C472.6,184.8,448.1,211.6,414.5,214.6z"/>
+			<path class="crst89" d="M456.4,287.5l-321.9,29.1c-33.6,3-63.6-18.8-67-48.8L66,254.3c-3.4-30,21.1-56.7,54.7-59.8l321.9-29.1
+				c33.6-3,63.6,18.8,67,48.8l1.5,13.4C514.4,257.7,489.9,284.5,456.4,287.5z"/>
+		</g>
+	</g>
+</switch>
+</svg>

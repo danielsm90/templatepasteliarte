@@ -1,0 +1,202 @@
+/*body
+{
+	background-image: url('imagenes/purty_wood.png');
+}*/
+body
+{
+	font-family: 'Raleway', sans-serif;
+}
+
+#encabezado
+{
+	width: 100%;
+	background-color: white;
+	position: relative;
+	text-align: center;
+}
+#encabezado1
+{
+	width: 60%;
+	height: 600px;
+	position: absolute;
+	background-image: url('imagenes/Pasteliarte/recuadro.png');
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%, -50%);
+}
+
+#encabezado1 h1
+{
+	font-size: 80px;
+	color: white;
+	left: 50%;
+}
+.titulo
+{
+	font-size: 40px;
+	position: absolute;
+	top: 35%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+}
+.imagen1
+{
+	width: 70%;
+	position: absolute;
+	bottom: -50%;
+	left: 55%;
+	transform: translateX(-50%);
+}
+
+.opciones
+{
+	width: 100%;
+	transform: skewY(-4deg);
+	
+}
+.opciones img
+{
+	transform: skewY(4deg);
+}
+
+#conocenos
+{
+	background-color: #C45166;
+}
+
+#conocenos img
+{
+	margin-left: 10%;
+}
+
+#xpressarte
+{
+	background-color: #C2374D;
+	
+}
+#xpressarte img
+{
+	margin-left: 10%;
+}
+#tienda
+{
+	background-color: #F7EA8C;
+}
+#tienda img
+{
+	margin-left: 10%;
+}
+#cita
+{
+	background-color: #5CA3A1;
+}
+#cita img
+{
+	margin-left: 10%;
+}
+
+p
+{
+	color: black;
+}
+
+nav
+{
+	width: 100%;
+	height: 80px;
+	background-color: #C2374D;	
+}
+
+#menuPrincipal
+{
+	width: 100%;
+	height: 80px;
+	background-color: #FF1D48;
+}
+
+.cantidad_cpk
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+}
+
+#menuPrincipal ul li a
+{
+	text-decoration: none;
+	color: white;
+	
+}
+
+#opcionMenu
+{
+	margin: 8px;
+}
+
+
+#menuPrincipal ul li a:hover
+{
+	background-color: #C45166;
+}
+
+.logo
+{
+	margin-left: 60px;
+}
+
+.navbar-text
+{
+	margin-left: 10px;
+}
+
+/*.pasteles
+{
+	
+	z-index: 0;
+	position: absolute;
+	pointer-events: none;
+}*/
+
+#pastelLogo
+{
+	position: absolute;
+	top: 18%;
+	left: 16%;
+}
+
+#pastelLogo1
+{
+	position: absolute;
+	
+	left: 65%;
+	background-attachment: fixed;
+
+	
+}
+
+.logoColor
+{
+	position: absolute;
+	left: 30%;
+}
+.fondo
+{
+	width: 100%;
+	margin-top: 50%;
+}
+
+.navbar-nav
+{
+	margin-left: 80px;
+}
+
+#footer
+{
+	text-align: center;
+	margin-top: 50px;
+}
+
+#footer img:hover
+{
+	background-image: url('imagenes/Pasteliarte/recuadro.png');
+}

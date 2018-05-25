@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 602">
+	<defs>
+		<style>
+			.b4cls-1{fill:#e57393;}
+			.b4cls-2{fill:#ff97b0;}
+			.b4cls-3,.b4cls-4{fill:none;}
+			.b4cls-3{stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:20px;}
+		</style>
+	</defs>
+	<title>
+		Recurso 15
+	</title>
+	<g id="Capa_2" data-name="Capa 2">
+		<g id="Capa_3" data-name="Capa 3">
+			<path class="b4cls-1" d="M413.67,345.39h0c-18.39,5.61-43.23,1.36-55.48-9.5l-23.52-20.82,1.14-12.95,65.46-7.36,24.38,10.87C437.9,316.48,432.06,339.79,413.67,345.39Z"/>
+			<path class="b4cls-2" d="M414.89,331.45h0c-18.39,5.6-43.23,1.35-55.48-9.5l-23.52-20.83,66.6-20.3L426,301.64C438.25,312.5,433.28,325.84,414.89,331.45Z"/>
+			<path class="b4cls-1" d="M408.09,318.5a5.57,5.57,0,0,1-4.83-.83l-31.75-28.12c-1.07-.94-.64-2.1,1-2.59a5.6,5.6,0,0,1,4.83.82l31.75,28.13C410.12,316.85,409.69,318,408.09,318.5Z"/>
+			<path class="b4cls-3" d="M408.44,248.34c0,34.33-52.13,62-116.43,62s-116.43-27.68-116.43-62"/>
+			<rect class="b4cls-4" width="576" height="602"/>
+		</g>
+	</g>
+</svg>
