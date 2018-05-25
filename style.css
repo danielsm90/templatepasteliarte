@@ -1,3 +1,14 @@
+/*
+Theme Name: Pasteliarte
+Theme URI: www.pasteliarte.com
+Description: Descripción
+Version: 1.0
+Author: waytic
+Author URL: www.waytic.co
+*/
+
+@import 'index.css';
+
 /*body
 {
 	background-image: url('imagenes/purty_wood.png');
@@ -5,6 +16,10 @@
 body
 {
 	font-family: 'Raleway', sans-serif;
+}
+
+.navbar-expand-lg .navbar-collapse{
+	justify-content: space-around;
 }
 
 #encabezado
@@ -19,7 +34,7 @@ body
 	width: 60%;
 	height: 600px;
 	position: absolute;
-	background-image: url('imagenes/Pasteliarte/recuadro.png');
+	background-image: url('img/Pasteliarte/recuadro.png');
 	left: 50%;
 	top: 45%;
 	transform: translate(-50%, -50%);
@@ -198,5 +213,5 @@ nav
 
 #footer img:hover
 {
-	background-image: url('imagenes/Pasteliarte/recuadro.png');
+	background-image: url('img/Pasteliarte/recuadro.png');
 }

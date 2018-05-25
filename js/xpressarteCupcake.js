@@ -87,7 +87,7 @@ $(document).ready(function() {
 		i = $(this).attr("data-adorno");
 		
 
-		$.get('imagenes/svg/' + $(this).attr('data-d'), function(data)
+		$.get($(this).attr('data-d'), function(data)
 		{
 			$(decoracion).html(data.getElementById("Capa_1"));
 		});
@@ -98,7 +98,7 @@ $(document).ready(function() {
 		var decoracion = document.getElementById("cup1").getSVGDocument().getElementById("Capa_1");
 		
 
-		$.get('imagenes/svg/' + $(this).attr('data-imagen'), function(data)
+		$.get($(this).attr('data-imagen'), function(data)
 		{
 			$(decoracion).html(data.getElementById("Capa_2"));
 		});
@@ -115,7 +115,7 @@ $(document).ready(function() {
 		
 		// i = $(this).attr("data-adorno");
 
-		$.get('imagenes/svg/' + $(this).attr('data-d'), function(data)
+		$.get($(this).attr('data-d'), function(data)
 		{
 			// if(id_pie_sel != id_pie)
 			// {
@@ -510,7 +510,7 @@ $(document).ready(function() {
 		$('.btn_adornos').removeClass('active');
 		$(this).addClass('active');
 		var decoracion = document.getElementById("cup1").getSVGDocument().getElementById("Capa_1");
-		$.get('imagenes/svg/' + $(this).attr('data-sel'), function(data)
+		$.get($(this).attr('data-sel'), function(data)
 		{
 			$(decoracion).html(data.getElementById("Capa_1"));
 		});
