@@ -49,7 +49,7 @@
 			<div class="col-8 cupcake">
 				<embed id="cup" src="imagenes/svg/Cupcake-01-01.svg" width="50%" height="50%" />
 				<div class="verRelleno">
-					<button id="noRelleno"><img src="imagenes/Despiece/sin_relleno_seleccionado.png" /></button>
+					<button id="noRelleno"><img src="imagenes/Despiece/sin_relleno.png" /></button>
 					<button id="relleno"><img src="imagenes/Despiece/relleno.png" /></button>
 					
 				</div>

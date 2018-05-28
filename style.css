@@ -13,9 +13,10 @@ Author URL: www.waytic.co
 {
 	background-image: url('imagenes/purty_wood.png');
 }*/
-body
+html, body
 {
 	font-family: 'Raleway', sans-serif;
+	scroll-behavior: smooth;
 }
 
 .navbar-expand-lg .navbar-collapse{

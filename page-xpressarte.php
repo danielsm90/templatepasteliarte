@@ -1,10 +1,7 @@
-<?php get_header(); ?>
+<?php get_header('xpressarte'); ?>
 	<?php
 	if(have_posts()):
 		the_post();
-		$my_wp_query = new WP_Query();
-    	$all_wp_pages = $my_wp_query->query(array('post_type' => 'page', 'posts_per_page' => -1));
-		$arrayPages = get_page_children(get_the_ID(), $all_wp_pages);
 	?>
 		<div id="fondo">
 			<img id="momento" src="<?php echo get_template_directory_uri(); ?>/img/Despiece/Momento.png" />
@@ -12,8 +9,13 @@
 			<div id="contenedorGrande">
 				<h3><?php echo get_the_content(); ?></h3>
 				<div id="manizales">
-					<h1>En Manizales<h1>
-					<a href="<?php echo get_page_link($arrayPages[2]->ID); ?>">
+					<h1>En Manizales</h1>
+					<?php
+					$pageMCupCakes = get_page_by_path( 'manizales-cupcakes' );
+					$urlImagenMCupCakes = get_the_post_thumbnail_url( $pageMCupCakes );
+					$urlMCupCakes = get_permalink( $pageMCupCakes );
+					?>
+					<a id="urlCuManizales" href="<?php echo $urlMCupCakes; ?>">
 						<div id="contenedorCupcake">
 							<div id="cupcake">
 								<h2>Cupcakes</h2>
@@ -21,7 +23,12 @@
 							</div>
 						</div>
 					</a>
-					<a href="<?php echo get_page_link($arrayPages[1]->ID); ?>">
+					<?php
+					$pageMCakes = get_page_by_path( 'manizales-cakes' );
+					$urlImagenMCakes = get_the_post_thumbnail_url( $pageMCakes );
+					$urlMCakes = get_permalink( $pageMCakes );
+					?>
+					<a id="urlCaManizales" href="<?php echo $urlMCakes; ?>">
 						<div id="contenedorTorta">
 							<div id="torta">
 								<h2>Cakes</h2>
@@ -32,14 +39,19 @@
 					
 				</div>
 				<div id="restodelpais">
-					<h1>En el resto del país<h1>
-					<a href="<?php echo get_page_link($arrayPages[0]->ID); ?>">
+					<h1>En el resto del país</h1>
+					<?php
+					$pageResto = get_page_by_path( 'resto-del-pais' );
+					$urlImagenResto = get_the_post_thumbnail_url( $pageResto );
+					$urlResto = get_permalink( $pageResto );
+					?>
+					<a id="urlResto" href="<?php echo $urlResto; ?>">
 						<div id="contenedorTortas">
 							<div id="tortas">
 								<h2>Cakes</h2>
 								<img class="imgCakes" src="<?php echo get_template_directory_uri(); ?>/img/Despiece/cakes.png" />
 							</div>
-					</div>
+						</div>
 					</a>
 				</div>
 			</div>

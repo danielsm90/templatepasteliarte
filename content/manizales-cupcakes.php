@@ -1,4 +1,5 @@
 <?php $urlSitio = get_template_directory_uri(); ?>
+<input type="hidden" id="urlSite" value="<?php echo get_template_directory_uri(); ?>">
 <div id="paginaEntera">
 	<div class="container-fluid">
 		<div class="row xpressArte">
@@ -49,11 +50,11 @@
 			<div class="col-8 cupcake">
 				<embed id="cup" src="<?php echo $urlSitio; ?>/img/svg/Cupcake-01-01.svg" width="50%" height="50%" />
 				<div class="verRelleno">
-					<button id="noRelleno"><img src="<?php echo $urlSitio; ?>/img/Despiece/sin_relleno_seleccionado.png" /></button>
-					<button id="relleno"><img src="<?php echo $urlSitio; ?>/img/Despiece/relleno.png" /></button>
+					<button id="noRelleno" class="item_relleno active"><img src="<?php echo $urlSitio; ?>/img/Despiece/sin_relleno.png" /></button>
+					<button id="relleno" class="item_relleno"><img src="<?php echo $urlSitio; ?>/img/Despiece/relleno.png" /></button>
 					
 				</div>
-				<button class="listo" id="bt_sup_listo">listo para hornear</button>
+				<a href="#cpkp" class="listo" id="bt_sup_listo">listo para hornear</a>
 			</div>
 			<div class="saboresRellenos col-2">
 				<div class="sabores">
@@ -147,21 +148,8 @@
 				</div>
 			</div>
 		</div>
-<!-- 		<div class="row footer">
-			<div class="col-12 footerExp">
-				<div class="footerEx">
-					<ul>
-						<li class="imgBtn"><a href="index.php"><img id="pasteliarteEx" src="<?php echo $urlSitio; ?>/img/Pasteliarte/logo.png"></a></li>
-						<li class="imgBtn"><a href="#"><img id="tiendaEx" src="<?php echo $urlSitio; ?>/img/Pasteliarte/tienda.png"></a></li>
-						<li class="imgBtn"><a href="cita-con-el-artista.php" ><img id="citaEx" src="<?php echo $urlSitio; ?>/img/Pasteliarte/cita.png"></a></li>
-					</ul>
-				</div>
-			</div>	
-		
-
-			
-		</div> -->
 	</div>
+	<div id="cpkp"></div>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-12">
@@ -225,7 +213,7 @@
 			<div class="col-3">
 				<div class="seccion">
 					<h6>Elige una opción</h6>
-					<button id="btn_personaje" data-sel="<?php echo $urlSitio; ?>/img/svg/Fondand.svg" class="btn_adornos"><img src="<?php echo $urlSitio; ?>/img/Despiece/personaje_cupcake.png" /></button>
+					<button id="btn_personaje" data-sel="<?php echo $urlSitio; ?>/img/svg/Fondand.svg" class="btn_adornos active"><img src="<?php echo $urlSitio; ?>/img/Despiece/personaje_cupcake.png" /></button>
 					<button id="btn_mensaje" data-sel="<?php echo $urlSitio; ?>/img/svg/Fondand.svg"  class="btn_adornos"><img src="<?php echo $urlSitio; ?>/img/Despiece/mensaje.png" /></button>
 					<button id="btn_crema" data-sel="<?php echo $urlSitio; ?>/img/svg/Crema-02.svg" class="btn_adornos"><img src="<?php echo $urlSitio; ?>/img/Despiece/crema.png" />		
 					</button>
@@ -320,7 +308,7 @@
 				<div id="sel_personajes">
 					<div class="opcionesPersonajes" id="op_per">
 						<h5>¿Cómo lo quieres?</h5>
-						<button data-imagen="<?php echo $urlSitio; ?>/img/svg/Fondand.svg" class="btn_seleccion_p" id="fondant_sel">
+						<button data-imagen="<?php echo $urlSitio; ?>/img/svg/Fondand.svg" class="btn_seleccion_p active" id="fondant_sel">
 							<img src="<?php echo $urlSitio; ?>/img/Despiece/fondant.png">
 						</button>
 						<button data-imagen="<?php echo $urlSitio; ?>/img/svg/Crema.svg" class="btn_seleccion_p" id="crema_sel">
@@ -331,7 +319,7 @@
 				<div id="personajes">
 					<div class="sel_per_pie">
 						<div class="botones_adornos">
-							<button class="btn_per_pie" id="prediseniado">Prediseñados</button>
+							<button class="btn_per_pie active" id="prediseniado">Prediseñados</button>
 							<button class="btn_per_pie" id="piezas">Piezas</button>
 						</div>
 						<ul class="fondant_adornos">

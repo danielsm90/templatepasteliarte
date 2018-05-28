@@ -17,11 +17,21 @@ $(window).load(function(){
 	$(rellenoSel).hide();
 	$(abiertoSel).hide();
 	$(puntosSel).hide();
-	var rellenoLoad = document.getElementById("cup1").getSVGDocument().getElementsByClassName("st8");
-	var abiertoLoad = document.getElementById("cup1").getSVGDocument().getElementsByClassName("st77");
-	var puntosLoad = document.getElementById("cup1").getSVGDocument().getElementsByClassName("st66");
-	var capAbiertoLoad = document.getElementById("cup1").getSVGDocument().getElementsByClassName("st9");
-	var fondo = document.getElementById("cup1").getSVGDocument().getElementById("SVGID_1_");
+
+	var idSvgSup = document.getElementById("cup1")
+	var rellenoLoad = idSvgSup.getSVGDocument().getElementsByClassName("st8");
+	var abiertoLoad = idSvgSup.getSVGDocument().getElementsByClassName("st77");
+	var puntosLoad = idSvgSup.getSVGDocument().getElementsByClassName("st66");
+	var capAbiertoLoad = idSvgSup.getSVGDocument().getElementsByClassName("st9");
+	var fondo = idSvgSup.getSVGDocument().getElementById("SVGID_1_");
+
+	var decoracion = idSvgSup.getSVGDocument().getElementById("Capa_1");
+	console.log(decoracion)
+	$.get($(".btn_adornos.active").attr('data-sel'), function(data)
+	{
+		$(decoracion).html(data.getElementById("Capa_1"));
+	});
+
 	$(rellenoLoad).hide();
 	$(abiertoLoad).hide();
 	$(puntosLoad).hide();
@@ -42,6 +52,8 @@ $(document).ready(function() {
 	// var a = [5];
 	// a.push(1);
 	// alert(a[0]);
+
+	var url = document.querySelector('#urlSite').value
 
 	var alto;
 	var relleno;
@@ -163,6 +175,11 @@ $(document).ready(function() {
 		$("#cantidadSel").text("0");
 	});
 
+	$('.item_relleno').click(function(){
+		$('.item_relleno').removeClass('active')
+		$(this).toggleClass('active')
+	})
+
 	
 
 	$('#noRelleno').click(function()
@@ -177,8 +194,6 @@ $(document).ready(function() {
 		capAbierto = document.getElementById("cup").getSVGDocument().getElementsByClassName("st9");
 		$(capAbierto).hide();
 		$('.rellenoSeleccionado').hide();
-		$('#noRelleno img').attr("src","imagenes/Despiece/sin_relleno_seleccionado.png");
-		$('#relleno img').attr("src","imagenes/Despiece/relleno.png");
 		
 		
 
@@ -186,7 +201,6 @@ $(document).ready(function() {
 
 	$('#relleno').click(function()
 	{
-		
 		relleno = document.getElementById("cup").getSVGDocument().getElementsByClassName("st8");
 		$(relleno).show();
 		abierto = document.getElementById("cup").getSVGDocument().getElementsByClassName("st77");
@@ -195,9 +209,8 @@ $(document).ready(function() {
 		$(puntos).show();
 		capAbierto = document.getElementById("cup").getSVGDocument().getElementsByClassName("st9");
 		$(capAbierto).show();
-		$('#relleno img').attr("src","imagenes/Despiece/relleno_seleccionado.png");
-		$('#noRelleno img').attr("src","imagenes/Despiece/sin_relleno.png");
-		
+		// $('#relleno img').attr("src","../img/Despiece/relleno_seleccionado.png");
+		// $('#noRelleno img').attr("src","../img/Despiece/sin_relleno.png");
 
 	});
 
@@ -309,7 +322,7 @@ $(document).ready(function() {
 			// 	alert("menor");
 			// }
 			
-			nuevo = $('<label class="image-checkbox"><div class="txt"></div><img class="cantidad_cpk" src="imagenes/Despiece/circulo.png" /><br><input class="disenios" type="checkbox" value="sel_'+i+'" /></label>');
+			nuevo = $('<label class="image-checkbox"><div class="txt"></div><img class="cantidad_cpk" src="'+url+'/img/Despiece/circulo.png" /><br><input class="disenios" type="checkbox" value="sel_'+i+'" /></label>');
 			// cx += 10;
 			
 
@@ -343,7 +356,7 @@ $(document).ready(function() {
         	}
         	else
         	{
-	        	$(this).siblings('.cantidad_cpk').attr('src', 'imagenes/svg/'+i);
+	        	$(this).siblings('.cantidad_cpk').attr('src', i);
 	        	$(this).siblings('.cantidad_cpk').css('{width: 45px; height: 45px}' );
 	        	$(this).siblings('.txt').remove();
         	}
@@ -402,7 +415,7 @@ $(document).ready(function() {
 		$(colorCrema2).css('fill', color_crema2);
 	});
 
-	var tipo;
+	var tipo = 'fondant'
 	var cir;
 	var fond;
 	
@@ -453,6 +466,13 @@ $(document).ready(function() {
 		$('.btn_seleccion_p').removeClass('active');
 		$('#prev_circle').hide();
 		$('#foto').hide();
+
+		$('#fondant_sel').addClass('active')
+		$('#personajes').show()
+		$('#prediseniado').addClass('active')
+		$('.fondant_adornos').css('display', 'flex')
+		$('.fondant_adornos').css('flex-wrap', 'wrap')
+
 	});
 
 	$('#btn_mensaje').click(function()
@@ -541,6 +561,11 @@ $(document).ready(function() {
 		$('#lista_nariz').hide();
 		$('#lista_oreja').hide();
 		$('.tituloPiezas').hide();
+
+		$('#personajes').show()
+		$('#prediseniado').addClass('active')
+		$('.fondant_adornos').css('display', 'flex')
+		$('.fondant_adornos').css('flex-wrap', 'wrap')
 	});
 
 	$('#crema_sel').click(function()
@@ -554,6 +579,11 @@ $(document).ready(function() {
 		$('#lista_nariz').hide();
 		$('#lista_oreja').hide();
 		$('.tituloPiezas').hide();
+
+		$('#personajes').show()
+		$('#prediseniado').addClass('active')
+		$('.fondant_adornos').css('display', 'flex')
+		$('.fondant_adornos').css('flex-wrap', 'wrap')
 
 	});
 

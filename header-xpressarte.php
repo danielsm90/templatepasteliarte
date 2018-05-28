@@ -3,13 +3,12 @@
 <head>
 	<title><?php echo get_bloginfo('title'); ?></title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">	
 	<?php wp_head(); ?>
 </head>
-<body>
-	<header id="menuPrincipal">
-		
-		<nav class="navbar navbar-expand-lg navbar-light">
+<body id="bodyExpressarte">
+	<header id="menuPrincipalExpressarte">
+		<nav id="nav" class="navbar navbar-expand-lg navbar-light">
 			<a class="navbar-brand" href="<?php echo get_bloginfo('url'); ?>">
 				<img  class="logo" src="<?php echo get_template_directory_uri(); ?>/img/Pasteliarte/logo.png" />
 			</a>
