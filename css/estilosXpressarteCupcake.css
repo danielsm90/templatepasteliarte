@@ -2,7 +2,6 @@
 button, input[type='radio'], input[type='check']
 {
 	cursor: pointer;
-	z-index: 0;
 }
 button:focus{
 	outline: 0;
@@ -75,6 +74,41 @@ button:focus{
 	background: #eeeeee54;
 	border-radius: 8px;
 }
+
+.precio
+{
+	margin-top: 1%;
+	margin-left: 1%;
+	width: 16%;
+	height: auto;
+	background: #eeeeee54;
+	border-radius: 8px;
+	padding: 10px;
+	z-index: 1;
+	position: fixed;
+}
+
+.valor
+{
+    background: #eeeeee54;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 0%;
+}
+
+.xpressArte .precio h6
+{
+	color: #45008e;
+    font-weight: bold;
+}
+
+.valor p
+{
+	color: #45008e;
+    font-weight: bold;
+    text-align: center;
+}
+
 
 .cantidad
 {
@@ -1405,101 +1439,166 @@ ul li
 
 .inputPieza#nariz_1
 {
-	background: url('../img/Despiece/nariz1.png');
+	background: url('../img/Despiece/nariz_1.png');
 	background-repeat: no-repeat;
 }
 
 .inputPieza#nariz_2
 {
-	background: url('../img/Despiece/nariz2.png');
+	background: url('../img/Despiece/nariz_2.png');
 	background-repeat: no-repeat;
 }
 
 .inputPieza#nariz_3
 {
-	background: url('../img/Despiece/nariz3.png');
+	background: url('../img/Despiece/nariz_3.png');
 	background-repeat: no-repeat;
 }
 
 .inputPieza#nariz_4
 {
-	background: url('../img/Despiece/nariz4.png');
+	background: url('../img/Despiece/nariz_4.png');
 	background-repeat: no-repeat;
 }
 
 .inputPieza#nariz_5
 {
-	background: url('../img/Despiece/nariz5.png');
+	background: url('../img/Despiece/nariz_5.png');
 	background-repeat: no-repeat;
 }
 .inputPieza#nariz_6
 {
-	background: url('../img/Despiece/nariz6.png');
+	background: url('../img/Despiece/nariz_6.png');
 	background-repeat: no-repeat;
 }
 
 .inputPieza#nariz_7
 {
-	background: url('../img/Despiece/nariz7.png');
+	background: url('../img/Despiece/nariz_7.png');
 	background-repeat: no-repeat;
 }
 
 .inputPieza#nariz_8
 {
-	background: url('../img/Despiece/nariz8.png');
+	background: url('../img/Despiece/nariz_8.png');
 	background-repeat: no-repeat;
 }
 
 .inputPieza#nariz_9
 {
-	background: url('../img/Despiece/nariz9.png');
+	background: url('../img/Despiece/nariz_9.png');
+	background-repeat: no-repeat;
+}
+
+.inputPieza#nariz_10
+{
+	background: url('../img/Despiece/nariz_10.png');
+	background-repeat: no-repeat;
+}
+
+.inputPieza#nariz_11
+{
+	background: url('../img/Despiece/nariz_11.png');
+	background-repeat: no-repeat;
+}
+
+.inputPieza#nariz_12
+{
+	background: url('../img/Despiece/nariz_12.png');
 	background-repeat: no-repeat;
 }
 
 .inputPieza#oreja_1
 {
-	background: url('../img/Despiece/oreja1.png');
+	background: url('../img/Despiece/oreja_1.png');
 	background-repeat: no-repeat;
 }
 
 .inputPieza#oreja_2
 {
-	background: url('../img/Despiece/oreja2.png');
+	background: url('../img/Despiece/oreja_2.png');
 	background-repeat: no-repeat;
 }
 
 .inputPieza#oreja_3
 {
-	background: url('../img/Despiece/oreja3.png');
+	background: url('../img/Despiece/oreja_3.png');
 	background-repeat: no-repeat;
 }
 
 .inputPieza#oreja_4
 {
-	background: url('../img/Despiece/oreja4.png');
+	background: url('../img/Despiece/oreja_4.png');
 	background-repeat: no-repeat;
 }
 
 .inputPieza#oreja_5
 {
-	background: url('../img/Despiece/oreja5.png');
+	background: url('../img/Despiece/oreja_5.png');
 	background-repeat: no-repeat;
 }
 .inputPieza#oreja_6
 {
-	background: url('../img/Despiece/oreja6.png');
+	background: url('../img/Despiece/oreja_6.png');
 	background-repeat: no-repeat;
 }
 
 .inputPieza#oreja_7
 {
-	background: url('../img/Despiece/oreja7.png');
+	background: url('../img/Despiece/oreja_7.png');
 	background-repeat: no-repeat;
 }
 
 .inputPieza#oreja_8
 {
-	background: url('../img/Despiece/oreja8.png');
+	background: url('../img/Despiece/oreja_8.png');
+	background-repeat: no-repeat;
+}
+
+.inputPieza#oreja_9
+{
+	background: url('../img/Despiece/oreja_9.png');
+	background-repeat: no-repeat;
+}
+
+.inputPieza#oreja_10
+{
+	background: url('../img/Despiece/oreja_10.png');
+	background-repeat: no-repeat;
+}
+
+.inputPieza#oreja_11
+{
+	background: url('../img/Despiece/oreja_11.png');
+	background-repeat: no-repeat;
+}
+
+.inputPieza#oreja_12
+{
+	background: url('../img/Despiece/oreja_12.png');
+	background-repeat: no-repeat;
+}
+
+.inputPieza#oreja_13
+{
+	background: url('../img/Despiece/oreja_13.png');
+	background-repeat: no-repeat;
+}
+.inputPieza#oreja_14
+{
+	background: url('../img/Despiece/oreja_14.png');
+	background-repeat: no-repeat;
+}
+
+.inputPieza#oreja_15
+{
+	background: url('../img/Despiece/oreja_15.png');
+	background-repeat: no-repeat;
+}
+
+.inputPieza#oreja_16
+{
+	background: url('../img/Despiece/oreja_16.png');
 	background-repeat: no-repeat;
 }
 

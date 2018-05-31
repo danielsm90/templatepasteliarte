@@ -113,7 +113,7 @@
 {
 	position: absolute;
 	top: 61%;
-	transform: translate(-50%, -50%);
+	transform: translate(20%, -50%);
 }
 
 #contenedorGrande h1
@@ -153,4 +153,3 @@
 {
 	margin-top: 53%;
 }
-

@@ -537,6 +537,15 @@
 								<li class="lst_piezas"><label><input data-sel="nariz_sel" data-adorno="personaje_3.png" 
 									data-d="nariz_9.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="nariz_9"></span></label></li>
+								<li class="lst_piezas"><label><input data-sel="nariz_sel" data-adorno="personaje_2.png" 
+									data-d="nariz_10.svg" class="inputradioPieza" type="radio">
+									<span  class="inputPieza" id="nariz_10"></span></label></li>
+								<li class="lst_piezas"><label><input data-sel="nariz_sel" data-adorno="personaje_3.png" 
+									data-d="nariz_11.svg" class="inputradioPieza" type="radio">
+									<span  class="inputPieza" id="nariz_11"></span></label></li>
+								<li class="lst_piezas"><label><input data-sel="nariz_sel" data-adorno="personaje_3.png" 
+									data-d="nariz_12.svg" class="inputradioPieza" type="radio">
+									<span  class="inputPieza" id="nariz_12"></span></label></li>
 							</ul>
 
 							<div class="tituloPiezas">
@@ -575,6 +584,39 @@
 									data-adorno="personaje_3.png" 
 									data-d="oreja_8.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="oreja_8"></span></label></li>
+								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+									data-adorno="personaje_1.png" 
+									data-d="oreja_9.svg" class="inputradioPieza" type="radio" checked>
+									<span  class="inputPieza" id="oreja_9"></span></label></li>
+								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+									data-adorno="personaje_2.png" 
+									data-d="oreja_10.svg" class="inputradioPieza" type="radio">
+									<span  class="inputPieza" id="oreja_10"></span></label></li>
+								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+									data-adorno="personaje_3.png" 
+									data-d="oreja_11.svg" class="inputradioPieza" type="radio">
+									<span  class="inputPieza" id="oreja_11"></span></label></li>
+								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+									data-adorno="personaje_4.png" 
+									data-d="oreja_12.svg" class="inputradioPieza" type="radio">
+									<span  class="inputPieza" id="oreja_12"></span></label></li>
+								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+									data-adorno="personaje_5.png" 
+									data-d="oreja_13.svg" class="inputradioPieza" type="radio">
+									<span  class="inputPieza" id="oreja_13"></span></label></li>
+								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+									data-adorno="personaje_1.png" 
+									data-d="oreja_14.svg" class="inputradioPieza" type="radio" checked>
+									<span  class="inputPieza" id="oreja_14"></span></label></li>
+								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+									data-adorno="personaje_2.png" 
+									data-d="oreja_15.svg" class="inputradioPieza" type="radio">
+									<span  class="inputPieza" id="oreja_15"></span></label></li>
+								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+									data-adorno="personaje_3.png" 
+									data-d="oreja_16.svg" class="inputradioPieza" type="radio">
+									<span  class="inputPieza" id="oreja_16"></span></label></li>
+									
 							</ul>
 						</div>
 					</div>

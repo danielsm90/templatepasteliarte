@@ -142,28 +142,6 @@ button:focus{
 	height: 20%;*/
 }
 
-
-
-.tamanioSeleccionado
-{
-	background: none;
-	border: 0;
-	color: white;
-	cursor: pointer;
-	padding: 0 5px;
-}
-
-.tamanioSeleccionado:first-child,  
-.tamanioSeleccionado:last-child
-{
-	padding: 0;
-}
-
-.tamanioSeleccionado:hover, 
-.tamanioSeleccionado:focus{
-	text-shadow: 2px 2px 0 black;
-}
-
 .contenedorinputs 
 {
     position: relative;
@@ -197,11 +175,6 @@ button:focus{
 {
 	color: white;
 	font-weight: 600;
-}
-
-.xpressArte h6
-{
-	color: white;
 }
 
 .saboresCake label

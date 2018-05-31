@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
 	<div id="fondoCita">
 		<div id="txt_cita">
-			<img src="imagenes/Pasteliarte/cita.png" />
+			<img src="<?php echo get_template_directory_uri(); ?>/img/Pasteliarte/cita.png" />
 		</div>
 	</div>
 	<div id="formulario">

@@ -1,20 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 602">
 	<defs>
 		<style>
-			.o13cls-1{fill:#f8f9d2;}
-			.o13cls-2{fill:none;}
+			.oj13cls-1{fill:#cb461d;}
+			.oj13cls-2{fill:#f05a24;}
+			.oj13cls-3{fill:#f8f9d2;}
+			.oj13cls-4{fill:none;}
 		</style>
 	</defs>
 	<title>
-		Recurso 9
+		Recurso 70
 	</title>
 	<g id="Capa_2" data-name="Capa 2">
 		<g id="Capa_3" data-name="Capa 3">
-			<path class="o13cls-1" d="M281.24,216.87c0,19.44-20.67,35.2-46.17,35.2s-46.18-15.76-46.18-35.2,20.68-35.19,46.18-35.19S281.24,197.44,281.24,216.87Z"/>
-			<path d="M265.59,225.11c0,6.65-7.08,12-15.8,12s-15.8-5.39-15.8-12,7.08-12,15.8-12S265.59,218.46,265.59,225.11Z"/>
-			<path class="o13cls-1" d="M390.61,216.87c0,19.44-20.68,35.2-46.18,35.2s-46.17-15.76-46.17-35.2,20.67-35.19,46.17-35.19S390.61,197.44,390.61,216.87Z"/>
-			<ellipse cx="321.42" cy="218.11" rx="15.8" ry="12.04"/>
-			<rect class="o13cls-2" width="576" height="602"/>
+			<ellipse class="oj13cls-1" cx="224.49" cy="189.87" rx="36.83" ry="31.79"/>
+			<ellipse class="oj13cls-1" cx="332.84" cy="188.65" rx="36.83" ry="30.58"/>
+			<ellipse class="oj13cls-2" cx="224.49" cy="182.35" rx="36.83" ry="28.75"/>
+			<ellipse class="oj13cls-2" cx="332.84" cy="181.13" rx="36.83" ry="27.53"/>
+			<ellipse class="oj13cls-3" cx="227.74" cy="172.98" rx="36.83" ry="23.5"/>
+			<path d="M248.09,173.81c0,4.44-5.64,8-12.6,8s-12.6-3.59-12.6-8,5.65-8,12.6-8S248.09,169.37,248.09,173.81Z"/>
+			<ellipse class="oj13cls-3" cx="327.96" cy="172.98" rx="36.83" ry="23.5"/>
+			<path d="M327,173.81c0,4.44-5.64,8-12.6,8s-12.6-3.59-12.6-8,5.65-8,12.6-8S327,169.37,327,173.81Z"/>
+			<rect class="oj13cls-4" width="576" height="602"/>
 		</g>
 	</g>
 </svg>

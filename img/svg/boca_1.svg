@@ -1,19 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 602">
 	<defs>
 		<style>
-			.cls-1,.cls-3{fill:none;}
-			.cls-2{fill:#f8f9d2;}
-			.cls-3{stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:12.24px;}
+			.b1cls-1{fill:none;}
 		</style>
 	</defs>
 	<title>
-		Recurso 47
+		Recurso 84
 	</title>
 	<g id="Capa_2" data-name="Capa 2">
 		<g id="Capa_3" data-name="Capa 3">
-			<rect class="cls-1" width="576" height="602"/>
-			<path class="cls-2" d="M209.61,280.89l-15.22,10.19,23.56,21,3.71-23.49A7.8,7.8,0,0,0,209.61,280.89Z"/>
-			<path class="cls-3" d="M191.06,284.89s90.95,116.16,202.6,0"/>
+			<path d="M361.84,231.54c27.65,0,45.54,22.1,33,40.74-20.32,30.16-62.51,50.83-111.27,50.83s-91-20.67-111.28-50.83c-12.55-18.64,5.35-40.74,33-40.74Z"/>
+			<rect class="b1cls-1" width="576" height="602"/>
 		</g>
 	</g>
 </svg>

@@ -67,6 +67,9 @@ $(document).ready(function() {
 	var i; 
 	var resultado;
 	var bandera;
+	var precio = 0;
+	var desnudo = 0;
+	var relleno = 1000;
 
 	$('#txt_mensaje').keypress(function(e)	
 	{
@@ -161,6 +164,9 @@ $(document).ready(function() {
 
 	$('#mini').click(function()
 	{
+		precio = 0;
+		desnudo = 1500;
+		precio += desnudo;
 		tamanio = $(this).val();
 		tamanioSeleccionado= $(this).attr("name");
 		$('#cantidadMini').show();
@@ -173,6 +179,9 @@ $(document).ready(function() {
 		$('#txtRelleno').hide();
 		$('#rellenoTxt').hide();
 		$("#cantidadSel").text("0");
+		$('.valor p').text('$'+ precio);
+		$('#mini').attr('disabled', true);
+		$('#stan').removeAttr('disabled')
 	});
 
 	$('.item_relleno').click(function(){
@@ -216,6 +225,9 @@ $(document).ready(function() {
 
 	$('#stan').click(function()
 	{
+		precio = 0;
+		desnudo = 2500;
+		precio += relleno + desnudo;
 		tamanio = $(this).val();
 		tamanioSeleccionado= $(this).attr("name");
 		$('#cantidadMini').hide();
@@ -229,6 +241,9 @@ $(document).ready(function() {
 		$('#txtRelleno').show();
 		$('#rellenoTxt').show();
 		$("#cantidadSel").text("1");
+		$('.valor p').text('$'+ precio);
+		$('#stan').attr('disabled', true);
+		$('#mini').removeAttr('disabled');
 	});
 
 	var col = '';
