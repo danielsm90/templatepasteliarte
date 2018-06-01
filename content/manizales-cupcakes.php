@@ -56,8 +56,8 @@
 			<div class="col-8 cupcake">
 				<embed id="cup" src="<?php echo $urlSitio; ?>/img/svg/Cupcake-01-01.svg" width="50%" height="50%" />
 				<div class="verRelleno">
-					<button id="noRelleno" class="item_relleno active"><img src="<?php echo $urlSitio; ?>/img/Despiece/sin_relleno.png" /></button>
-					<button id="relleno" class="item_relleno"><img src="<?php echo $urlSitio; ?>/img/Despiece/relleno.png" /></button>
+					<button id="noRelleno" class="item_relleno"><img src="<?php echo $urlSitio; ?>/img/Despiece/sin_relleno.png" /></button>
+					<button id="relleno" class="item_relleno active"><img src="<?php echo $urlSitio; ?>/img/Despiece/relleno.png" /></button>
 					
 				</div>
 				<a href="#cpkp" class="listo" id="bt_sup_listo">listo para hornear</a>
@@ -75,7 +75,7 @@
 					  			<label for="choco">Chocolate</label></span></li>
 					  		<li><input data-color-sabor="#EDCE3A" class="inputSabor" type="radio" name="saborEstandar" value="Naranja" id="naranjaS">
 					  			<span class="inputColorSabor" id="naranjaSabor">
-					  			<label for="naranjaS">Naranja <br> Amapola</label></span></li>
+					  			<label for="naranjaS">Naranja Amapola</label></span></li>
 					  		<li><input data-color-sabor="#FFE5A4" class="inputSabor" type="radio" name="saborEstandar" value="Coco" id="coco"><span class="inputColorSabor" id="cocoSabor">
 					  			<label for="coco">Coco</label></span></li>
 						</ul>
@@ -164,7 +164,7 @@
 					<div id="cpk2">
 						<div id="cont_cup_img">
 							<h2 id="cantidadSel">0</h2>
-							<embed id="cpkSeleccionado" src="<?php echo $urlSitio; ?>/img/svg/Cupcake-01-01.svg" />
+							<embed id="cpkSeleccionado" src="<?php echo $urlSitio; ?>/img/svg/cupcakeSelect.svg" />
 						</div>
 						<div id="cont_cup_sel">
 							<h3 id="cupcakeTxt" class="txtCake">Cupcakes</h3>

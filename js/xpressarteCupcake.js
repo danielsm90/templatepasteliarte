@@ -1,22 +1,19 @@
 $(window).load(function(){
-	var rellenoLoad = document.getElementById("cup").getSVGDocument().getElementsByClassName("st8");
-	var abiertoLoad = document.getElementById("cup").getSVGDocument().getElementsByClassName("st77");
-	var puntosLoad = document.getElementById("cup").getSVGDocument().getElementsByClassName("st66");
-	var capAbiertoLoad = document.getElementById("cup").getSVGDocument().getElementsByClassName("st9");
 	var fondo = document.getElementById("cpkSeleccionado").getSVGDocument().getElementById("SVGID_1_");
 	var capSel = document.getElementById("cpkSeleccionado").getSVGDocument().getElementsByClassName("st9");
 	var rellenoSel = document.getElementById("cpkSeleccionado").getSVGDocument().getElementsByClassName("st8");
 	var abiertoSel = document.getElementById("cpkSeleccionado").getSVGDocument().getElementsByClassName("st77");
 	var puntosSel = document.getElementById("cpkSeleccionado").getSVGDocument().getElementsByClassName("st66");
-	$(rellenoLoad).hide();
-	$(abiertoLoad).hide();
-	$(puntosLoad).hide();
-	$(capAbiertoLoad).hide();
+
 	$(fondo).hide();
 	$(capSel).hide();
 	$(rellenoSel).hide();
 	$(abiertoSel).hide();
 	$(puntosSel).hide();
+	// $(rellenoLoad).hide();
+	// $(abiertoLoad).hide();
+	// $(puntosLoad).hide();
+	// $(capAbiertoLoad).hide();
 
 	var idSvgSup = document.getElementById("cup1")
 	var rellenoLoad = idSvgSup.getSVGDocument().getElementsByClassName("st8");
@@ -43,6 +40,35 @@ $(window).load(function(){
         $('[data-toggle="tooltip"]').tooltip();
     });
 
+	inicializarAnimaciones()
+
+	$(window).scroll(function(){
+		var element = $("#cup")
+		var capSubir = document.getElementById("cup").getSVGDocument().getElementsByClassName("cupSubir");
+		var sombra = document.getElementById("cup").getSVGDocument().getElementById("sombra");
+		$(sombra).css('transform-origin', 'center')
+
+		var windowHeight = $(window).scrollTop()
+		var contenido2 = element.offset()
+		contenido2 = contenido2.top
+
+		var moveIn = windowHeight - contenido2
+
+		var sombreScale = Math.abs(moveIn/100)
+
+		for (var i = 0; i < capSubir.length; i++) {
+			if( windowHeight >= contenido2 ){
+				$(capSubir[i]).css('transform', 'translateY('+(-moveIn)+'px)')
+				$(sombra).css('opactiy', '0.1')
+				// $(sombra).css('transform', 'scaleX('+sombreScale+')')
+			}else{
+				$(capSubir[i]).css('transform', 'translateY(0)')
+				$(sombra).css('opactiy', '0.3')
+				// $(sombra).css('transform', 'scaleX(1)')
+			}
+		}
+	})
+
 })
 
 
@@ -67,9 +93,32 @@ $(document).ready(function() {
 	var i; 
 	var resultado;
 	var bandera;
-	var precio = 0;
-	var desnudo = 0;
-	var relleno = 1000;
+
+	var desnudo = 2500, relleno = 1000, cremChis, tapaPlana = 3500, cremPelit, letra, piezasPre, piezasAd, cantidad = 1
+
+    var precioTotal = (desnudo + relleno + tapaPlana)*cantidad;
+
+    var cantTxtId = $('#cantidadStandard').children('.slider').val()
+    var contTxt = $('#cantidadStandard').children('div').children('button[value="'+cantTxtId+'"]').attr('id')
+
+    var array = [];
+		
+	var cont = 0;
+	
+	for (var i = 1; i <= contTxt; i++) 
+	{
+		nuevo = i
+		
+		nuevo = $('<label class="image-checkbox"><div class="txt"></div><img class="cantidad_cpk" src="'+url+'/img/Despiece/circulo.png" /><br><input class="disenios" type="checkbox" value="sel_'+i+'" /></label>');		
+
+		array.push(nuevo);	
+		cont++;			
+	}
+	$('.numeroCup').html(array);
+
+    $('#cantidadSel').html(contTxt)
+
+    $('.valor p').text('$'+precioTotal)
 
 	$('#txt_mensaje').keypress(function(e)	
 	{
@@ -88,8 +137,8 @@ $(document).ready(function() {
 		// // console.log(resultado);
 		// $(this).text(String.fromCharCode(e.which));
 		// var texto =  $(`<text x=20 y=150
-  // 					style="font: bold 2em 'comic sans ms';fill: aqua; stroke: blue; stroke-width: 2px;">
-  // 					Primer texto svg</text>`)
+  		// 					style="font: bold 2em 'comic sans ms';fill: aqua; stroke: blue; stroke-width: 2px;">
+  		// 					Primer texto svg</text>`)
 		//  document.getElementById("cup1").getSVGDocument().getElementById("Capa_1").createElement(texto)
 		
 	});
@@ -162,11 +211,31 @@ $(document).ready(function() {
 		});
 	});
 
-	$('#mini').click(function()
-	{
-		precio = 0;
-		desnudo = 1500;
-		precio += desnudo;
+	$('#mini').click(function(){
+		desnudo = 1500
+		relleno = 0
+		cantidad = 12
+		tapaPlana = 2000
+
+		var array = [];
+		
+		var cont = 0;
+		
+		for (var i = 1; i <= cantidad; i++) 
+		{
+			nuevo = i
+			
+			nuevo = $('<label class="image-checkbox"><div class="txt"></div><img class="cantidad_cpk" src="'+url+'/img/Despiece/circulo.png" /><br><input class="disenios" type="checkbox" value="sel_'+i+'" /></label>');		
+
+			array.push(nuevo);	
+			cont++;
+			
+			$("#cantidadSel").text(cantidad);			
+		}
+		$('.numeroCup').html(array);
+
+		precioTotal = recalcularPrecio(desnudo, relleno, cantidad, tapaPlana)
+
 		tamanio = $(this).val();
 		tamanioSeleccionado= $(this).attr("name");
 		$('#cantidadMini').show();
@@ -179,7 +248,7 @@ $(document).ready(function() {
 		$('#txtRelleno').hide();
 		$('#rellenoTxt').hide();
 		$("#cantidadSel").text("0");
-		$('.valor p').text('$'+ precio);
+		$('.valor p').text('$'+ precioTotal);
 		$('#mini').attr('disabled', true);
 		$('#stan').removeAttr('disabled')
 	});
@@ -187,47 +256,63 @@ $(document).ready(function() {
 	$('.item_relleno').click(function(){
 		$('.item_relleno').removeClass('active')
 		$(this).toggleClass('active')
-	})
-
-	
+	})	
 
 	$('#noRelleno').click(function()
 	{
 	   
 	    relleno = document.getElementById("cup").getSVGDocument().getElementsByClassName("st8");
-		$(relleno).hide();
+		$(relleno).hide('slow');
 		abierto = document.getElementById("cup").getSVGDocument().getElementsByClassName("st77");
-		$(abierto).hide();
+		$(abierto).hide('slow');
 		puntos = document.getElementById("cup").getSVGDocument().getElementsByClassName("st66");
-		$(puntos).hide();
+		$(puntos).hide('slow');
 		capAbierto = document.getElementById("cup").getSVGDocument().getElementsByClassName("st9");
-		$(capAbierto).hide();
-		$('.rellenoSeleccionado').hide();
-		
-		
-
+		$(capAbierto).hide('slow');
+		$('.rellenoSeleccionado').hide('slow');
 	});
 
 	$('#relleno').click(function()
 	{
 		relleno = document.getElementById("cup").getSVGDocument().getElementsByClassName("st8");
-		$(relleno).show();
+		$(relleno).show('slow');
 		abierto = document.getElementById("cup").getSVGDocument().getElementsByClassName("st77");
-		$(abierto).show();
+		$(abierto).show('slow');
 		puntos = document.getElementById("cup").getSVGDocument().getElementsByClassName("st66");
-		$(puntos).show();
+		$(puntos).show('slow');
 		capAbierto = document.getElementById("cup").getSVGDocument().getElementsByClassName("st9");
-		$(capAbierto).show();
+		$(capAbierto).show('slow');
 		// $('#relleno img').attr("src","../img/Despiece/relleno_seleccionado.png");
 		// $('#noRelleno img').attr("src","../img/Despiece/sin_relleno.png");
 
 	});
 
-	$('#stan').click(function()
-	{
-		precio = 0;
-		desnudo = 2500;
-		precio += relleno + desnudo;
+	$('#stan').click(function(){
+		relleno = 1000
+		desnudo = 2500
+		tapaPlana = 3500
+		cantidadId = parseInt( $('#cantidadStandard').children('.slider').val() )
+		cantidad = parseInt( $('#cantidadStandard').children('div').children('button[value="'+cantidadId+'"]').attr('id') )
+
+		var array = [];
+		
+		var cont = 0;
+		
+		for (var i = 1; i <= cantidad; i++) 
+		{
+			nuevo = i
+			
+			nuevo = $('<label class="image-checkbox"><div class="txt"></div><img class="cantidad_cpk" src="'+url+'/img/Despiece/circulo.png" /><br><input class="disenios" type="checkbox" value="sel_'+i+'" /></label>');		
+
+			array.push(nuevo);	
+			cont++;
+			
+			$("#cantidadSel").text(cantidad);			
+		}
+		$('.numeroCup').html(array);
+
+		precioTotal = recalcularPrecio(desnudo, relleno, cantidad, tapaPlana)
+
 		tamanio = $(this).val();
 		tamanioSeleccionado= $(this).attr("name");
 		$('#cantidadMini').hide();
@@ -241,7 +326,7 @@ $(document).ready(function() {
 		$('#txtRelleno').show();
 		$('#rellenoTxt').show();
 		$("#cantidadSel").text("1");
-		$('.valor p').text('$'+ precio);
+		$('.valor p').text('$'+ precioTotal);
 		$('#stan').attr('disabled', true);
 		$('#mini').removeAttr('disabled');
 	});
@@ -275,9 +360,13 @@ $(document).ready(function() {
 		var path3 = document.getElementById("cup1").getSVGDocument().getElementsByClassName("st62");
 		var x = $(this).siblings('span').css('backgroundColor');
 		color = hexc(x);
+		$(path).css('transition', '.25s')
 		$(path).css('fill',color);
+		$(path2).css('transition', '.25s')
 		$(path2).css('fill',color);
+		$(path3).css('transition', '.25s')
 		$(path3).css('fill',color);
+		$(capAbierto).css('transition', '.25s')
 		$(capAbierto).css('fill',color);
 
 		var barras = document.getElementById("cup").getSVGDocument().getElementsByClassName("st5");
@@ -303,43 +392,20 @@ $(document).ready(function() {
 
 	var nuevo;
 
-	$('.cantidadSeleccionada').click(function()
-	{
+	$('.cantidadSeleccionada').click(function(){
 		var z = $(this).val();
-		var cantidad = $(this).attr("id");
+		cantidad = parseInt( $(this).attr("id") );
 		var array = [];
 		
-		var cx = 20;
-		var cy = 10;
 		var cont = 0;
 
 		$(this).parent('div').siblings('.slider').val(z);
 		
 		for (var i = 1; i <=cantidad; i++) 
-		{			
-			//array[i];
-			nuevo = i;
-
-			// if(cont == 4)
-			// {
-			// 	cx = 10;
-			// 	cy += 10;
-			// 	cont = 0;
-
-			// }
-
-			// if(anterior < z)
-			// {
-			// 	alert("mayor");
-			// }
-			// else if(anterior>z)
-			// {
-			// 	alert("menor");
-			// }
+		{
+			nuevo = i
 			
-			nuevo = $('<label class="image-checkbox"><div class="txt"></div><img class="cantidad_cpk" src="'+url+'/img/Despiece/circulo.png" /><br><input class="disenios" type="checkbox" value="sel_'+i+'" /></label>');
-			// cx += 10;
-			
+			nuevo = $('<label class="image-checkbox"><div class="txt"></div><img class="cantidad_cpk" src="'+url+'/img/Despiece/circulo.png" /><br><input class="disenios" type="checkbox" value="sel_'+i+'" /></label>');		
 
 			array.push(nuevo);	
 			cont++;
@@ -347,9 +413,9 @@ $(document).ready(function() {
 			$("#cantidadSel").text(cantidad);			
 		}
 		$('.numeroCup').html(array);
-		// alert(z);
-		//(array);
-		
+		precioTotal = recalcularPrecio(desnudo, relleno, cantidad, tapaPlana)
+
+		$('.valor p').html('$' + precioTotal)
 	});
 
 	$('#aplicar_dis').on('click', function() 
@@ -394,8 +460,11 @@ $(document).ready(function() {
 		// var y = $(this).val();
 		// sabor = hexc(x);
 		$("#txtSabor").text(saborSel);
+		$(path).css('transition', '.25s')
 		$(path).css('fill',sabor);
+		$(path2).css('transition', '.25s')
 		$(path2).css('fill',sabor);
+		$(path3).css('transition', '.25s')
 		$(path3).css('fill',sabor);
 		// $(sabor).css('fill',$(this).attr('data-color-sabor'));
 
@@ -414,6 +483,7 @@ $(document).ready(function() {
 		// var x = $(this).siblings('span').css('backgroundColor');
 		// var y = $(this).val();
 		// relleno = hexc(x);
+		$(path).css('transition', '.25s')
 		$(path).css('fill',relleno);
 		$("#txtRelleno").text(rellenoSel);
 
@@ -681,3 +751,18 @@ $(document).ready(function() {
     }
 
 })
+
+function inicializarAnimaciones(){
+	$('.tamanio').css('animation-name', 'showLeft')
+	$('.cantidad').css('animation-name', 'showLeft')
+	$('.colores').css('animation-name', 'showLeft')
+	$('.precio').css('animation-name', 'showBottom')
+	$('.sabores').css('animation-name', 'showBottom')
+	$('.rellenos').css('animation-name', 'showBottom')
+}
+
+function recalcularPrecio(desnudo, relleno, cantidad, tapaPlana){
+
+	return (desnudo + relleno + tapaPlana) * cantidad
+	
+}

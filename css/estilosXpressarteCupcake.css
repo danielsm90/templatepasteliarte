@@ -31,29 +31,42 @@ button:focus{
 	background: #45008ef2;
 }
 
-#menuPrincipalExpressarte ul li a
-{
+#menuPrincipalExpressarte ul li a{
 	text-decoration: none;
 	color: white;
-	
 }
 
-#menuPrincipalExpressarte
-{
+@keyframes showOpacity{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+#menuPrincipalExpressarte ul li a img{
+	opacity: 0;
+	animation-name: showOpacity;
+	animation-duration: 1s;
+	animation-delay: .5s;
+	animation-fill-mode: forwards;
+}
+
+#menuPrincipalExpressarte{
 	width: 100%;
 	height: 80px;
 	position: fixed;
 	z-index: 3;
 }
-#nav1
-{
+#nav1{
 	background-color: #45008e;
 }
 
-#nav
-{
+#nav{
 	z-index: 1;
 	box-shadow: 0px -8px 50px black;
+	overflow: hidden;
 }
 
 .xpressArte
@@ -64,8 +77,18 @@ button:focus{
 	right: 0;
 	
 }
-.tamanio, .cantidad, .colores
-{
+@keyframes showLeft{
+	0%{
+		opacity: 0;
+		transform: translateX(-120%);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+.tamanio, .cantidad, .colores{
+	opacity: 0;
 	margin-top: 5%;
 	margin-left: 5%;
 	width: 113%;
@@ -73,10 +96,30 @@ button:focus{
 	padding: 20px;
 	background: #eeeeee54;
 	border-radius: 8px;
+	/*animation-name: showLeft;*/
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+.cantidad{
+	animation-delay: .25s;
+}
+.colores{
+	animation-delay: .5s;
 }
 
-.precio
-{
+@keyframes showBottom{
+	0%{
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+.precio{
+	opacity: 0;
 	margin-top: 1%;
 	margin-left: 1%;
 	width: 16%;
@@ -86,6 +129,10 @@ button:focus{
 	padding: 10px;
 	z-index: 1;
 	position: fixed;
+	/*animation-name: showBottom;*/
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
 }
 
 .valor
@@ -148,8 +195,23 @@ button:focus{
     font-size: 20px;
 }
 
+@keyframes showZoomIn{
+	0%{
+		opacity: 0;
+		transform: scale(0);
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
 .listo#bt_sup_listo{
-	margin-left: 36%;
+	opacity: 0;
+	animation-name: showZoomIn;
+	animation-duration: .5s;
+	animation-delay: 1.75s;
+	animation-fill-mode: forwards;
 }
 
 .listo#al_horno{
@@ -244,14 +306,17 @@ button:focus{
 	flex-wrap: wrap;
 }
 
-.sabores
-{
+.sabores{
+	opacity: 0;
 	width: auto;
 	height: auto;
 	background: #eeeeee00;
 	border: 3px solid white;
 	border-radius: 8px;
 	display: inline-block;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-delay: .25s;
 }
 
 
@@ -308,6 +373,7 @@ ul li
 {
 	width: 47%;
 	display: flex;
+	padding: 2px;
 }
 
 .saboresRellenos div ul li input[type='radio']
@@ -323,11 +389,17 @@ ul li
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
 }
 
 .saboresRellenos div ul li span label
 {
 	margin-bottom: 0;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
 }
 
 .inputradio
@@ -428,30 +500,55 @@ ul li
 	position: absolute;
 }
 
-.cupcake
-{
+@keyframes showZoomOut{
+	0%{
+		opacity: 0;
+		transform: scale(1.5);
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.cupcake{
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-
-.cupcake #cup
-{
+.cupcake #cup{
+	opacity: 0;
 	height: 360px;
-	/*position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);*/
-	margin-left: 30%;
+	animation-name: showZoomOut;
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-delay: 1s;
 }
 
-.verRelleno
-{
-	margin-left: 46%;
+@keyframes showTop{
+	0%{
+		opacity: 0;
+		transform: translateY(-80%);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+.verRelleno{
+	opacity: 0;
 	margin-bottom: 5%;
+	animation-name: showTop;
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-delay: 1.5s;
 }
 
-.bandeja
-{
+.bandeja{
 	width: 350px;
 	height: 300px;
 	top: 0%;
@@ -477,8 +574,8 @@ ul li
 	position: absolute;
 }
 
-.rellenos
-{
+.rellenos{
+	opacity: 0;
 	margin-top: 2%;
 	width: auto;
 	height: auto;
@@ -486,6 +583,9 @@ ul li
 	border: 3px solid white;
 	border-radius: 8px;
 	display: block;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-delay: .5s;
 }
 
 .rellenos h5
@@ -646,13 +746,26 @@ ul li
     position: relative;
 }
 
+@keyframes rotar{
+	0%{
+		transform: translate(-50%, -50%) rotate(-10deg);
+	}
+	100%{
+		transform: translate(-50%, -50%) rotate(10deg);
+	}
+}
+
 #imagen img
 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
+	animation-name: rotar;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+	animation-duration: 2s;
 }
 
 #imagen1
