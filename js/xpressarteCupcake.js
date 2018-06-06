@@ -109,7 +109,7 @@ $(document).ready(function() {
 	{
 		nuevo = i
 		
-		nuevo = $('<label class="image-checkbox"><div class="txt"></div><img class="cantidad_cpk" src="'+url+'/img/Despiece/circulo.png" /><br><input class="disenios" type="checkbox" value="sel_'+i+'" /></label>');		
+		nuevo = $('<label class="image-checkbox"><div class"piezas_ad"></div><div class="txt"></div><img class="cantidad_cpk" src="'+url+'/img/Despiece/circulo.png" /><br><input class="disenios" type="checkbox" value="sel_'+i+'" /></label>');		
 
 		array.push(nuevo);	
 		cont++;			
@@ -143,12 +143,17 @@ $(document).ready(function() {
 		
 	});
 
+	var cup1 = document.getElementById("cup1")
+
 
 	$('.inputradioPersonaje').click(function()
 	{
-		var decoracion = document.getElementById("cup1").getSVGDocument().getElementById("Capa_1");
+		
+		var decoracion = cup1.getSVGDocument().getElementById("Capa_1");
 		
 		i = $(this).attr("data-adorno");
+
+		$(cup1).attr('data-adorno', i)
 		
 
 		$.get($(this).attr('data-d'), function(data)
@@ -159,7 +164,7 @@ $(document).ready(function() {
 
 	$('.btn_seleccion_p').click(function()
 	{
-		var decoracion = document.getElementById("cup1").getSVGDocument().getElementById("Capa_1");
+		var decoracion = cup1.getSVGDocument().getElementById("Capa_1");
 		
 
 		$.get($(this).attr('data-imagen'), function(data)
@@ -177,7 +182,8 @@ $(document).ready(function() {
 	{
 		var data_sel = $(this).attr('data-sel');
 		
-		// i = $(this).attr("data-adorno");
+		i = $(this).attr("data-adorno");
+
 
 		$.get($(this).attr('data-d'), function(data)
 		{
@@ -189,23 +195,27 @@ $(document).ready(function() {
 			// }
 			if(data_sel == 'ojo_sel')
 			{
-				decoracionOjos = document.getElementById("cup1").getSVGDocument().getElementById("ojos");
+				decoracionOjos = cup1.getSVGDocument().getElementById("ojos");
 				$(decoracionOjos).html(data.getElementById("Capa_3"));
+				$(cup1).attr("data-ojos", i);
 			}
 			else if(data_sel == 'boca_sel')
 			{
-				decoracionBocas = document.getElementById("cup1").getSVGDocument().getElementById("bocas");
+				decoracionBocas = cup1.getSVGDocument().getElementById("bocas");
 				$(decoracionBocas).html(data.getElementById("Capa_3"));
+				$(cup1).attr("data-bocas", i);
 			}
 			else if(data_sel == 'nariz_sel')
 			{
-				decoracionNarices = document.getElementById("cup1").getSVGDocument().getElementById("narices");
+				decoracionNarices = cup1.getSVGDocument().getElementById("narices");
 				$(decoracionNarices).html(data.getElementById("Capa_3"));
+				$(cup1).attr("data-narices", i);
 			}
 			else if(data_sel == 'oreja_sel')
 			{
-				decoracionOrejas = document.getElementById("cup1").getSVGDocument().getElementById("orejas");
+				decoracionOrejas = cup1.getSVGDocument().getElementById("orejas");
 				$(decoracionOrejas).html(data.getElementById("Capa_3"));
+				$(cup1).attr("data-orejas", i);
 			}
 			
 		});
@@ -225,7 +235,7 @@ $(document).ready(function() {
 		{
 			nuevo = i
 			
-			nuevo = $('<label class="image-checkbox"><div class="txt"></div><img class="cantidad_cpk" src="'+url+'/img/Despiece/circulo.png" /><br><input class="disenios" type="checkbox" value="sel_'+i+'" /></label>');		
+			nuevo = $('<label class="image-checkbox"><div class"piezas_ad"></div><div class="txt"></div><img class="cantidad_cpk" src="'+url+'/img/Despiece/circulo.png" /><br><input class="disenios" type="checkbox" value="sel_'+i+'" /></label>');		
 
 			array.push(nuevo);	
 			cont++;
@@ -302,7 +312,7 @@ $(document).ready(function() {
 		{
 			nuevo = i
 			
-			nuevo = $('<label class="image-checkbox"><div class="txt"></div><img class="cantidad_cpk" src="'+url+'/img/Despiece/circulo.png" /><br><input class="disenios" type="checkbox" value="sel_'+i+'" /></label>');		
+			nuevo = $('<label class="image-checkbox"><div class"piezas_ad"></div><div class="txt"></div><img class="cantidad_cpk" src="'+url+'/img/Despiece/circulo.png" /><br><input class="disenios" type="checkbox" value="sel_'+i+'" /></label>');		
 
 			array.push(nuevo);	
 			cont++;
@@ -357,7 +367,7 @@ $(document).ready(function() {
 		var path = document.getElementById("cup").getSVGDocument().getElementsByClassName("st3");
 		capAbierto = document.getElementById("cup").getSVGDocument().getElementsByClassName("st9");
 		var path2 = document.getElementById("cpkSeleccionado").getSVGDocument().getElementsByClassName("st3");
-		var path3 = document.getElementById("cup1").getSVGDocument().getElementsByClassName("st62");
+		var path3 = cup1.getSVGDocument().getElementsByClassName("st62");
 		var x = $(this).siblings('span').css('backgroundColor');
 		color = hexc(x);
 		$(path).css('transition', '.25s')
@@ -373,7 +383,7 @@ $(document).ready(function() {
 		$(barras).css('fill', $(this).attr('data-color-bar'));
 		var barras1 = document.getElementById("cpkSeleccionado").getSVGDocument().getElementsByClassName("st5");
 		$(barras1).css('fill', $(this).attr('data-color-bar'));
-		var barras2 = document.getElementById("cup1").getSVGDocument().getElementsByClassName("st93");
+		var barras2 = cup1.getSVGDocument().getElementsByClassName("st93");
 		$(barras2).css('fill', $(this).attr('data-color-bar'));
 	});
 
@@ -405,7 +415,7 @@ $(document).ready(function() {
 		{
 			nuevo = i
 			
-			nuevo = $('<label class="image-checkbox"><div class="txt"></div><img class="cantidad_cpk" src="'+url+'/img/Despiece/circulo.png" /><br><input class="disenios" type="checkbox" value="sel_'+i+'" /></label>');		
+			nuevo = $('<label class="image-checkbox"><div class"piezas_ad"></div><div class="txt"></div><img class="cantidad_cpk" src="'+url+'/img/Despiece/circulo.png" /><br><input class="disenios" type="checkbox" value="sel_'+i+'" /></label>');		
 
 			array.push(nuevo);	
 			cont++;
@@ -433,11 +443,23 @@ $(document).ready(function() {
         	}
         	else if(bandera == "foto")
         	{
-        		$(this).siblings('.cantidad_cpk').attr('src', result);
+        		$(this).siblings('.cantidad_cpk').attr('src', $(cup1).attr('data-adorno'));
+        	}
+        	else if(bandera == "piezas")
+        	{
+        		$(this).siblings('.cantidad_cpk').attr('src', '/img/Despiece/circulo.png');
+        		$(this).parent('.image-checkbox').append('<img class="ojo_ad" src="'+ $(cup1).attr('data-ojos')+'"/>');
+        		$(this).parent('.image-checkbox').append('<img class="boca_ad" src="'+ $(cup1).attr('data-bocas')+'"/>');
+        		$(this).parent('.image-checkbox').append('<img class="nariz_ad" src="'+ $(cup1).attr('data-narices')+'"/>');
+        		$(this).parent('.image-checkbox').append('<img class="oreja_ad" src="'+ $(cup1).attr('data-orejas')+'"/>');
         	}
         	else
         	{
-	        	$(this).siblings('.cantidad_cpk').attr('src', i);
+        		$(".ojo_ad").remove();
+        		$(".boca_ad").remove();
+        		$(".nariz_ad").remove();
+        		$(".oreja_ad").remove();
+	        	$(this).siblings('.cantidad_cpk').attr('src', $(cup1).attr('data-adorno'));
 	        	$(this).siblings('.cantidad_cpk').css('{width: 45px; height: 45px}' );
 	        	$(this).siblings('.txt').remove();
         	}
@@ -448,6 +470,21 @@ $(document).ready(function() {
         // $('.cantidad_cpk').attr('src', 'imagenes/Despiece/'+i);
     });
 
+    $("#info").on('click', function()
+    {
+    	var dis;
+    	$('.disenios').each(function()
+    	{
+    		dis = $(this).siblings('.cantidad_cpk').attr('src');
+    		console.log(dis);
+    		
+
+
+    	});
+    	
+    	
+    });
+
 
 	$('.inputSabor').click(function()
 	{
@@ -455,7 +492,7 @@ $(document).ready(function() {
 		var sabor = $(this).attr('data-color-sabor');
 		var path = document.getElementById("cup").getSVGDocument().getElementsByClassName("st6");
 		var path2 = document.getElementById("cpkSeleccionado").getSVGDocument().getElementsByClassName("st6");
-		var path3 = document.getElementById("cup1").getSVGDocument().getElementsByClassName("st156");
+		var path3 = cup1.getSVGDocument().getElementsByClassName("st156");
 		// var x = $(this).siblings('span').css('backgroundColor');
 		// var y = $(this).val();
 		// sabor = hexc(x);
@@ -494,8 +531,9 @@ $(document).ready(function() {
 		var color_crema1 = $(this).attr('data-cr');
 		var color_crema2 = $(this).attr('data-cr1');
 		i = $(this).attr('data-adorno');
-		var colorCrema1 = document.getElementById("cup1").getSVGDocument().getElementsByClassName("crst12");
-		var colorCrema2 = document.getElementById("cup1").getSVGDocument().getElementsByClassName("crst89");
+		$(cup1).attr('data-adorno', i)
+		var colorCrema1 = cup1.getSVGDocument().getElementsByClassName("crst12");
+		var colorCrema2 = cup1.getSVGDocument().getElementsByClassName("crst89");
 		$(colorCrema1).css('fill', color_crema1);
 		$(colorCrema2).css('fill', color_crema2);
 	});
@@ -636,6 +674,11 @@ $(document).ready(function() {
 
 	$('#fondant_sel').click(function()
 	{
+		bandera = "imagen"
+		$(decoracionOjos).children().remove();
+		$(decoracionBocas).children().remove();
+		$(decoracionNarices).children().remove();
+		$(decoracionOrejas).children().remove();
 
 		tipo = "fondant"
 		$("#personajes").show();
@@ -655,10 +698,16 @@ $(document).ready(function() {
 
 	$('#crema_sel').click(function()
 	{
+		bandera = "imagen"
+		$(decoracionOjos).children().remove();
+		$(decoracionBocas).children().remove();
+		$(decoracionNarices).children().remove();
+		$(decoracionOrejas).children().remove();
+
 		tipo = "crema"
 		$("#personajes").show(); 
 		$(".fondant_adornos").hide();
-		$(".crema_adornos").hide();
+		$(".crema_adornos").show();
 		$('#lista_ojos').hide();
 		$('#lista_boca').hide();
 		$('#lista_nariz').hide();
@@ -667,13 +716,14 @@ $(document).ready(function() {
 
 		$('#personajes').show()
 		$('#prediseniado').addClass('active')
-		$('.fondant_adornos').css('display', 'flex')
-		$('.fondant_adornos').css('flex-wrap', 'wrap')
+		$('.crema_adornos').css('display', 'flex')
+		$('.crema_adornos').css('flex-wrap', 'wrap')
 
 	});
 
 	$('#piezas').click(function()
 	{
+		bandera = "piezas"
 		$('#lista_ojos').show();
 		$('.tituloPiezas').show();
 		$('#lista_boca').show();
@@ -681,14 +731,27 @@ $(document).ready(function() {
 		$('#lista_oreja').show();
 		$(".fondant_adornos").hide();
 		$(".crema_adornos").hide();
+
+		var decoracion = cup1.getSVGDocument().getElementById("Capa_1");
+		
+
+		$.get($(".btn_seleccion_p.active").attr('data-imagen'), function(data)
+		{
+			$(decoracion).html(data.getElementById("Capa_2"));
+		});
 	});
 
 	$('#prediseniado').click(function()
 	{
+		bandera = "imagen"
 		$(decoracionOjos).children().remove();
 		$(decoracionBocas).children().remove();
 		$(decoracionNarices).children().remove();
 		$(decoracionOrejas).children().remove();
+		$("#cup1").removeAttr('data-ojos');
+		$("#cup1").removeAttr('data-bocas');
+		$("#cup1").removeAttr('data-narices');
+		$("#cup1").removeAttr('data-orejas');
 
 		if(tipo == "fondant")
 		{
@@ -748,6 +811,7 @@ $(document).ready(function() {
         result = e.target.result
         $('#prev_square').attr("src",result)
         $('#prev_circle').css("background-image", "url("+ result +")")
+        $(cup1).attr("data-adorno", result)
     }
 
 })

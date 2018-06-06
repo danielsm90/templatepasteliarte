@@ -424,6 +424,11 @@ ul li
     transform: translateY(85%);
 }
 
+#info
+{
+	 transform: translateY(95%);	
+}
+
 .inputradioPersonaje, .inputradioCremas, .inputradioPieza
 {   
     opacity: 0;
@@ -1735,4 +1740,28 @@ ul li
 {
 	position: absolute;
 	font-size: 11px;
+}
+
+.ojo_ad
+{
+	position: absolute;
+    transform: translate(-65%,-100%);
+}
+
+.boca_ad
+{
+	position: absolute;
+    transform: translate(-65%,-75%);
+}
+
+.nariz_ad
+{
+    position: absolute;
+    transform: translate(-65%, -95%);
+}
+
+.oreja_ad
+{
+	position: absolute;
+    transform: translate(-65%, -110%);
 }

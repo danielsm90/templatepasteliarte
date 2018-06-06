@@ -46,12 +46,12 @@
 					
 				
 				</div>
-				<div class="precio">
+			<!-- 	<div class="precio">
 					<h6>Precio actual</h6>
 					<div class="valor">
 						<p>$0</p>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<div class="col-8 cupcake">
 				<embed id="cup" src="<?php echo $urlSitio; ?>/img/svg/Cupcake-01-01.svg" width="50%" height="50%" />
@@ -200,7 +200,9 @@
 					<div class="numeroCup"></div>
 					<h6 class="txt_dis">Selecciona los cupcakes para aplicar este diseño</h6>
 					<button class="aplicar" id="aplicar_dis">Aplicar Diseño</button>
+
 				</div>
+				<button class="aplicar" id="info">Información</button>
 			</div>
 			<div class="col-7 cupcakeAdorno">
 				
@@ -314,7 +316,8 @@
 				<div id="sel_personajes">
 					<div class="opcionesPersonajes" id="op_per">
 						<h5>¿Cómo lo quieres?</h5>
-						<button data-imagen="<?php echo $urlSitio; ?>/img/svg/Fondand.svg" class="btn_seleccion_p active" id="fondant_sel">
+						<button data-imagen="<?php echo $urlSitio; ?>/img/svg/Fondand.svg" class="btn_seleccion_p active" 
+							id="fondant_sel">
 							<img src="<?php echo $urlSitio; ?>/img/Despiece/fondant.png">
 						</button>
 						<button data-imagen="<?php echo $urlSitio; ?>/img/svg/Crema.svg" class="btn_seleccion_p" id="crema_sel">
@@ -432,43 +435,56 @@
 								<h5><img src="<?php echo $urlSitio; ?>/img/Despiece/ojos.png">Ojos</h5>
 							</div>
 							<ul id="lista_ojos">
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" data-adorno="personaje_1.png" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_1.svg" class="inputradioPieza" type="radio" checked>
+								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_1.svg" 
+									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_1.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="ojo_1"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" data-adorno="personaje_2.png" 
+								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_2.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_2.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="ojo_2"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" data-adorno="personaje_3.png" 
+								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_3.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_3.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="ojo_3"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" data-adorno="personaje_4.png" 
+								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_4.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_4.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="ojo_4"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" data-adorno="personaje_5.png" 
+								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_5.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_5.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="ojo_5"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" data-adorno="personaje_6.png" 
+								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_6.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_6.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="ojo_6"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" data-adorno="personaje_7.png" 
+								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_7.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_7.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="ojo_7"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" data-adorno="personaje_8.png" 
+								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_8.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_8.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="ojo_8"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" data-adorno="personaje_9.png" 
+								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_9.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_9.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="ojo_9"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" data-adorno="personaje_10.png" 
+								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_10.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_10.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="ojo_10"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" data-adorno="personaje_11.png" 
+								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_11.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_11.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="ojo_11"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" data-adorno="personaje_12.png" 
+								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_12.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_12.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="ojo_12"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" data-adorno="personaje_13.png" 
+								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_13.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_13.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="ojo_13"></span></label></li>
 			
@@ -477,25 +493,32 @@
 								<h5><img src="<?php echo $urlSitio; ?>/img/Despiece/boca.png">Bocas</h5>
 							</div>
 							<ul id="lista_boca">
-								<li class="lst_piezas"><label><input data-sel="boca_sel" data-adorno="personaje_1.png" 
+								<li class="lst_piezas"><label><input data-sel="boca_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_1.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/boca_1.svg" class="inputradioPieza" type="radio" checked>
 									<span  class="inputPieza" id="boca_1"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="boca_sel" data-adorno="personaje_2.png" 
+								<li class="lst_piezas"><label><input data-sel="boca_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_2.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/boca_2.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="boca_2"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="boca_sel" data-adorno="personaje_3.png" 
+								<li class="lst_piezas"><label><input data-sel="boca_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_3.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/boca_3.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="boca_3"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="boca_sel" data-adorno="personaje_4.png" 
+								<li class="lst_piezas"><label><input data-sel="boca_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_4.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/boca_4.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="boca_4"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="boca_sel" data-adorno="personaje_5.png" 
+								<li class="lst_piezas"><label><input data-sel="boca_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_5.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/boca_5.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="boca_5"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="boca_sel" data-adorno="personaje_4.png" 
+								<li class="lst_piezas"><label><input data-sel="boca_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_6.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/boca_6.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="boca_6"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="boca_sel" data-adorno="personaje_5.png" 
+								<li class="lst_piezas"><label><input data-sel="boca_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_7.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/boca_7.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="boca_7"></span></label></li>
 							</ul>
@@ -504,40 +527,52 @@
 								<h5><img src="<?php echo $urlSitio; ?>/img/Despiece/nariz.png">Narices</h5>
 							</div>
 							<ul id="lista_nariz">
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" data-adorno="personaje_1.png" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_1.svg" class="inputradioPieza" type="radio" checked>
+								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_1.svg" 
+									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_1.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="nariz_1"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" data-adorno="personaje_2.png" 
+								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_2.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_2.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="nariz_2"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" data-adorno="personaje_3.png" 
+								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_3.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_3.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="nariz_3"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" data-adorno="personaje_4.png" 
+								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_4.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_4.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="nariz_4"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" data-adorno="personaje_5.png" 
+								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_5.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_5.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="nariz_5"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" data-adorno="personaje_1.png" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_6.svg" class="inputradioPieza" type="radio" checked>
+								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_6.svg" 
+									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_6.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="nariz_6"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" data-adorno="personaje_2.png" 
+								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_7.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_7.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="nariz_7"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" data-adorno="personaje_3.png" 
+								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_8.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_8.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="nariz_8"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" data-adorno="personaje_3.png" 
+								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_9.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_9.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="nariz_9"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" data-adorno="personaje_2.png" 
+								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_10.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_10.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="nariz_10"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" data-adorno="personaje_3.png" 
+								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_11.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_11.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="nariz_11"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" data-adorno="personaje_3.png" 
+								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_12.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_12.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="nariz_12"></span></label></li>
 							</ul>
@@ -547,67 +582,67 @@
 							</div>
 							<ul id="lista_oreja">
 								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="personaje_1.png" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_1.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_1.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="oreja_1"></span></label></li>
 								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="personaje_2.png" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_2.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_2.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="oreja_2"></span></label></li>
 								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="personaje_3.png" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_3.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_3.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="oreja_3"></span></label></li>
 								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="personaje_4.png" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_4.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_4.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="oreja_4"></span></label></li>
 								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="personaje_5.png" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_5.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_5.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="oreja_5"></span></label></li>
 								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="personaje_1.png" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_6.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_6.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="oreja_6"></span></label></li>
 								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="personaje_2.png" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_7.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_7.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="oreja_7"></span></label></li>
 								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="personaje_3.png" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_8.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_8.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="oreja_8"></span></label></li>
 								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="personaje_1.png" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_9.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_9.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="oreja_9"></span></label></li>
 								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="personaje_2.png" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_10.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_10.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="oreja_10"></span></label></li>
 								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="personaje_3.png" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_11.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_11.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="oreja_11"></span></label></li>
 								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="personaje_4.png" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_12.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_12.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="oreja_12"></span></label></li>
 								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="personaje_5.png" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_13.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_13.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="oreja_13"></span></label></li>
 								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="personaje_1.png" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_14.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_14.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="oreja_14"></span></label></li>
 								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="personaje_2.png" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_15.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_15.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="oreja_15"></span></label></li>
 								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="personaje_3.png" 
+									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_16.svg" 
 									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_16.svg" class="inputradioPieza" type="radio">
 									<span  class="inputPieza" id="oreja_16"></span></label></li>
 							</ul>
@@ -621,41 +656,41 @@
 							</h5>
 						</div>
 						<ul>
-							<li><label><input data-adorno="crema1.png" data-cr1="#92ce45" data-cr="#88c23f" class="inputradioCremas" type="radio" checked>
+							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema1.png" data-cr1="#92ce45" data-cr="#88c23f" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema1"></span></label></li>
-							<li><label><input data-adorno="crema2.png" data-cr1="#fbfb3b" data-cr="#FFFF00" class="inputradioCremas" type="radio">
+							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema2.png" data-cr1="#fbfb3b" data-cr="#FFFF00" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema2"></span></label></li>
-							<li><label><input data-adorno="crema3.png" data-cr1="#f79930" data-cr="#F38F1E" class="inputradioCremas" type="radio">
+							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema3.png" data-cr1="#f79930" data-cr="#F38F1E" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema3"></span></label></li>
-							<li><label><input data-adorno="crema4.png" data-cr1="#e23c64" data-cr="#DD2A55" class="inputradioCremas" type="radio">
+							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema4.png" data-cr1="#e23c64" data-cr="#DD2A55" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema4"></span></label></li>
-							<li><label><input data-adorno="crema5.png" data-cr1="#e864ec" data-cr="#E352E8" class="inputradioCremas" type="radio">
+							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema5.png" data-cr1="#e864ec" data-cr="#E352E8" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema5"></span></label></li>
-							<li><label><input data-adorno="crema6.png" data-cr1="#44b1e0" data-cr="#29A7DE" class="inputradioCremas" type="radio">
+							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema6.png" data-cr1="#44b1e0" data-cr="#29A7DE" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema6"></span></label></li>
-							<li><label><input data-adorno="crema7.png" data-cr1="#d3f3a7" data-cr="#CCEF9C" class="inputradioCremas" type="radio">
+							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema7.png" data-cr1="#d3f3a7" data-cr="#CCEF9C" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema7"></span></label></li>
-							<li><label><input data-adorno="crema8.png" data-cr1="#f5f3cb" data-cr="#FFFDAB" class="inputradioCremas" type="radio">
+							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema8.png" data-cr1="#f5f3cb" data-cr="#FFFDAB" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema8"></span></label></li>
-							<li><label><input data-adorno="crema9.png" data-cr1="#fbe0c6" data-cr="#FCD6B1" class="inputradioCremas" type="radio">
+							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema9.png" data-cr1="#fbe0c6" data-cr="#FCD6B1" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema9"></span></label></li>
-							<li><label><input data-adorno="crema10.png" data-cr1="#f1bfcd" data-cr="#EDB0C1" class="inputradioCremas" type="radio">
+							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema10.png" data-cr1="#f1bfcd" data-cr="#EDB0C1" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema10"></span></label></li>
-							<li><label><input data-adorno="crema11.png" data-cr1="#fa97ff" data-cr="#EE82F4" class="inputradioCremas" type="radio">
+							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema11.png" data-cr1="#fa97ff" data-cr="#EE82F4" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema11"></span></label></li>
-							<li><label><input data-adorno="crema12.png" data-cr1="#b7e8f9" data-cr="#9DDDF4" class="inputradioCremas" type="radio">
+							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema12.png" data-cr1="#b7e8f9" data-cr="#9DDDF4" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema12"></span></label></li>
-							<li><label><input data-adorno="crema13.png" data-cr1="#FCF8A9" data-cr="#88C23F" class="inputradioCremas" type="radio">
+							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema13.png" data-cr1="#FCF8A9" data-cr="#88C23F" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema13"></span></label></li>
-							<li><label><input data-adorno="crema14.png" data-cr1="#FCF8A9" data-cr="#FFFF00" class="inputradioCremas" type="radio">
+							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema14.png" data-cr1="#FCF8A9" data-cr="#FFFF00" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema14"></span></label></li>
-							<li><label><input data-adorno="crema15.png" data-cr1="#FCF8A9" data-cr="#F38F1E" class="inputradioCremas" type="radio">
+							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema15.png" data-cr1="#FCF8A9" data-cr="#F38F1E" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema15"></span></label></li>
-							<li><label><input data-adorno="crema16.png" data-cr1="#FCF8A9" data-cr="#DD2A55" class="inputradioCremas" type="radio">
+							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema16.png" data-cr1="#FCF8A9" data-cr="#DD2A55" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema16"></span></label></li>
-							<li><label><input data-adorno="crema17.png" data-cr1="#FCF8A9" data-cr="#E352E8" class="inputradioCremas" type="radio">
+							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema17.png" data-cr1="#FCF8A9" data-cr="#E352E8" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema17"></span></label></li>
-							<li><label><input data-adorno="crema18.png" data-cr1="#FCF8A9" data-cr="#29A7DE" class="inputradioCremas" type="radio">
+							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema18.png" data-cr1="#FCF8A9" data-cr="#29A7DE" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema18"></span></label></li>
 						</ul>
 					</div>
