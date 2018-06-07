@@ -347,7 +347,7 @@ $(document).ready(function() {
 	var col = '';
 	var y = $('input:radio[name=color]:checked').siblings('span').css('backgroundColor');
 	col = hexc(y);
-	capacillo = $('input:radio[name=color]:checked').attr('id')
+	capacillo = $('.inputradio:checked').attr('id')
 	capacilloHex = col
 	$('.seleccion').css('fill',col);
 
@@ -443,6 +443,19 @@ $(document).ready(function() {
 		t.siblings(".oreja_ad").remove();
 	}
 
+	function eliminarPiezas()
+	{
+		$('#cup1').removeAttr("data-ojos");
+		$('#cup1').removeAttr("data-bocas");
+		$('#cup1').removeAttr("data-narices");
+		$('#cup1').removeAttr("data-orejas");
+		$('.cantidad_cpk').removeAttr("data-ojos");
+		$('.cantidad_cpk').removeAttr("data-bocas");
+		$('.cantidad_cpk').removeAttr("data-narices");
+		$('.cantidad_cpk').removeAttr("data-orejas");
+		$(this).siblings('.txt').children().remove();	
+	}
+
 	$('#aplicar_dis').on('click', function() 
 	{
 		
@@ -458,6 +471,7 @@ $(document).ready(function() {
         		$(this).siblings('.txt').children().remove();	
         		$(this).siblings('.cantidad_cpk').attr('src', url + '/img/Despiece/circulo.png');
         		$(this).siblings('.txt').append('<p>'+resultado+ '</p>');
+        		$(this).siblings('.cantidad_cpk').attr('data-mensaje', resultado);
 
         	}
         	else if(bandera == "foto")
@@ -472,10 +486,14 @@ $(document).ready(function() {
         		$(this).siblings('.txt').children().remove();
         		$(this).siblings('.cantidad_cpk').attr('src', url + '/img/Despiece/circulo.png');
         		$(this).parent('.image-checkbox').append('<img class="ojo_ad" src="'+ $(cup1).attr('data-ojos')+'"/>');
-        		$(this).parent('.image-checkbox').append('<img class="boca_ad" src="'+ $(cup1).attr('data-bocas')+'"/>');
-        		$(this).parent('.image-checkbox').append('<img class="nariz_ad" src="'+ $(cup1).attr('data-narices')+'"/>');
-        		$(this).parent('.image-checkbox').append('<img class="oreja_ad" src="'+ $(cup1).attr('data-orejas')+'"/>');
         		$(this).siblings('.cantidad_cpk').attr('data-ojos', $(cup1).attr('data-ojos'));
+        		$(this).parent('.image-checkbox').append('<img class="boca_ad" src="'+ $(cup1).attr('data-bocas')+'"/>');
+        		$(this).siblings('.cantidad_cpk').attr('data-bocas', $(cup1).attr('data-bocas'));
+        		$(this).parent('.image-checkbox').append('<img class="nariz_ad" src="'+ $(cup1).attr('data-narices')+'"/>');
+        		$(this).siblings('.cantidad_cpk').attr('data-narices', $(cup1).attr('data-narices'));
+        		$(this).parent('.image-checkbox').append('<img class="oreja_ad" src="'+ $(cup1).attr('data-orejas')+'"/>');
+        		$(this).siblings('.cantidad_cpk').attr('data-orejas', $(cup1).attr('data-orejas'));
+        		
 
         	}
         	else
@@ -614,6 +632,7 @@ $(document).ready(function() {
 
 	$('#btn_crema').click(function()
 	{
+		eliminarPiezas();
 		$(decoracionOjos).children().remove();
 		$(decoracionBocas).children().remove();
 		$(decoracionNarices).children().remove();
@@ -640,6 +659,7 @@ $(document).ready(function() {
 
 	$('#btn_personaje').click(function()
 	{
+		eliminarPiezas();
 		// cir = document.getElementById("cup1").getSVGDocument().getElementsByClassName("st157");
 		// $(cir).hide();
 		// fond = document.getElementById("cup1").getSVGDocument().getElementsByClassName("st156");
@@ -669,6 +689,7 @@ $(document).ready(function() {
 
 	$('#btn_mensaje').click(function()
 	{
+		eliminarPiezas();
 		$(decoracionOjos).children().remove();
 		$(decoracionBocas).children().remove();
 		$(decoracionNarices).children().remove();
@@ -692,6 +713,7 @@ $(document).ready(function() {
 
 	$('#btn_foto').click(function()
 	{
+		eliminarPiezas();
 		bandera = "foto"
 		resultado = " ";
 		$(decoracionOjos).children().remove();
@@ -743,6 +765,7 @@ $(document).ready(function() {
 
 	$('#fondant_sel').click(function()
 	{
+		eliminarPiezas();
 		bandera = "imagen"
 		$(decoracionOjos).children().remove();
 		$(decoracionBocas).children().remove();
@@ -767,6 +790,7 @@ $(document).ready(function() {
 
 	$('#crema_sel').click(function()
 	{
+		eliminarPiezas();
 		bandera = "imagen"
 		$(decoracionOjos).children().remove();
 		$(decoracionBocas).children().remove();
@@ -792,6 +816,7 @@ $(document).ready(function() {
 
 	$('#piezas').click(function()
 	{
+		eliminarPiezas();
 		bandera = "piezas"
 		$('#lista_ojos').show();
 		$('.tituloPiezas').show();
@@ -812,15 +837,13 @@ $(document).ready(function() {
 
 	$('#prediseniado').click(function()
 	{
+		eliminarPiezas();
 		bandera = "imagen"
 		$(decoracionOjos).children().remove();
 		$(decoracionBocas).children().remove();
 		$(decoracionNarices).children().remove();
 		$(decoracionOrejas).children().remove();
-		$("#cup1").removeAttr('data-ojos');
-		$("#cup1").removeAttr('data-bocas');
-		$("#cup1").removeAttr('data-narices');
-		$("#cup1").removeAttr('data-orejas');
+
 
 		if(tipo == "fondant")
 		{
