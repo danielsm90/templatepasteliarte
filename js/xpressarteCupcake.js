@@ -87,12 +87,13 @@ $(document).ready(function() {
 	var puntos;
 	var capAbierto;
 	var tamanio;
-	var tamanioSeleccionado;
+	var tamanioSeleccionado = 'Standard';
 	var saborSel;
 	var rellenoSel;
 	var i; 
 	var resultado;
 	var bandera;
+	var capacillo, capacilloHex
 
 	var desnudo = 2500, relleno = 1000, cremChis, tapaPlana = 3500, cremPelit, letra, piezasPre, piezasAd, cantidad = 1
 
@@ -226,6 +227,7 @@ $(document).ready(function() {
 		relleno = 0
 		cantidad = 12
 		tapaPlana = 2000
+		rellenoSel = undefined
 
 		var array = [];
 		
@@ -303,6 +305,7 @@ $(document).ready(function() {
 		tapaPlana = 3500
 		cantidadId = parseInt( $('#cantidadStandard').children('.slider').val() )
 		cantidad = parseInt( $('#cantidadStandard').children('div').children('button[value="'+cantidadId+'"]').attr('id') )
+		rellenoSel = $('input:radio[name=saborRelleno]:checked').val();
 
 		var array = [];
 		
@@ -344,6 +347,8 @@ $(document).ready(function() {
 	var col = '';
 	var y = $('input:radio[name=color]:checked').siblings('span').css('backgroundColor');
 	col = hexc(y);
+	capacillo = $('input:radio[name=color]:checked').attr('id')
+	capacilloHex = col
 	$('.seleccion').css('fill',col);
 
 	var sab;
@@ -370,6 +375,8 @@ $(document).ready(function() {
 		var path3 = cup1.getSVGDocument().getElementsByClassName("st62");
 		var x = $(this).siblings('span').css('backgroundColor');
 		color = hexc(x);
+		capacillo = $(this).attr('id')
+		capacilloHex = color
 		$(path).css('transition', '.25s')
 		$(path).css('fill',color);
 		$(path2).css('transition', '.25s')
@@ -428,6 +435,14 @@ $(document).ready(function() {
 		$('.valor p').html('$' + precioTotal)
 	});
 
+	function eliminarPiezasAd(t)
+	{
+		t.siblings(".ojo_ad").remove();
+		t.siblings(".boca_ad").remove();
+		t.siblings(".nariz_ad").remove();
+		t.siblings(".oreja_ad").remove();
+	}
+
 	$('#aplicar_dis').on('click', function() 
 	{
 		
@@ -439,29 +454,36 @@ $(document).ready(function() {
             diseniados.push($(this).val());
             if(bandera == "texto")
         	{
-        		$(this).siblings('.txt').html(resultado);
+        		eliminarPiezasAd($(this));
+        		$(this).siblings('.txt').children().remove();	
+        		$(this).siblings('.cantidad_cpk').attr('src', url + '/img/Despiece/circulo.png');
+        		$(this).siblings('.txt').append('<p>'+resultado+ '</p>');
+
         	}
         	else if(bandera == "foto")
         	{
+        		eliminarPiezasAd($(this));
+        		$(this).siblings('.txt').children().remove();
         		$(this).siblings('.cantidad_cpk').attr('src', $(cup1).attr('data-adorno'));
         	}
         	else if(bandera == "piezas")
         	{
-        		$(this).siblings('.cantidad_cpk').attr('src', '/img/Despiece/circulo.png');
+        		eliminarPiezasAd($(this));
+        		$(this).siblings('.txt').children().remove();
+        		$(this).siblings('.cantidad_cpk').attr('src', url + '/img/Despiece/circulo.png');
         		$(this).parent('.image-checkbox').append('<img class="ojo_ad" src="'+ $(cup1).attr('data-ojos')+'"/>');
         		$(this).parent('.image-checkbox').append('<img class="boca_ad" src="'+ $(cup1).attr('data-bocas')+'"/>');
         		$(this).parent('.image-checkbox').append('<img class="nariz_ad" src="'+ $(cup1).attr('data-narices')+'"/>');
         		$(this).parent('.image-checkbox').append('<img class="oreja_ad" src="'+ $(cup1).attr('data-orejas')+'"/>');
+        		$(this).siblings('.cantidad_cpk').attr('data-ojos', $(cup1).attr('data-ojos'));
+
         	}
         	else
         	{
-        		$(".ojo_ad").remove();
-        		$(".boca_ad").remove();
-        		$(".nariz_ad").remove();
-        		$(".oreja_ad").remove();
+        		eliminarPiezasAd($(this));
 	        	$(this).siblings('.cantidad_cpk').attr('src', $(cup1).attr('data-adorno'));
 	        	$(this).siblings('.cantidad_cpk').css('{width: 45px; height: 45px}' );
-	        	$(this).siblings('.txt').remove();
+	        	$(this).siblings('.txt').children().remove();
         	}
         	$(this).removeAttr('checked');
         	
@@ -472,15 +494,62 @@ $(document).ready(function() {
 
     $("#info").on('click', function()
     {
-    	var dis;
+    	var disSrc, disDataAd, disDataOj, disDataBo, disDataNa, disDataOr, disDataMe;
+    	var arrayCupcakes = [], arrayFinal = []
     	$('.disenios').each(function()
     	{
-    		dis = $(this).siblings('.cantidad_cpk').attr('src');
-    		console.log(dis);
-    		
+    		var arrayEachCC = []
+    		disSrc = $(this).siblings('.cantidad_cpk').attr('src')
+			if (typeof disSrc !== typeof undefined && disSrc !== false) {
+				arrayEachCC.push(disSrc)
+			}
 
+			disDataAd = $(this).siblings('.cantidad_cpk').attr('data-adorno')
+			if (typeof disDataAd !== typeof undefined && disDataAd !== false) {
+				arrayEachCC.push(disDataAd)
+			}
 
+			disDataOj = $(this).siblings('.cantidad_cpk').attr('data-ojos')
+			if (typeof disDataOj !== typeof undefined && disDataOj !== false) {
+				arrayEachCC.push(disDataOj)
+			}
+
+			disDataBo = $(this).siblings('.cantidad_cpk').attr('data-bocas')
+			if (typeof disDataBo !== typeof undefined && disDataBo !== false) {
+				arrayEachCC.push(disDataBo)
+			}
+
+			disDataNa = $(this).siblings('.cantidad_cpk').attr('data-narices')
+			if (typeof disDataNa !== typeof undefined && disDataNa !== false) {
+				arrayEachCC.push(disDataNa)
+			}
+
+			disDataOr = $(this).siblings('.cantidad_cpk').attr('data-orejas')
+			if (typeof disDataOr !== typeof undefined && disDataOr !== false) {
+				arrayEachCC.push(disDataOr)
+			}
+
+			disDataMe = $(this).siblings('.cantidad_cpk').attr('data-mensaje')
+			if (typeof disDataMe !== typeof undefined && disDataMe !== false) {
+				arrayEachCC.push(disDataMe)
+			}
+			arrayCupcakes.push(arrayEachCC)
     	});
+
+    	arrayFinal = {
+    		'quantity': cantidad,
+    		'flavor': saborSel,
+    		'filling': rellenoSel,
+    		'type': tamanioSeleccionado,
+    		'total': 100,
+    		'capacillo': {
+    			'name': capacillo,
+    			'value': capacilloHex
+    		},
+    		'cupcakes': arrayCupcakes
+    	}
+
+    	console.log('Array: ', arrayFinal)
     	
     	
     });

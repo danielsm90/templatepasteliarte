@@ -168,7 +168,7 @@
 						</div>
 						<div id="cont_cup_sel">
 							<h3 id="cupcakeTxt" class="txtCake">Cupcakes</h3>
-							<h3 id="tamnioTxt" class="txtCake">Tamaño</h3>
+							<h3 id="tamnioTxt" class="txtCake">Standard</h3>
 							<p id="saborTxt" class="txtCake">Sabor a <span id="txtSabor" class="spanCup">Sabor</span></p>
 							<p id="rellenoTxt" class="txtCake">Con relleno de <span id="txtRelleno" class="spanCup">Relleno</span></p>
 						</div>
