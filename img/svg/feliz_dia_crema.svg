@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 602">
+	<defs>
+		<style>
+			.colorcls-1{fill:#ff0;}
+			.colorcls-2{fill:#fcf8a9;}
+			.fedicls-11,.fedicls-3,.fedicls-5{fill:none;}
+			.fedicls-3{stroke:#603813;}
+			.fedicls-3,.fedicls-5{stroke-linecap:round;stroke-miterlimit:10;}
+			.fedicls-4{fill:#d86c00;}
+			.fedicls-5{stroke:#ffcd9c;}
+			.fedicls-6{font-size:31.48px;font-family:GillSansMT-ExtraCondensedBold, Gill Sans MT Ext Condensed Bold;}
+			.fedicls-10,.fedicls-6{fill:#ec1e79;}
+			.fedicls-7{fill:#39b44a;}
+			.fedicls-8{fill:#662d90;}
+			.fedicls-9{fill:#29aae1;}
+		</style>
+	</defs>
+	<title>
+		Recurso 209
+	</title>
+	<g id="Capa_2" data-name="Capa 2">
+		<g id="Capa_3" data-name="Capa 3">
+			<path class="colorcls-1" d="M504.27,292.14c0,100-95.9,77.22-214.19,77.22S75.89,392.14,75.89,292.14s95.9-181.07,214.19-181.07S504.27,192.13,504.27,292.14Z"/>
+			<path class="colorcls-2" d="M333.3,155.81l-75.74,6c-33.58,2.65-63.56-16.47-67-42.73l-1.52-11.77C185.68,81,257.16,9.56,290.75,6.9L319.48,49c33.58-2.65,63.56,16.47,67,42.73L388,103.47C391.35,129.72,366.88,153.15,333.3,155.81Z"/>
+			<path class="colorcls-1" d="M414.5,215l-238.15,21.5c-33.58,3-63.56-18.81-67-48.79l-1.52-13.44c-3.4-30,21.07-56.73,54.66-59.76L400.68,93c33.58-3,63.56,18.81,67,48.79l1.52,13.44C472.56,185.19,448.09,211.95,414.5,215Z"/>
+			<path class="colorcls-2" d="M456.36,287.88,134.49,316.94c-33.58,3-63.56-18.81-67-48.79L66,254.71c-3.4-30,21.07-56.73,54.66-59.76l321.87-29.05c33.58-3,63.56,18.81,67,48.79L511,228.12C514.42,258.09,489.95,284.85,456.36,287.88Z"/>
+		</g>
+		<g id="Capa_1-2" data-name="Capa 1">
+			<line class="fedicls-3" x1="176.8" y1="49.21" x2="169.3" y2="16.34"/>
+			<path class="fedicls-4" d="M201.77,127.58,186.46,131a8.09,8.09,0,0,1-9.59-6.22l-18-80.49c-.58-2.59,3.54-9.43,7-14.6a8.42,8.42,0,0,1,11.36-2.54c5.35,3.2,12,7.62,12.57,10.22l18,80.49A8.09,8.09,0,0,1,201.77,127.58Z"/>
+			<line class="fedicls-5" x1="162.16" y1="59.01" x2="188.45" y2="31.28"/>
+			<line class="fedicls-5" x1="165.83" y1="78.4" x2="193.19" y2="49.54"/>
+			<line class="fedicls-5" x1="169.86" y1="96.44" x2="197.23" y2="67.59"/>
+			<line class="fedicls-5" x1="173.9" y1="114.49" x2="201.26" y2="85.64"/>
+			<line class="fedicls-5" x1="177.93" y1="132.54" x2="205.3" y2="103.68"/>
+			<text class="fedicls-6" transform="matrix(2.33, -1.42, 0.52, 0.85, 156.31, 218.58)">
+				Feliz
+				<tspan x="3.6" y="27">
+					Día
+				</tspan>
+			</text>
+			<ellipse class="fedicls-7" cx="368" cy="129" rx="15" ry="18" transform="translate(133.1 440.26) rotate(-72.28)"/>
+			<ellipse class="fedicls-8" cx="430" cy="204.5" rx="13.5" ry="17" transform="matrix(0.8, -0.6, 0.6, 0.8, -37.01, 297.33)"/>
+			<ellipse class="fedicls-9" cx="355" cy="241.5" rx="14.5" ry="19" transform="translate(-66.79 321.76) rotate(-45)"/>
+			<ellipse class="fedicls-10" cx="448" cy="285" rx="15" ry="17" transform="translate(-76.49 367.7) rotate(-41.42)"/>
+			<ellipse class="fedicls-9" cx="240" cy="275" rx="20" ry="15" transform="translate(-96.35 133.24) rotate(-26.03)"/>
+			<ellipse class="fedicls-7" cx="160" cy="331" rx="20" ry="15"/>
+			<ellipse class="fedicls-8" cx="136" cy="261" rx="19" ry="14" transform="translate(-156.43 227.81) rotate(-56)"/>
+			<ellipse class="fedicls-10" cx="278" cy="92.5" rx="18" ry="12.5"/>
+			<ellipse class="fedicls-10" cx="306" cy="176.5" rx="18" ry="12.5"/>
+			<ellipse class="fedicls-8" cx="331.5" cy="311.5" rx="18.5" ry="13.5"/>
+			<rect class="fedicls-11" width="576" height="602"/>
+		</g>
+	</g>
+</svg>

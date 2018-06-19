@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 602">
+	<defs>
+		<style>
+			.colorcls-1{fill:#ff0;}
+			.colorcls-2{fill:#fcf8a9;}
+			.nipscls-3{fill:#d1c23b;}
+			.nipscls-4{fill:#fff;opacity:0.5;}
+			.nipscls-5{fill:none;}
+		</style>
+	</defs>
+	<title>
+		Recurso 229
+	</title>
+	<g id="Capa_2" data-name="Capa 2">
+		<g id="Capa_3" data-name="Capa 3">
+			<path class="colorcls-1" d="M504.27,292.14c0,100-95.9,77.22-214.19,77.22S75.89,392.14,75.89,292.14s95.9-181.07,214.19-181.07S504.27,192.13,504.27,292.14Z"/>
+			<path class="colorcls-2" d="M333.3,155.81l-75.74,6c-33.58,2.65-63.56-16.47-67-42.73l-1.52-11.77C185.68,81,257.16,9.56,290.75,6.9L319.48,49c33.58-2.65,63.56,16.47,67,42.73L388,103.47C391.35,129.72,366.88,153.15,333.3,155.81Z"/>
+			<path class="colorcls-1" d="M414.5,215l-238.15,21.5c-33.58,3-63.56-18.81-67-48.79l-1.52-13.44c-3.4-30,21.07-56.73,54.66-59.76L400.68,93c33.58-3,63.56,18.81,67,48.79l1.52,13.44C472.56,185.19,448.09,211.95,414.5,215Z"/>
+			<path class="colorcls-2" d="M456.36,287.88,134.49,316.94c-33.58,3-63.56-18.81-67-48.79L66,254.71c-3.4-30,21.07-56.73,54.66-59.76l321.87-29.05c33.58-3,63.56,18.81,67,48.79L511,228.12C514.42,258.09,489.95,284.85,456.36,287.88Z"/>
+		</g>
+		<g id="Capa_1-2" data-name="Capa 1">
+			<circle class="nipscls-3" cx="196.43" cy="273.15" r="25.43"/>
+			<circle class="nipscls-3" cx="264.43" cy="320.15" r="25.43"/>
+			<circle class="nipscls-3" cx="418.43" cy="323.15" r="25.43"/>
+			<circle class="nipscls-3" cx="494.43" cy="267.15" r="25.43"/>
+			<circle class="nipscls-3" cx="88.43" cy="301.15" r="25.43"/>
+			<circle class="nipscls-3" cx="97.43" cy="223.15" r="25.43"/>
+			<circle class="nipscls-3" cx="180.78" cy="158.18" r="25.43"/>
+			<circle class="nipscls-3" cx="264.22" cy="122.43" r="25.43"/>
+			<circle class="nipscls-3" cx="280.9" cy="195.53" r="25.43"/>
+			<circle class="nipscls-3" cx="354.8" cy="135.94" r="25.43"/>
+			<circle class="nipscls-3" cx="417.57" cy="209.04" r="25.43"/>
+			<circle class="nipscls-3" cx="354.8" cy="264.66" r="25.43"/>
+			<circle class="nipscls-3" cx="305.22" cy="52.43" r="25.43"/>
+			<circle class="nipscls-4" cx="98.5" cy="299.5" r="9.5"/>
+			<circle class="nipscls-4" cx="108.5" cy="221.5" r="9.5"/>
+			<circle class="nipscls-4" cx="206.5" cy="270.5" r="9.5"/>
+			<circle class="nipscls-4" cx="274.5" cy="315.5" r="9.5"/>
+			<circle class="nipscls-4" cx="363.5" cy="259.5" r="9.5"/>
+			<circle class="nipscls-4" cx="429.5" cy="320.5" r="9.5"/>
+			<circle class="nipscls-4" cx="505.5" cy="264.5" r="9.5"/>
+			<circle class="nipscls-4" cx="190.5" cy="153.5" r="9.5"/>
+			<circle class="nipscls-4" cx="274.5" cy="122.5" r="9.5"/>
+			<circle class="nipscls-4" cx="290.5" cy="191.5" r="9.5"/>
+			<circle class="nipscls-4" cx="366.5" cy="134.5" r="9.5"/>
+			<circle class="nipscls-4" cx="428.5" cy="206.5" r="9.5"/>
+			<circle class="nipscls-4" cx="311.5" cy="49.5" r="9.5"/>
+			<rect class="nipscls-5" width="576" height="602"/>
+		</g>
+	</g>
+</svg>

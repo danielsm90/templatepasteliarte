@@ -9,7 +9,7 @@
 <body>
 	<header id="menuPrincipal">
 		
-		<nav class="navbar navbar-expand-lg navbar-light">
+		<nav id="nav" class="navbar navbar-expand-lg navbar-light">
 			<a class="navbar-brand" href="<?php echo get_bloginfo('url'); ?>">
 				<img  class="logo" src="<?php echo get_template_directory_uri(); ?>/img/Pasteliarte/logo.png" />
 			</a>

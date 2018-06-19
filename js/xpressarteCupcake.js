@@ -95,9 +95,9 @@ $(document).ready(function() {
 	var bandera;
 	var capacillo, capacilloHex
 
-	var desnudo = 2500, relleno = 1000, cremChis, tapaPlana = 3500, cremPelit, letra, piezasPre, piezasAd, cantidad = 1
+	var desnudo = 2500, relleno = 1000, cremChis, tapaPlana = 3500, letra, piezasPre, piezasAd, cantidad = 1
 
-    var precioTotal = (desnudo + relleno + tapaPlana)*cantidad;
+    var precioInicial, precioTotal;
 
     var cantTxtId = $('#cantidadStandard').children('.slider').val()
     var contTxt = $('#cantidadStandard').children('div').children('button[value="'+cantTxtId+'"]').attr('id')
@@ -119,7 +119,6 @@ $(document).ready(function() {
 
     $('#cantidadSel').html(contTxt)
 
-    $('.valor p').text('$'+precioTotal)
 
 	$('#txt_mensaje').keypress(function(e)	
 	{
@@ -144,11 +143,42 @@ $(document).ready(function() {
 		
 	});
 
+	$('#txt_mensaje1').keypress(function(e)	
+	{
+		// alert("Pulsaste la tecla con código: "+String.fromCharCode(e.which));
+		if($(this).val().length < 1)
+		{
+			
+			resultado =  $(this).val() + String.fromCharCode(e.which);
+			$('#textocup').html(resultado);
+			bandera =  "texto";
+			if(e.which == 32)
+			{
+				$('#textocup').html(resultado + '<br>');
+			}
+		}
+		// // console.log(resultado);
+		// $(this).text(String.fromCharCode(e.which));
+		// var texto =  $(`<text x=20 y=150
+  		// 					style="font: bold 2em 'comic sans ms';fill: aqua; stroke: blue; stroke-width: 2px;">
+  		// 					Primer texto svg</text>`)
+		//  document.getElementById("cup1").getSVGDocument().getElementById("Capa_1").createElement(texto)
+		
+	});
+
 	var cup1 = document.getElementById("cup1")
 
 
 	$('.inputradioPersonaje').click(function()
 	{
+		if(tamanioSeleccionado == 'Standard')
+		{
+			piezasPre = 3000;
+		}
+		else
+		{
+			piezasPre = 2000;
+		}
 		
 		var decoracion = cup1.getSVGDocument().getElementById("Capa_1");
 		
@@ -181,6 +211,14 @@ $(document).ready(function() {
 
 	$('.inputradioPieza').click(function()
 	{
+		if(tamanioSeleccionado == 'Standard')
+		{
+			piezasAd = 1000;
+		}
+		else
+		{
+			piezasAd = 500;
+		}
 		var data_sel = $(this).attr('data-sel');
 		
 		i = $(this).attr("data-adorno");
@@ -222,12 +260,39 @@ $(document).ready(function() {
 		});
 	});
 
+	var dec
+
+	$('.inputradioAdicional').click(function()
+	{
+		console.log(color_crema1, color_crema2)
+		colorCrema_1 = cup1.getSVGDocument().getElementsByClassName("colorcls-1");
+		colorCrema_2 = cup1.getSVGDocument().getElementsByClassName("colorcls-2");
+		dec = cup1.getSVGDocument().getElementById("adicional1");
+		i = $(this).attr("data-adorno");
+		$.get($(this).attr('data-d'), function(data)
+		{
+			$(dec).html(data.getElementById("Capa_2"));
+			$(colorCrema_1).css('fill', color_crema1);
+			$(colorCrema_2).css('fill', color_crema2);
+			$(cup1).attr("data-adorno", i);
+		});
+		
+	});
+
 	$('#mini').click(function(){
 		desnudo = 1500
 		relleno = 0
 		cantidad = 12
-		tapaPlana = 2000
 		rellenoSel = undefined
+
+		if($('.btn_seleccion_p.active').attr('id') == 'fondant_sel')
+		{
+			tapaPlana = 2000;
+		}
+		else
+		{
+			tapaPlana = 1500;
+		}
 
 		var array = [];
 		
@@ -246,8 +311,6 @@ $(document).ready(function() {
 		}
 		$('.numeroCup').html(array);
 
-		precioTotal = recalcularPrecio(desnudo, relleno, cantidad, tapaPlana)
-
 		tamanio = $(this).val();
 		tamanioSeleccionado= $(this).attr("name");
 		$('#cantidadMini').show();
@@ -260,7 +323,6 @@ $(document).ready(function() {
 		$('#txtRelleno').hide();
 		$('#rellenoTxt').hide();
 		$("#cantidadSel").text("0");
-		$('.valor p').text('$'+ precioTotal);
 		$('#mini').attr('disabled', true);
 		$('#stan').removeAttr('disabled')
 	});
@@ -302,7 +364,14 @@ $(document).ready(function() {
 	$('#stan').click(function(){
 		relleno = 1000
 		desnudo = 2500
-		tapaPlana = 3500
+		if($('.btn_seleccion_p.active').attr('id') == 'fondant_sel')
+		{
+			tapaPlana = 3500;
+		}
+		else
+		{
+			tapaPlana = 1500;
+		}
 		cantidadId = parseInt( $('#cantidadStandard').children('.slider').val() )
 		cantidad = parseInt( $('#cantidadStandard').children('div').children('button[value="'+cantidadId+'"]').attr('id') )
 		rellenoSel = $('input:radio[name=saborRelleno]:checked').val();
@@ -324,8 +393,6 @@ $(document).ready(function() {
 		}
 		$('.numeroCup').html(array);
 
-		precioTotal = recalcularPrecio(desnudo, relleno, cantidad, tapaPlana)
-
 		tamanio = $(this).val();
 		tamanioSeleccionado= $(this).attr("name");
 		$('#cantidadMini').hide();
@@ -339,7 +406,6 @@ $(document).ready(function() {
 		$('#txtRelleno').show();
 		$('#rellenoTxt').show();
 		$("#cantidadSel").text("1");
-		$('.valor p').text('$'+ precioTotal);
 		$('#stan').attr('disabled', true);
 		$('#mini').removeAttr('disabled');
 	});
@@ -430,9 +496,7 @@ $(document).ready(function() {
 			$("#cantidadSel").text(cantidad);			
 		}
 		$('.numeroCup').html(array);
-		precioTotal = recalcularPrecio(desnudo, relleno, cantidad, tapaPlana)
 
-		$('.valor p').html('$' + precioTotal)
 	});
 
 	function eliminarPiezasAd(t)
@@ -446,6 +510,14 @@ $(document).ready(function() {
 		t.siblings(".cantidad_cpk").removeAttr("data-narices");
 		t.siblings(".cantidad_cpk").removeAttr("data-orejas");
 		t.siblings(".cantidad_cpk").removeAttr("data-mensaje");
+		t.siblings(".cantidad_cpk").removeAttr("data-precio-ojos");
+		t.siblings(".cantidad_cpk").removeAttr("data-precio-bocas");
+		t.siblings(".cantidad_cpk").removeAttr("data-precio-narices");
+		t.siblings(".cantidad_cpk").removeAttr("data-precio-orejas");
+		t.siblings(".cantidad_cpk").removeAttr("data-precio-pred");
+		t.siblings(".cantidad_cpk").removeAttr("data-precio-mensaje");
+		t.siblings(".cantidad_cpk").removeAttr("data-adorno");
+
 
 
 	}
@@ -456,11 +528,12 @@ $(document).ready(function() {
 		$('#cup1').removeAttr("data-bocas");
 		$('#cup1').removeAttr("data-narices");
 		$('#cup1').removeAttr("data-orejas");
+		$('#cup1').removeAttr("data-adorno");
 	}
 
 	$('#aplicar_dis').on('click', function() 
 	{
-		
+		var cupOj, cupBo, cupNa, cupOr
         var diseniados = new Array();
 
         $('.disenios:checked').each(function() 
@@ -474,6 +547,7 @@ $(document).ready(function() {
         		$(this).siblings('.cantidad_cpk').attr('src', url + '/img/Despiece/circulo.png');
         		$(this).siblings('.txt').append('<p>'+resultado+ '</p>');
         		$(this).siblings('.cantidad_cpk').attr('data-mensaje', resultado);
+        		$(this).siblings('.cantidad_cpk').attr('data-precio-mensaje', letra);
 
         	}
         	else if(bandera == "foto")
@@ -487,21 +561,49 @@ $(document).ready(function() {
         		eliminarPiezasAd($(this));
         		$(this).siblings('.txt').children().remove();
         		$(this).siblings('.cantidad_cpk').attr('src', url + '/img/Despiece/circulo.png');
-        		$(this).parent('.image-checkbox').append('<img class="ojo_ad" src="'+ $(cup1).attr('data-ojos')+'"/>');
-        		$(this).siblings('.cantidad_cpk').attr('data-ojos', $(cup1).attr('data-ojos'));
-        		$(this).parent('.image-checkbox').append('<img class="boca_ad" src="'+ $(cup1).attr('data-bocas')+'"/>');
-        		$(this).siblings('.cantidad_cpk').attr('data-bocas', $(cup1).attr('data-bocas'));
-        		$(this).parent('.image-checkbox').append('<img class="nariz_ad" src="'+ $(cup1).attr('data-narices')+'"/>');
-        		$(this).siblings('.cantidad_cpk').attr('data-narices', $(cup1).attr('data-narices'));
-        		$(this).parent('.image-checkbox').append('<img class="oreja_ad" src="'+ $(cup1).attr('data-orejas')+'"/>');
-        		$(this).siblings('.cantidad_cpk').attr('data-orejas', $(cup1).attr('data-orejas'));
+
+        		cupOj = $(cup1).attr("data-ojos");
+        		if (typeof cupOj !== typeof undefined && cupOj !== false) 
+        		{
+	        		
+	        		$(this).parent('.image-checkbox').append('<img class="ojo_ad" src="'+ $(cup1).attr('data-ojos')+'"/>');
+	        		$(this).siblings('.cantidad_cpk').attr('data-ojos', $(cup1).attr('data-ojos'));
+	        		$(this).siblings('.cantidad_cpk').attr('data-precio-ojos', piezasAd);
+        		}
+
+        		cupBo = $(cup1).attr("data-bocas");
+        		if (typeof cupBo !== typeof undefined && cupBo !== false) 
+        		{
+	        		$(this).parent('.image-checkbox').append('<img class="boca_ad" src="'+ $(cup1).attr('data-bocas')+'"/>');
+	        		$(this).siblings('.cantidad_cpk').attr('data-bocas', $(cup1).attr('data-bocas'));
+	        		$(this).siblings('.cantidad_cpk').attr('data-precio-bocas', piezasAd);
+        		}
+
+        		cupNa = $(cup1).attr("data-narices");
+        		if (typeof cupNa !== typeof undefined && cupNa !== false) 
+        		{
+	        		$(this).parent('.image-checkbox').append('<img class="nariz_ad" src="'+ $(cup1).attr('data-narices')+'"/>');
+	        		$(this).siblings('.cantidad_cpk').attr('data-narices', $(cup1).attr('data-narices'));
+	        		$(this).siblings('.cantidad_cpk').attr('data-precio-narices', piezasAd);
+        		}
+
+        		cupOr = $(cup1).attr("data-orejas");
+        		if (typeof cupNa !== typeof undefined && cupNa !== false) 
+        		{
+	        		$(this).parent('.image-checkbox').append('<img class="oreja_ad" src="'+ $(cup1).attr('data-orejas')+'"/>');
+	        		$(this).siblings('.cantidad_cpk').attr('data-orejas', $(cup1).attr('data-orejas'));
+	        		$(this).siblings('.cantidad_cpk').attr('data-precio-orejas', piezasAd);
+	        	}
         		
 
         	}
         	else
         	{
         		eliminarPiezasAd($(this));
+        		
 	        	$(this).siblings('.cantidad_cpk').attr('src', $(cup1).attr('data-adorno'));
+	        	$(this).siblings('.cantidad_cpk').attr('data-adorno', $(cup1).attr('data-adorno'));
+	        	$(this).siblings('.cantidad_cpk').attr('data-precio-pred', piezasPre);
 	        	$(this).siblings('.cantidad_cpk').css('{width: 45px; height: 45px}' );
 	        	$(this).siblings('.txt').children().remove();
         	}
@@ -514,54 +616,105 @@ $(document).ready(function() {
 
     $("#info").on('click', function()
     {
-    	var disSrc, disDataAd, disDataOj, disDataBo, disDataNa, disDataOr, disDataMe;
+    	precioInicial =  (desnudo + relleno + tapaPlana) * cantidad;
+    	console.log(precioInicial);
+    	var disSrc, disDataAd, disDataOj, disDataBo, disDataNa, disDataOr, disDataMe,
+    	 preOj, preBo, preNa, preOr, precioAdorno, prePie =0, preLet = 0;
     	var arrayCupcakes = [], arrayFinal = []
+    	console.log(prePie);
     	$('.disenios').each(function()
     	{
     		var arrayEachCC = []
-    		disSrc = $(this).siblings('.cantidad_cpk').attr('src')
-			if (typeof disSrc !== typeof undefined && disSrc !== false) {
-				arrayEachCC.push(disSrc)
-			}
+   //  		disSrc = $(this).siblings('.cantidad_cpk').attr('src')
+			// if (typeof disSrc !== typeof undefined && disSrc !== false) {
+			// 	arrayEachCC.push(disSrc)
+			// }
+
 
 			disDataAd = $(this).siblings('.cantidad_cpk').attr('data-adorno')
 			if (typeof disDataAd !== typeof undefined && disDataAd !== false) {
 				arrayEachCC.push(disDataAd)
+				prePie = parseInt($(this).siblings('.cantidad_cpk').attr('data-precio-pred'));
+				arrayEachCC.push(prePie)
+				
 			}
+			// else
+			// {
+			// 	piezasPre = 0;
+			// }
 
 			disDataOj = $(this).siblings('.cantidad_cpk').attr('data-ojos')
 			if (typeof disDataOj !== typeof undefined && disDataOj !== false) {
 				arrayEachCC.push(disDataOj)
+				preOj = parseInt($(this).siblings('.cantidad_cpk').attr('data-precio-ojos'));
 			}
+			// else
+			// {
+			// 	preOj = 0;
+			// }
 
 			disDataBo = $(this).siblings('.cantidad_cpk').attr('data-bocas')
 			if (typeof disDataBo !== typeof undefined && disDataBo !== false) {
 				arrayEachCC.push(disDataBo)
+				preBo = parseInt($(this).siblings('.cantidad_cpk').attr('data-precio-bocas'));
 			}
+			// else
+			// {
+			// 	preBo = 0;
+			// }
 
 			disDataNa = $(this).siblings('.cantidad_cpk').attr('data-narices')
 			if (typeof disDataNa !== typeof undefined && disDataNa !== false) {
 				arrayEachCC.push(disDataNa)
+				preNa = parseInt($(this).siblings('.cantidad_cpk').attr('data-precio-narices'));
 			}
+			// else
+			// {
+			// 	preNa = 0;
+
+			// }
 
 			disDataOr = $(this).siblings('.cantidad_cpk').attr('data-orejas')
 			if (typeof disDataOr !== typeof undefined && disDataOr !== false) {
 				arrayEachCC.push(disDataOr)
+				preOr = parseInt($(this).siblings('.cantidad_cpk').attr('data-precio-orejas'));
 			}
+			// else
+			// {
+			// 	preOr = 0;
+			// }
 
 			disDataMe = $(this).siblings('.cantidad_cpk').attr('data-mensaje')
 			if (typeof disDataMe !== typeof undefined && disDataMe !== false) {
 				arrayEachCC.push(disDataMe)
+				preLet = parseInt($(this).siblings('.cantidad_cpk').attr('data-precio-mensaje'));
+				arrayEachCC.push(preLet)
+				
 			}
+			// else
+			// {
+			// 	letra = 0;
+			// }
+			prePie += parseInt($(this).arrayEachCC[1])
+			
+			
+
 			arrayCupcakes.push(arrayEachCC)
     	});
+
+
+		piezasAd = preOj + preBo + preNa + preOr;
+		precioAdorno = piezasPre + piezasAd + letra;
+		precioTotal = precioInicial + precioAdorno;
+		console.log(prePie)
+		console.log(preLet);
 
     	arrayFinal = {
     		'quantity': cantidad,
     		'flavor': saborSel,
     		'filling': rellenoSel,
     		'type': tamanioSeleccionado,
-    		'total': 100,
+    		'total': precioTotal,
     		'capacillo': {
     			'name': capacillo,
     			'value': capacilloHex
@@ -601,6 +754,36 @@ $(document).ready(function() {
 		$('#textocup').css('color', color_letra);
 	});
 
+	$('.inputradioCrema').click(function()
+	{
+		var color_fon = $(this).siblings('span').css('backgroundColor');
+		var path = cup1.getSVGDocument().getElementsByClassName("fonst0");
+		$(path).css('fill', color_fon);
+
+	});
+
+	$('.inputradioColorPie').click(function()
+	{
+		var color_fondo = $(this).siblings('span').css('backgroundColor');
+		var color_fon_cr;
+		var path;
+		var path2;
+		if(tipo == "fondant")
+		{
+			path = cup1.getSVGDocument().getElementsByClassName("fonst0")
+		}
+		else
+		{
+			color_fon_cr = $(this).attr('data-color-cr');
+			console.log(color_fon_cr)
+			path = cup1.getSVGDocument().getElementsByClassName("cre1cls-1")
+			path2 = cup1.getSVGDocument().getElementsByClassName("cre1cls-2")
+		}
+
+		$(path).css('fill', color_fondo);
+		$(path2).css('fill', color_fon_cr);
+	});
+
 	$('.inputRelleno').click(function()
 	{
 		var relleno = $(this).attr('data-color-relleno');
@@ -615,16 +798,26 @@ $(document).ready(function() {
 
 	});
 
+	var color_crema1;
+	var color_crema2;
+	var colorCrema_1;
+	var colorCrema_2;
+
 	$('.inputradioCremas').click(function()
 	{
-		var color_crema1 = $(this).attr('data-cr');
-		var color_crema2 = $(this).attr('data-cr1');
+		piezasPre = 1000;
+		color_crema1 = $(this).attr('data-cr');
+		color_crema2 = $(this).attr('data-cr1');
 		i = $(this).attr('data-adorno');
 		$(cup1).attr('data-adorno', i)
 		var colorCrema1 = cup1.getSVGDocument().getElementsByClassName("crst12");
 		var colorCrema2 = cup1.getSVGDocument().getElementsByClassName("crst89");
+		colorCrema_1 = cup1.getSVGDocument().getElementsByClassName("colorcls-1");
+		colorCrema_2 = cup1.getSVGDocument().getElementsByClassName("colorcls-2");
 		$(colorCrema1).css('fill', color_crema1);
 		$(colorCrema2).css('fill', color_crema2);
+		$(colorCrema_1).css('fill', color_crema1);
+		$(colorCrema_2).css('fill', color_crema2);
 	});
 
 	var tipo = 'fondant'
@@ -672,6 +865,7 @@ $(document).ready(function() {
 		$(decoracionBocas).children().remove();
 		$(decoracionNarices).children().remove();
 		$(decoracionOrejas).children().remove();
+		$(dec).children().remove();
 		$("#txt_mensaje").val(resultado);
 		$('#textocup').html(resultado);
 		$("#sel_personajes").show();
@@ -686,16 +880,30 @@ $(document).ready(function() {
 		$('#prediseniado').addClass('active')
 		$('.fondant_adornos').css('display', 'flex')
 		$('.fondant_adornos').css('flex-wrap', 'wrap')
+		$('.colorFond').hide()
 
 	});
 
 	$('#btn_mensaje').click(function()
 	{
+		if(tamanioSeleccionado == 'Standard')
+		{
+			letra = 3000;
+			$(".texto").show();
+			$(".texto1").hide();
+		}
+		else
+		{
+			letra = 500;
+			$(".texto1").show();
+			$(".texto").hide();
+		}
 		eliminarPiezas();
 		$(decoracionOjos).children().remove();
 		$(decoracionBocas).children().remove();
 		$(decoracionNarices).children().remove();
 		$(decoracionOrejas).children().remove();
+		$(dec).children().remove();
 		$("#sel_personajes").hide();
 		$("#opcionesTexto").show();
 		$("#sel_cremas").hide();
@@ -711,6 +919,7 @@ $(document).ready(function() {
 		$('#lista_nariz').hide();
 		$('#lista_oreja').hide();
 		$('.tituloPiezas').hide();
+		$('.colorFond').hide();
 	});
 
 	$('#btn_foto').click(function()
@@ -722,6 +931,7 @@ $(document).ready(function() {
 		$(decoracionBocas).children().remove();
 		$(decoracionNarices).children().remove();
 		$(decoracionOrejas).children().remove();
+		$(dec).children().remove();
 		$("#txt_mensaje").val(resultado);
 		$('#textocup').html(resultado);
 		$("#sel_personajes").hide();
@@ -739,6 +949,7 @@ $(document).ready(function() {
 		$('#lista_nariz').hide();
 		$('#lista_oreja').hide();
 		$('.tituloPiezas').hide();
+		$('.colorFond').hide();
 	});
 
 	$('.btn_adornos').click(function()
@@ -767,6 +978,14 @@ $(document).ready(function() {
 
 	$('#fondant_sel').click(function()
 	{
+		if(tamanioSeleccionado == 'Standard')
+		{
+			tapaPlana = 3500;
+		}
+		else
+		{
+			tapaPlana = 2000;
+		}
 		eliminarPiezas();
 		bandera = "imagen"
 		$(decoracionOjos).children().remove();
@@ -783,6 +1002,7 @@ $(document).ready(function() {
 		$('#lista_nariz').hide();
 		$('#lista_oreja').hide();
 		$('.tituloPiezas').hide();
+		$('.colorFond').hide();
 
 		$('#personajes').show()
 		$('#prediseniado').addClass('active')
@@ -792,6 +1012,7 @@ $(document).ready(function() {
 
 	$('#crema_sel').click(function()
 	{
+		tapaPlana = 1500;
 		eliminarPiezas();
 		bandera = "imagen"
 		$(decoracionOjos).children().remove();
@@ -808,6 +1029,7 @@ $(document).ready(function() {
 		$('#lista_nariz').hide();
 		$('#lista_oreja').hide();
 		$('.tituloPiezas').hide();
+		$('.colorFond').hide();
 
 		$('#personajes').show()
 		$('#prediseniado').addClass('active')
@@ -824,6 +1046,7 @@ $(document).ready(function() {
 		$('#lista_boca').show();
 		$('#lista_nariz').show();
 		$('#lista_oreja').show();
+		$('.colorFond').show();
 		$(".fondant_adornos").hide();
 		$(".crema_adornos").hide();
 
@@ -848,6 +1071,7 @@ $(document).ready(function() {
 		$("#cup1").removeAttr('data-bocas');
 		$("#cup1").removeAttr('data-narices');
 		$("#cup1").removeAttr('data-orejas');
+		$('.colorFond').hide();
 
 		if(tipo == "fondant")
 		{

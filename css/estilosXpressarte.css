@@ -13,107 +13,76 @@
 #contenedorGrande
 {
 	width: 100%;
-	height: 900px;
-	background-color: #45008e;
+	/*height: 900px;*/
+	background-color: #380679;
 	position: relative;
 	border-radius: 50px;
 	margin-top: 1%;
 }
 
-#manizales
-{
-	width: 40%;
-	height: 70%;
-	position: absolute;
-	top: 50%;
-	left: 27%;
+.contenedorOpciones{
+	display: flex;
+	justify-content: space-around;
+}
+
+.contenedorOpciones #manizales,
+.contenedorOpciones #restodelpais{
+	flex: 0 0 40%;
 	background-color: #ff3960;
-	transform: translate(-50%, -50%);
 	border-radius: 50px;
 }
 
-#restodelpais
-{
-	width: 40%;
-	height: 70%;
-	position: absolute;
-	top: 50%;
-	left: 29%;
-	background-color: #ff3960;
-	transform: translate(50%, -50%);
-	border-radius: 50px;
-}
-
-#contenedorCupcake
-{
-	width: 90%;
-	height: 35%;
-	position: absolute;
-	top: 27%;
-	left: 50%;
-	background-color: #eeeeee91;
-	transform: translate(-50%, -50%);
-	border-radius: 50px;
-}
-
-#contenedorTorta
-{
-	width: 90%;
-	height: 46%;
-	position: absolute;
-	top: 25%;
-	left: 50%;
+#contenedorCupcake,
+#contenedorTorta,
+#contenedorTortas{
 	background-color: #eeeeee38;
-	transform: translate(-50%, 50%);
 	border-radius: 50px;
-	z-index: -1;
+	width: 90%;
+	margin: 0 auto;
+	transition: all ease .5s;
 }
 
-#contenedorTortas
-{
-	width: 90%;
-	height: 85%;
-	position: absolute;
-	top: 53%;
-	left: 50%;
-	background-color: #eeeeee38;
-	transform: translate(-50%, -50%);
-	border-radius: 50px;
+#contenedorTortas{
+
 }
 
 .imgCupcake
 {
-	width: 70%;
-	position: absolute;
+	max-width: 100%;
+	transition: .5s;
+	/*position: absolute;
 	top: 80%;
 	left: 29%;
 	transform: translate(-50%, -50%);
-	transition: .5s;
+	*/
+}
+
+#urlCuManizales:hover #contenedorCupcake,
+#urlCaManizales:hover #contenedorTorta,
+#urlResto:hover #contenedorTortas{
+	background-color: #eeeeee91;
 }
 
 #urlCuManizales:hover .imgCupcake{
-	transform: rotateY(-90deg) translate(-50%, -50%);
-	transform-origin: top left;
-}
-
-#urlCuManizales,
-#urlCaManizales,
-#urlResto{
+	/*transform: rotateY(-90deg) translate(-50%, -50%);
+	transform-origin: top left;*/
 }
 
 .imgCake
 {
-	position: absolute;
+	max-width: 100%;
+	/*position: absolute;
 	top: 53%;
 	left: 61%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);*/
 }
 
 .imgCakes
 {
-	position: absolute;
+	max-width: 100%;
+	/*position: absolute;
 	top: 61%;
-	transform: translate(20%, -50%);
+	transform: translate(20%, -50%);*/
 }
 
 #contenedorGrande h1
@@ -138,18 +107,13 @@
 
 #contenedorGrande h2
 {
-	margin-right: 60%;
 	color: white;
 	margin-top: 10px;
+	padding: 20px;
 }
 
 #contenedorGrande h3
 {
 	text-align: center;
 	color: white;
-}
-
-#contenedorTorta h2
-{
-	margin-top: 53%;
 }

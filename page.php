@@ -2,8 +2,11 @@
 
 <?php
 
+global $post;
+$post_slug=$post->post_name;
+
 if(have_posts()){
-	get_template_part( 'content/manizales-cupcakes' );
+	get_template_part( 'content/'.$post_slug );
 }
 
 ?>

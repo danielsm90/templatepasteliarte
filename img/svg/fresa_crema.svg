@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 602">
+	<defs>
+		<style>
+			.colorcls-1{fill:#ff0;}
+			.colorcls-2{fill:#fcf8a9;}
+			.frecls-3{fill:#c0272d;}
+			.frecls-4{fill:#8bc53f;}
+			.frecls-5{opacity:0.8;}
+			.frecls-6{fill:#fbed21;}
+			.frecls-7{fill:none;}
+		</style>
+	</defs>
+	<title>
+		Recurso 210
+	</title>
+	<g id="Capa_2" data-name="Capa 2">
+		<g id="Capa_3" data-name="Capa 3">
+			<path class="colorcls-1" d="M504.27,292.14c0,100-95.9,77.22-214.19,77.22S75.89,392.14,75.89,292.14s95.9-181.07,214.19-181.07S504.27,192.13,504.27,292.14Z"/>
+			<path class="colorcls-2" d="M333.3,155.81l-75.74,6c-33.58,2.65-63.56-16.47-67-42.73l-1.52-11.77C185.68,81,257.16,9.56,290.75,6.9L319.48,49c33.58-2.65,63.56,16.47,67,42.73L388,103.47C391.35,129.72,366.88,153.15,333.3,155.81Z"/>
+			<path class="colorcls-1" d="M414.5,215l-238.15,21.5c-33.58,3-63.56-18.81-67-48.79l-1.52-13.44c-3.4-30,21.07-56.73,54.66-59.76L400.68,93c33.58-3,63.56,18.81,67,48.79l1.52,13.44C472.56,185.19,448.09,211.95,414.5,215Z"/>
+			<path class="colorcls-2" d="M456.36,287.88,134.49,316.94c-33.58,3-63.56-18.81-67-48.79L66,254.71c-3.4-30,21.07-56.73,54.66-59.76l321.87-29.05c33.58-3,63.56,18.81,67,48.79L511,228.12C514.42,258.09,489.95,284.85,456.36,287.88Z"/>
+		</g>
+		<g id="Capa_1-2" data-name="Capa 1">
+			<path class="frecls-3" d="M479.1,122.94c-21.17,25.42-69.42,45-92.67,25.65s-12.72-70.36,8.45-95.78,44.95-15.64,68.21,3.73S500.26,97.52,479.1,122.94Z"/>
+			<path class="frecls-4" d="M511,67c-17.18-13.44-37.49-11.18-37.49-11.18s28.66-15.36,25-20.75c-2.36-3.5-20.54,5.5-31,16.18,8.6-12.26,14.16-31.78,10.29-33.46-6-2.59-15.88,28.37-15.88,28.37s-1.45-20.38-17.78-34.85,10,37.17,9,36.44S438.56,32.3,437.9,37.53c-.56,4.42,13,21.67,18.07,26l0,0,.76.61.74.63,0,0c5.19,4.15,24.62,14.41,28.86,13.06,5-1.6-11.93-12.27-12.82-13.09S528.16,80.47,511,67Z"/>
+			<g class="frecls-5">
+				<ellipse class="frecls-6" cx="442.99" cy="79.38" rx="4.94" ry="2.47" transform="translate(98.5 368.99) rotate(-50.21)"/>
+				<ellipse class="frecls-6" cx="431.52" cy="64.82" rx="4.94" ry="2.47" transform="translate(105.56 354.93) rotate(-50.21)"/>
+				<ellipse class="frecls-6" cx="416.18" cy="59.2" rx="4.94" ry="2.47" transform="translate(104.36 341.12) rotate(-50.21)"/>
+				<ellipse class="frecls-6" cx="468.6" cy="103.57" rx="4.94" ry="2.47" transform="translate(89.14 397.38) rotate(-50.21)"/>
+				<ellipse class="frecls-6" cx="459.03" cy="88.45" rx="4.94" ry="2.47" transform="translate(97.31 384.58) rotate(-50.21)"/>
+				<ellipse class="frecls-6" cx="428.92" cy="96.27" rx="4.94" ry="2.47" transform="matrix(0.64, -0.77, 0.77, 0.64, 80.46, 364.26)"/>
+				<ellipse class="frecls-6" cx="417.45" cy="81.71" rx="4.94" ry="2.47" transform="translate(87.52 350.2) rotate(-50.21)"/>
+				<ellipse class="frecls-6" cx="402.12" cy="76.09" rx="4.94" ry="2.47" transform="translate(86.32 336.39) rotate(-50.21)"/>
+				<ellipse class="frecls-6" cx="454.54" cy="120.46" rx="4.94" ry="2.47" transform="translate(71.1 392.65) rotate(-50.21)"/>
+				<ellipse class="frecls-6" cx="444.97" cy="105.34" rx="4.94" ry="2.47" transform="translate(79.27 379.85) rotate(-50.21)"/>
+				<ellipse class="frecls-6" cx="414.86" cy="113.16" rx="4.94" ry="2.47" transform="translate(62.42 359.53) rotate(-50.21)"/>
+				<ellipse class="frecls-6" cx="403.39" cy="98.6" rx="4.94" ry="2.47" transform="translate(69.48 345.48) rotate(-50.21)"/>
+				<ellipse class="frecls-6" cx="430.9" cy="122.23" rx="4.94" ry="2.47" transform="translate(61.23 375.13) rotate(-50.21)"/>
+				<ellipse class="frecls-6" cx="401.5" cy="129.2" rx="4.94" ry="2.47" transform="translate(45.28 355.04) rotate(-50.21)"/>
+				<ellipse class="frecls-6" cx="390.03" cy="114.64" rx="4.94" ry="2.47" transform="translate(52.34 340.99) rotate(-50.21)"/>
+				<ellipse class="frecls-6" cx="417.54" cy="138.27" rx="4.94" ry="2.47" transform="translate(44.09 370.64) rotate(-50.21)"/>
+				<ellipse class="frecls-6" cx="389.46" cy="95.58" rx="4.94" ry="2.47" transform="translate(144.61 413.17) rotate(-66.16)"/>
+				<ellipse class="frecls-6" cx="438.08" cy="136.79" rx="4.94" ry="2.47" transform="translate(16.56 318.31) rotate(-40.64)"/>
+			</g>
+			<rect class="frecls-7" width="576" height="602"/>
+		</g>
+	</g>
+</svg>

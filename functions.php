@@ -2,9 +2,18 @@
 
 require_once('walker_menu.php');
 
-// Registrar Menu
+// Registrar Menu y Widgets
 	register_nav_menus (array(
 		'menu_superior' => 'Menu superior'
+	));
+
+	register_sidebar(array(
+		'name' => 'Cita con el artista',
+		'id' => 'cita-artista',
+		'before_widget' => '<div class="wg_header">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
 	));
 
 // Incluir css y js
@@ -14,12 +23,12 @@ require_once('walker_menu.php');
 	if(!function_exists('insertar_css')){
 		function insertar_css(){
 			wp_enqueue_style( 'bootstrap-css-pasteliarte', get_bloginfo('template_url') . '/css/bootstrap.min.css', false, false, 'screen' );
-			wp_enqueue_style( 'styles', get_bloginfo('stylesheet_url'), array( 'bootstrap-css-pasteliarte' ), false, 'screen' );
 			wp_enqueue_style( 'styles-cita', get_bloginfo('template_url') . '/css/estiloCita.css', array( 'bootstrap-css-pasteliarte' ), false, 'screen' );
-			wp_enqueue_style( 'styles-exp', get_bloginfo('template_url') . '/css/estilosXpressarte.css', array( 'styles' ), false, 'screen' );
+			wp_enqueue_style( 'styles-exp', get_bloginfo('template_url') . '/css/estilosXpressarte.css', array( 'bootstrap-css-pasteliarte' ), false, 'screen' );
 			wp_enqueue_style( 'styles-expCup', get_bloginfo('template_url') . '/css/estilosXpressarteCupcake.css', array( 'styles-exp' ), false, 'screen' );
 
 			wp_enqueue_style( 'styles-expCake', get_bloginfo('template_url') . '/css/estilosXpressarteCake.css', array( 'styles-exp' ), false, 'screen' );
+			wp_enqueue_style( 'styles', get_bloginfo('stylesheet_url'), array( 'styles-expCake' ), false, 'screen' );
 		}
 	}
 

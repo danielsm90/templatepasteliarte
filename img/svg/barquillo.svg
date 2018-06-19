@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 602">
+	<defs>
+		<style>
+			.barcls-1{fill:#ffd071;}
+			.barcls-2,.barcls-4{fill:none;}
+			.barcls-2{stroke:#603813;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}
+			.barcls-3{fill:#8b6239;}
+		</style>
+	</defs>
+	<title>
+		Recurso 168
+	</title>
+	<g id="Capa_2" data-name="Capa 2">
+		<g id="Capa_4" data-name="Capa 4">
+			<path class="barcls-1" d="M444.07,37.05h41.87a5.69,5.69,0,0,1,5.69,5.69v175.9a.94.94,0,0,1-.94.94H440.31a.94.94,0,0,1-.94-.94V41.76a4.71,4.71,0,0,1,4.71-4.71Z" transform="translate(196.03 -272.36) rotate(40.67)"/>
+			<line class="barcls-2" x1="463.21" y1="92.06" x2="521.43" y2="102.14"/>
+			<line class="barcls-2" x1="446.76" y1="111.21" x2="504.98" y2="121.29"/>
+			<line class="barcls-2" x1="430.31" y1="130.36" x2="488.53" y2="140.43"/>
+			<line class="barcls-2" x1="413.86" y1="149.51" x2="472.08" y2="159.58"/>
+			<line class="barcls-2" x1="397.41" y1="168.66" x2="455.63" y2="178.73"/>
+			<ellipse class="barcls-3" cx="516.8" cy="67.43" rx="8.98" ry="19.98" transform="translate(128.88 415.49) rotate(-49.33)"/>
+		</g>
+		<g id="Capa_1-2" data-name="Capa 1">
+			<rect class="barcls-4" width="576" height="602"/>
+		</g>
+	</g>
+</svg>

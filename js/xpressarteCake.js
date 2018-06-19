@@ -48,7 +48,7 @@ $(document).ready(function()
 		i = $(this).attr("data-adorno");
 		
 
-		$.get('imagenes/svg/' + $(this).attr('data-d'), function(data)
+		$.get($(this).attr('data-d'), function(data)
 		{
 			$(decoracion).html(data.getElementById("Capa_2"));
 		});
@@ -58,7 +58,7 @@ $(document).ready(function()
 	{
 		$('.disenios:checked').each(function() 
         {
-        	$(this).siblings('.cantidad_cake').attr('src', 'imagenes/svg/'+i);
+        	$(this).siblings('.cantidad_cake').attr('src', i);
         	$(this).removeAttr('checked');
         });
 	});

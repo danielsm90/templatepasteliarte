@@ -7,15 +7,15 @@
 		</style>
 	</defs>
 	<title>
-		Recurso 52
+		Recurso 99
 	</title>
 	<g id="Capa_2" data-name="Capa 2">
 		<g id="Capa_3" data-name="Capa 3">
 			<rect class="n8cls-1" width="576" height="602"/>
-			<rect class="n8cls-2" x="221.3" y="226.27" width="132.87" height="107.98" rx="48.26" ry="48.26"/>
-			<rect class="n8cls-3" x="214.77" y="217.56" width="132.87" height="107.98" rx="48.26" ry="48.26"/>
-			<ellipse class="n8cls-2" cx="257.32" cy="275.02" rx="20.99" ry="26.58" transform="translate(-60.21 72.48) rotate(-14.37)"/>
-			<ellipse class="n8cls-2" cx="315.73" cy="272.85" rx="20.99" ry="14.59" transform="translate(-98.15 326.1) rotate(-48.16)"/>
+			<rect class="n8cls-2" x="216.3" y="205.27" width="132.87" height="107.98" rx="48.26" ry="48.26"/>
+			<rect class="n8cls-3" x="209.77" y="196.56" width="132.87" height="107.98" rx="48.26" ry="48.26"/>
+			<ellipse class="n8cls-2" cx="252.32" cy="254.02" rx="20.99" ry="26.58" transform="translate(-55.15 70.58) rotate(-14.37)"/>
+			<ellipse class="n8cls-2" cx="310.73" cy="251.85" rx="20.99" ry="14.59" transform="translate(-84.17 315.38) rotate(-48.16)"/>
 		</g>
 	</g>
 </svg>

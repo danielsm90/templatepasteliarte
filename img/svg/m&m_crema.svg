@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 602">
+	<defs>
+		<style>
+			.colorcls-1{fill:#ff0;}
+			.colorcls-2{fill:#fcf8a9;}
+			.mymcls-3{fill:#39b44a;}
+			.mymcls-4{fill:#fbed21;}
+			.mymcls-5{fill:blue;}
+			.mymcls-6{fill:#f05a24;}
+			.mymcls-7{fill:#ec1e79;}
+			.mymcls-8{fill:#ec1c24;}
+			.mymcls-9{fill:none;}
+		</style>
+	</defs>
+	<title>
+		Recurso 219
+	</title>
+	<g id="Capa_2" data-name="Capa 2">
+		<g id="Capa_3" data-name="Capa 3">
+			<path class="colorcls-1" d="M504.27,292.14c0,100-95.9,77.22-214.19,77.22S75.89,392.14,75.89,292.14s95.9-181.07,214.19-181.07S504.27,192.13,504.27,292.14Z"/>
+			<path class="colorcls-2" d="M333.3,155.81l-75.74,6c-33.58,2.65-63.56-16.47-67-42.73l-1.52-11.77C185.68,81,257.16,9.56,290.75,6.9L319.48,49c33.58-2.65,63.56,16.47,67,42.73L388,103.47C391.35,129.72,366.88,153.15,333.3,155.81Z"/>
+			<path class="colorcls-1" d="M414.5,215l-238.15,21.5c-33.58,3-63.56-18.81-67-48.79l-1.52-13.44c-3.4-30,21.07-56.73,54.66-59.76L400.68,93c33.58-3,63.56,18.81,67,48.79l1.52,13.44C472.56,185.19,448.09,211.95,414.5,215Z"/>
+			<path class="colorcls-2" d="M456.36,287.88,134.49,316.94c-33.58,3-63.56-18.81-67-48.79L66,254.71c-3.4-30,21.07-56.73,54.66-59.76l321.87-29.05c33.58-3,63.56,18.81,67,48.79L511,228.12C514.42,258.09,489.95,284.85,456.36,287.88Z"/>
+		</g>
+		<g id="Capa_1-2" data-name="Capa 1">
+			<ellipse class="mymcls-3" cx="368" cy="169" rx="15" ry="18" transform="translate(94.99 468.09) rotate(-72.28)"/>
+			<ellipse class="mymcls-4" cx="430" cy="204.5" rx="13.5" ry="17" transform="matrix(0.8, -0.6, 0.6, 0.8, -37.01, 297.33)"/>
+			<ellipse class="mymcls-5" cx="355" cy="241.5" rx="14.5" ry="19" transform="translate(-66.79 321.76) rotate(-45)"/>
+			<ellipse class="mymcls-5" cx="487" cy="298.5" rx="14.5" ry="19" transform="translate(-68.43 431.79) rotate(-45)"/>
+			<ellipse class="mymcls-6" cx="421" cy="275" rx="15" ry="17" transform="translate(-76.63 347.34) rotate(-41.42)"/>
+			<ellipse class="mymcls-7" cx="403" cy="331" rx="15" ry="17" transform="translate(-118.18 349.44) rotate(-41.42)"/>
+			<ellipse class="mymcls-6" cx="212" cy="277" rx="20" ry="15" transform="translate(-100.07 121.16) rotate(-26.03)"/>
+			<ellipse class="mymcls-8" cx="160" cy="331" rx="20" ry="15"/>
+			<ellipse class="mymcls-5" cx="89" cy="311" rx="15" ry="20" transform="translate(-207.42 181.48) rotate(-50.43)"/>
+			<ellipse class="mymcls-4" cx="136" cy="261" rx="19" ry="14" transform="translate(-156.43 227.81) rotate(-56)"/>
+			<ellipse class="mymcls-8" cx="284" cy="236" rx="19" ry="14" transform="translate(-70.46 339.49) rotate(-56)"/>
+			<ellipse class="mymcls-8" cx="265" cy="98" rx="19" ry="14" transform="translate(35.57 262.9) rotate(-56)"/>
+			<ellipse class="mymcls-4" cx="323" cy="139" rx="19" ry="14" transform="translate(27.15 329.06) rotate(-56)"/>
+			<ellipse class="mymcls-4" cx="258" cy="39" rx="19" ry="14" transform="translate(81.4 231.09) rotate(-56)"/>
+			<ellipse class="mymcls-6" cx="278" cy="171.5" rx="18" ry="12.5"/>
+			<ellipse class="mymcls-6" cx="197" cy="98.5" rx="18" ry="12.5"/>
+			<ellipse class="mymcls-3" cx="212" cy="151.5" rx="18" ry="12.5"/>
+			<ellipse class="mymcls-3" cx="341" cy="69.5" rx="18" ry="12.5"/>
+			<ellipse class="mymcls-3" cx="331.5" cy="311.5" rx="18.5" ry="13.5"/>
+			<ellipse class="mymcls-5" cx="196.5" cy="209.5" rx="18.5" ry="13.5"/>
+			<ellipse class="mymcls-6" cx="136.5" cy="199.5" rx="18.5" ry="13.5"/>
+			<ellipse class="mymcls-5" cx="260.5" cy="336.5" rx="18.5" ry="13.5"/>
+			<rect class="mymcls-9" width="576" height="602"/>
+		</g>
+	</g>
+</svg>

@@ -3,7 +3,7 @@
 <div id="paginaEntera">
 	<div class="container-fluid">
 		<div class="row xpressArte">
-			<div class="col-2">
+			<div class="col-sm-12 col-lg-2">
 				<div class="tamanio">
 					<h5>Tamaño Cupcake</h5>
 					<input class="slider" type="range" min="10" max="20" value="20" disabled="true" />
@@ -53,7 +53,7 @@
 					</div>
 				</div> -->
 			</div>
-			<div class="col-8 cupcake">
+			<div class="col-sm-12 col-lg-8 cupcake">
 				<embed id="cup" src="<?php echo $urlSitio; ?>/img/svg/Cupcake-01-01.svg" width="50%" height="50%" />
 				<div class="verRelleno">
 					<button id="noRelleno" class="item_relleno"><img src="<?php echo $urlSitio; ?>/img/Despiece/sin_relleno.png" /></button>
@@ -62,22 +62,24 @@
 				</div>
 				<a href="#cpkp" class="listo" id="bt_sup_listo">listo para hornear</a>
 			</div>
-			<div class="saboresRellenos col-2">
+			<div class="saboresRellenos col-sm-12 col-lg-2">
 				<div class="sabores">
 					<h5>Sabores</h5>
 					<div class="saborNormal">
 						<h6>Sabor</h6>
 						<ul class="contenedorinputs">   
 					  		<li><input data-color-sabor="#F8D675" class="inputSabor" type="radio" name="saborEstandar" value="Vainilla" id="vainilla" checked>
-					  			<span class="inputColorSabor" id="vainillaSabor"><label for="vainilla">Vainilla</label></span></li>
+					  			<span  class="inputColorSabor" id="vainillaSabor">
+					  				<label data-toggle="tooltip" data-placement="top" title="Vainilla: El clásico Pastel blanco  que hace una perfecta combinación con cualquier tipo de relleno" for="vainilla">Vainilla</label></span></li>
 					  		<li><input data-color-sabor="#603813" class="inputSabor" type="radio" name="saborEstandar" value="Chocolate" id="choco">
-					  			<span class="inputColorSabor" id="chocolate">
-					  			<label for="choco">Chocolate</label></span></li>
+					  			<span  class="inputColorSabor" id="chocolate">
+					  				<label data-toggle="tooltip" data-placement="top" title="Chocolate: Suave sabor a chocolate que  al contrastar con nuestros rellenos, genera una explosión de sabores en el paladar" for="choco">Chocolate</label></span></li>
 					  		<li><input data-color-sabor="#EDCE3A" class="inputSabor" type="radio" name="saborEstandar" value="Naranja" id="naranjaS">
-					  			<span class="inputColorSabor" id="naranjaSabor">
-					  			<label for="naranjaS">Naranja Amapola</label></span></li>
-					  		<li><input data-color-sabor="#FFE5A4" class="inputSabor" type="radio" name="saborEstandar" value="Coco" id="coco"><span class="inputColorSabor" id="cocoSabor">
-					  			<label for="coco">Coco</label></span></li>
+					  			<span  class="inputColorSabor" id="naranjaSabor">
+					  				<label data-toggle="tooltip" data-placement="top" title="Cítricos- amapola: un pastel blanco con matices cítricos y semillas de amapola " for="naranjaS">Naranja Amapola</label></span></li>
+					  		<li><input data-color-sabor="#FFE5A4" class="inputSabor" type="radio" name="saborEstandar" value="Coco" id="coco">
+					  			<span class="inputColorSabor" id="cocoSabor">
+					  				<label data-toggle="tooltip" data-placement="top" title="Coco: un esponjoso pastel blanco con sabor y trozos de coco naturales" for="coco">Coco</label></span></li>
 						</ul>
 					</div>
 					<div class="saborEspecial">
@@ -85,15 +87,17 @@
 						<ul class="contenedorinputs">
 							<li><input data-color-sabor="#C1272D" class="inputSabor" type="radio" name="saborEstandar" value="Red Velvet" id="redVel">
 					  			<span class="inputColorSabor" id="redVelvet">
-					  				<label for="redVel">Red Velvet</label></span></li>
+					  				<label data-toggle="tooltip" data-placement="top" title="Red Velvet: De origen americano, Es un  pastel de color rojo con la perfecta combinación entre vainilla  y chocolate  que hace maridaje con un suave frosting de queso como relleno." for="redVel">Red Velvet</label></span></li>
 					  		<li><input data-color-sabor="#CCB279" class="inputSabor" type="radio" name="saborEstandar" value="Mocca" id="moccaS">
 					  			<span class="inputColorSabor" id="mocca">
-					  				<label for="moccaS">Moka</label></span></li>
+					  				<label data-toggle="tooltip" data-placement="top" title="Mocca (para cupcakes):  Pastel de Café Amaretto con trozos de chocolate belga como relleno" for="moccaS">Mocca</label></span></li>
 					  		<li><input data-color-sabor="#EFAC37" class="inputSabor" type="radio" name="saborEstandar" value="Maple" id="mapleS">
 					  			<span class="inputColorSabor" id="maple">
-					  				<label for="mapleS">Maple</label></span></li>
+					  				<label data-toggle="tooltip" data-placement="top" title="Maple & Bacon : delicioso pastel que te lleva por un camino de sensaciones en tu paladar,  que va de lo dulce de la miel de maple al toque salado y crocante del bacon" for="mapleS">Maple</label></span></li>
 					  		<li><input data-color-sabor="#EFAC37" class="inputSabor" type="radio" name="saborEstandar" value="Zanahoria" id="zanahoriaS">
-					  			<span class="inputColorSabor" id="zanahoria"><label for="zanahoriaS">Zanahoria</label></span></li>   
+					  			<span class="inputColorSabor" id="zanahoria">
+					  				<label data-toggle="tooltip" data-placement="top" title="Zanahoria: pastel hecho con trozos de zanahoria y el toque especial que nos evoca las delicias de la abuela
+									" for="zanahoriaS">Zanahoria</label></span></li>   
 						</ul>
 					</div>
 					<div class="saborSinAzucar">
@@ -102,15 +106,15 @@
 					  		<li><input data-color-sabor="#F8D675" class="inputSabor" type="radio" name="saborEstandar" value="Vainilla sin azucar" 
 					  			id="vainillaEs">
 					  			<span class="inputColorSabor" id="vainillaEspecial">
-					  				<label for="vainillaEs">Vainilla</label></span></li>
+					  				<label data-toggle="tooltip" data-placement="top" title="Sin azúcar: Pasteles aptos para diabéticos y dietéticos , el reemplazo del azúcar se absorbe directamente en el intestino delgado." for="vainillaEs">Vainilla</label></span></li>
 					  		<li><input data-color-sabor="#603813" class="inputSabor" type="radio" name="saborEstandar" value="Chocolate sin azucar" 
 					  			id="chocolateEs">
 					  			<span class="inputColorSabor" id="chocolateEspecial">
-					  				<label for="chocolateEs">Chocolate</label></span></li>
+					  				<label data-toggle="tooltip" data-placement="top" title="Sin azúcar: Pasteles aptos para diabéticos y dietéticos , el reemplazo del azúcar se absorbe directamente en el intestino delgado." for="chocolateEs">Chocolate</label></span></li>
 					  		<li><input data-color-sabor="#EFAC37" class="inputSabor" type="radio" name="saborEstandar" value="Naranja sin azucar" 
 					  			id="naranjaEs">
 					  			<span class="inputColorSabor" id="naranjaEspecial">
-					  				<label for="naranjaEs">Naranja</label></span></li>
+					  				<label data-toggle="tooltip" data-placement="top" title="Sin azúcar: Pasteles aptos para diabéticos y dietéticos , el reemplazo del azúcar se absorbe directamente en el intestino delgado." for="naranjaEs">Naranja</label></span></li>
 						</ul>
 					</div>
 				</div>
@@ -119,37 +123,52 @@
 						<ul class="contenedorinputs">
 							<li><input data-color-relleno="#603813" class="inputRelleno" type="radio" name="saborRelleno" value="Nutela" id="nutelaR">
 					  			<span class="inputColorRelleno" id="nutela">
-					  				<label for="nutelaR">Nutela</label></span></li> 
+					  				<label data-toggle="tooltip" data-placement="top" title="Nutela" for="nutelaR">Nutela</label></span></li> 
 					  		<li><input data-color-relleno="#F9C41E" class="inputRelleno" type="radio" name="saborRelleno" value="Maracuya" id="maracuyaR">
 					  			<span class="inputColorRelleno" id="maracuya">
-					  				<label for="maracuyaR">Maracuya</label></span></li>
+					  				<label data-toggle="tooltip" data-placement="top" title="Maracuya" for="maracuyaR">Maracuya</label></span></li>
 					  		<li><input data-color-relleno="#C67A24" class="inputRelleno" type="radio" name="saborRelleno" value="Arequipe" id="arequipeR">
 					  			<span class="inputColorRelleno" id="arequipe">
-					  				<label for="arequipeR">Arequipe</label></span></li>
+					  				<label data-toggle="tooltip" data-placement="top" title="Arequipe" for="arequipeR">Arequipe</label></span></li>
 					  		<li><input data-color-relleno="#DEFFAE" class="inputRelleno" type="radio" name="saborRelleno" value="Limón" id="limonR">
 					  			<span class="inputColorRelleno" id="limon">
-					  				<label for="limonR">Limón</label></span></li>
+					  				<label data-toggle="tooltip" data-placement="top" title="Limón" for="limonR">Limón</label></span></li>
 					  		<li><input data-color-relleno="#FFE5A4" class="inputRelleno" type="radio" name="saborRelleno" value="Leche Condensada" id="lecheCondensadaR">
 					  			<span class="inputColorRelleno" id="lecheCondensada">
-					  				<label for="lecheCondensadaR">Leche</label></span></li>
+					  				<label data-toggle="tooltip" data-placement="top" title="Leche Condensada" for="lecheCondensadaR">Leche Condensada</label></span></li>
 					  		<li><input data-color-relleno="#FFE5A4" class="inputRelleno" type="radio" name="saborRelleno" value="Coco" id="cocoR">
 					  			<span class="inputColorRelleno" id="cocoRe">
-					  				<label for="cocoR">Coco</label></span></li>  
+					  				<label data-toggle="tooltip" data-placement="top" title="Coco" for="cocoR">Coco</label></span></li>  
 					  		<li><input data-color-relleno="#C67A24" class="inputRelleno" type="radio" name="saborRelleno" value="Mantequilla de Maní" id="mantequillaR">
 					  			<span class="inputColorRelleno" id="mantequilla">
 					  				<label data-toggle="tooltip" data-placement="top" title="Mantequilla de Maní"
 					  				 for="mantequillaR">Mantequilla de Maní</label></span></li>
-					  		<li><input data-color-relleno="#F5D0A9" class="inputRelleno" type="radio" name="saborRelleno" value="Vainilla" 
-					  			id="vainillaR" checked>
-					  			<span class="inputColorRelleno" id="vainillaRelleno">
-					  				<label for="vainillaR">Vainilla</label></span></li>
-					  		<li><input data-color-relleno="#F5A9A9" class="inputRelleno" type="radio" name="saborRelleno" value="Fresa" id="fresaR">
-					  			<span class="inputColorRelleno" id="fresa">
-					  				<label for="fresaR">Fresa</label></span></li>
-					  		<li><input data-color-relleno="#D0FA58" class="inputRelleno" type="radio" name="saborRelleno" value="Mango" id="mangoR">
-					  			<span class="inputColorRelleno" id="mango">
-					  				<label for="mangoR">Mango</label>
+					  		<li><input data-color-relleno="#ECFFCC" class="inputRelleno" type="radio" name="saborRelleno" value="Limonada de Coco" id="limonadaR" checked>
+					  			<span class="inputColorRelleno" id="limonadaRelleno">
+					  				<label data-toggle="tooltip" data-placement="top" title="Limonada de Coco" for="limonadaR">Limonada de Coco</label></span></li>
+					  		<li><input data-color-relleno="#C1272D" class="inputRelleno" type="radio" name="saborRelleno" value="Frutos Rojos" id="frutosR">
+					  			<span class="inputColorRelleno" id="frutos">
+					  				<label data-toggle="tooltip" data-placement="top" title="Frutos Rojos" for="frutosR">Frutos Rojos</label></span></li>
+					  		<li><input data-color-relleno="#603813" class="inputRelleno" type="radio" name="saborRelleno" value="Chocolate" id="chocolateR">
+					  			<span class="inputColorRelleno" id="chocol">
+					  				<label data-toggle="tooltip" data-placement="top" title="Chocolate" for="chocolateR">Chocolate</label>
 					  			</span></li>
+						</ul>
+						<h5>con licor</h5>
+						<ul class="contenedorinputs">
+							<li><input data-color-relleno="#603813" class="inputRelleno" type="radio" name="saborRelleno" value="Amaretto" id="amarettoR">
+					  			<span class="inputColorRelleno" id="amaretto">
+					  				<label data-toggle="tooltip" data-placement="top" title="Amaretto" for="amarettoR">Amaretto</label></span></li> 
+					  		<li><input data-color-relleno="#FFE5A4" class="inputRelleno" type="radio" name="saborRelleno" value="Crema de Whiskey" id="cremaR">
+					  			<span class="inputColorRelleno" id="cremaW">
+					  				<label data-toggle="tooltip" data-placement="top" title="Crema de Whiskey" for="cremaR">Crema de Whiskey</label></span></li>
+					  		<li><input data-color-relleno=" #F9C41E" class="inputRelleno" type="radio" name="saborRelleno" value="Piña Colada" id="piniaR">
+					  			<span class="inputColorRelleno" id="pinia">
+					  				<label data-toggle="tooltip" data-placement="top" title="Piña Colada" for="piniaR">Piña Colada
+					  				</label></span></li>
+					  		<li><input data-color-relleno="#CCB279" class="inputRelleno" type="radio" name="saborRelleno" value="Licor de Mocca" id="licorMR">
+					  			<span class="inputColorRelleno" id="licorM">
+					  				<label data-toggle="tooltip" data-placement="top" title="Licor de Mocca" for="licorMR">Licor de Mocca</label></span></li>
 						</ul>
 				</div>
 			</div>
@@ -180,20 +199,20 @@
 		</div>
 	</div>
 	<div class="container-fluid">
-		<div class="row anim">
+		<!-- <div class="row anim">
 			<div class="col-12" id="animacion">
 				<p>Aqui va animación</p>
 			</div>
-		</div>
+		</div> -->
 		<div class="row image">
-			<div class="col-12" id="imagen">
+			<div class="col-12 h-md-50 h-lg-100" id="imagen">
 				<img src="<?php echo $urlSitio; ?>/img/Despiece/imagen2.png">
 			</div>
 		</div>
 	</div>
 	<div class="container-fluid">
 		<div class="row decorar">
-			<div class="col-2">
+			<div class="col-12 col-lg-2">
 				<div class="cantidadCupcakes">
 					<h5>Tus Cupcakes</h5>
 					<p>Selecciona los cupcakes que tendran este diseño</p>
@@ -204,7 +223,7 @@
 				</div>
 				<button class="aplicar" id="info">Información</button>
 			</div>
-			<div class="col-7 cupcakeAdorno">
+			<div class="col-12 col-lg-7 cupcakeAdorno">
 				
 				<!-- <text x=20 y=150
   					style="font: bold 2em 'comic sans ms';fill: aqua; stroke: blue; stroke-width: 2px;">
@@ -218,7 +237,7 @@
 				
 				<div id="prev_circle" style="background-image: url('<?php echo $urlSitio; ?>/img/Despiece/prev_circle.png');"></div>
 			</div>
-			<div class="col-3">
+			<div class="col-12 col-lg-3">
 				<div class="seccion">
 					<h6>Elige una opción</h6>
 					<button id="btn_personaje" data-sel="<?php echo $urlSitio; ?>/img/svg/Fondand.svg" class="btn_adornos active"><img src="<?php echo $urlSitio; ?>/img/Despiece/personaje_cupcake.png" /></button>
@@ -233,6 +252,11 @@
 						<h5>Escribe algo</h5>
 						<input type="text" class="escribir" id="txt_mensaje" maxlength="10" value="">
 						<p>10 caracteres maximo</p>
+					</div>
+					<div class="texto1">
+						<h5>Escribe algo</h5>
+						<input type="text" class="escribir1" id="txt_mensaje1" maxlength="1" value="">
+						<p>1 caracter maximo</p>
 					</div>
 					<div class="colorCrema">
 						<div class="tituloCrema">
@@ -431,223 +455,262 @@
 
 						</ul>
 						
-							<div class="tituloPiezas">
-								<h5><img src="<?php echo $urlSitio; ?>/img/Despiece/ojos.png">Ojos</h5>
-							</div>
-							<ul id="lista_ojos">
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_1.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_1.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="ojo_1"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_2.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_2.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="ojo_2"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_3.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_3.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="ojo_3"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_4.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_4.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="ojo_4"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_5.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_5.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="ojo_5"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_6.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_6.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="ojo_6"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_7.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_7.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="ojo_7"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_8.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_8.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="ojo_8"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_9.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_9.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="ojo_9"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_10.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_10.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="ojo_10"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_11.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_11.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="ojo_11"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_12.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_12.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="ojo_12"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="ojo_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_13.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/ojo_13.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="ojo_13"></span></label></li>
-			
-							</ul>
-							<div class="tituloPiezas">
-								<h5><img src="<?php echo $urlSitio; ?>/img/Despiece/boca.png">Bocas</h5>
-							</div>
-							<ul id="lista_boca">
-								<li class="lst_piezas"><label><input data-sel="boca_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_1.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/boca_1.svg" class="inputradioPieza" type="radio" checked>
-									<span  class="inputPieza" id="boca_1"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="boca_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_2.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/boca_2.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="boca_2"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="boca_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_3.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/boca_3.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="boca_3"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="boca_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_4.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/boca_4.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="boca_4"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="boca_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_5.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/boca_5.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="boca_5"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="boca_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_6.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/boca_6.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="boca_6"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="boca_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_7.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/boca_7.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="boca_7"></span></label></li>
-							</ul>
-
-							<div class="tituloPiezas">
-								<h5><img src="<?php echo $urlSitio; ?>/img/Despiece/nariz.png">Narices</h5>
-							</div>
-							<ul id="lista_nariz">
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_1.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_1.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="nariz_1"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_2.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_2.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="nariz_2"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_3.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_3.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="nariz_3"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_4.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_4.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="nariz_4"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_5.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_5.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="nariz_5"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_6.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_6.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="nariz_6"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_7.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_7.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="nariz_7"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_8.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_8.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="nariz_8"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_9.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_9.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="nariz_9"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_10.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_10.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="nariz_10"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_11.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_11.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="nariz_11"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="nariz_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_12.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/nariz_12.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="nariz_12"></span></label></li>
-							</ul>
-
-							<div class="tituloPiezas">
-								<h5><img src="<?php echo $urlSitio; ?>/img/Despiece/oreja.png">Orejas</h5>
-							</div>
-							<ul id="lista_oreja">
-								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_1.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_1.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="oreja_1"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_2.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_2.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="oreja_2"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_3.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_3.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="oreja_3"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_4.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_4.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="oreja_4"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_5.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_5.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="oreja_5"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_6.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_6.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="oreja_6"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_7.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_7.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="oreja_7"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_8.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_8.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="oreja_8"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_9.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_9.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="oreja_9"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_10.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_10.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="oreja_10"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_11.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_11.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="oreja_11"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_12.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_12.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="oreja_12"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_13.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_13.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="oreja_13"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_14.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_14.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="oreja_14"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_15.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_15.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="oreja_15"></span></label></li>
-								<li class="lst_piezas"><label><input data-sel="oreja_sel" 
-									data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_16.svg" 
-									data-d="<?php echo $urlSitio; ?>/img/svg/oreja_16.svg" class="inputradioPieza" type="radio">
-									<span  class="inputPieza" id="oreja_16"></span></label></li>
-							</ul>
+						<div class="tituloPiezas">
+							<h5><img src="<?php echo $urlSitio; ?>/img/Despiece/ojos.png">Ojos</h5>
 						</div>
+						<ul id="lista_ojos">
+							<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_1.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/ojo_1.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="ojo_1"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_2.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/ojo_2.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="ojo_2"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_3.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/ojo_3.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="ojo_3"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_4.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/ojo_4.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="ojo_4"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_5.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/ojo_5.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="ojo_5"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_6.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/ojo_6.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="ojo_6"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_7.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/ojo_7.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="ojo_7"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_8.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/ojo_8.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="ojo_8"></span></label></li>
+							<!-- <li class="lst_piezas"><label><input data-sel="ojo_sel" 
+								data-adorno="<?php //echo $urlSitio; ?>/img/svg/ojo_9.svg" 
+								data-d="<?php //echo $urlSitio; ?>/img/svg/ojo_9.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="ojo_9"></span></label></li> -->
+							<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_10.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/ojo_10.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="ojo_10"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_11.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/ojo_11.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="ojo_11"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_12.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/ojo_12.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="ojo_12"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="ojo_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/ojo_13.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/ojo_13.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="ojo_13"></span></label></li>
+		
+						</ul>
+						<div class="tituloPiezas">
+							<h5><img src="<?php echo $urlSitio; ?>/img/Despiece/boca.png">Bocas</h5>
+						</div>
+						<ul id="lista_boca">
+							<li class="lst_piezas"><label><input data-sel="boca_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_1.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/boca_1.svg" class="inputradioPieza" type="radio" checked>
+								<span  class="inputPieza" id="boca_1"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="boca_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_2.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/boca_2.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="boca_2"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="boca_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_3.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/boca_3.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="boca_3"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="boca_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_4.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/boca_4.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="boca_4"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="boca_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_5.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/boca_5.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="boca_5"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="boca_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_6.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/boca_6.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="boca_6"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="boca_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/boca_7.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/boca_7.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="boca_7"></span></label></li>
+						</ul>
+
+						<div class="tituloPiezas">
+							<h5><img src="<?php echo $urlSitio; ?>/img/Despiece/nariz.png">Narices</h5>
+						</div>
+						<ul id="lista_nariz">
+							<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_1.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/nariz_1.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="nariz_1"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_2.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/nariz_2.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="nariz_2"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_3.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/nariz_3.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="nariz_3"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_4.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/nariz_4.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="nariz_4"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_5.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/nariz_5.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="nariz_5"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_6.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/nariz_6.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="nariz_6"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_7.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/nariz_7.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="nariz_7"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_8.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/nariz_8.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="nariz_8"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_9.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/nariz_9.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="nariz_9"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_10.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/nariz_10.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="nariz_10"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_11.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/nariz_11.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="nariz_11"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="nariz_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/nariz_12.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/nariz_12.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="nariz_12"></span></label></li>
+						</ul>
+
+						<div class="tituloPiezas">
+							<h5><img src="<?php echo $urlSitio; ?>/img/Despiece/oreja.png">Orejas</h5>
+						</div>
+						<ul id="lista_oreja">
+							<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_1.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/oreja_1.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="oreja_1"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_2.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/oreja_2.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="oreja_2"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_3.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/oreja_3.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="oreja_3"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_4.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/oreja_4.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="oreja_4"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_5.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/oreja_5.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="oreja_5"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_6.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/oreja_6.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="oreja_6"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_7.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/oreja_7.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="oreja_7"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_8.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/oreja_8.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="oreja_8"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_9.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/oreja_9.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="oreja_9"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_10.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/oreja_10.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="oreja_10"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_11.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/oreja_11.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="oreja_11"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_12.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/oreja_12.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="oreja_12"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_13.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/oreja_13.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="oreja_13"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_14.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/oreja_14.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="oreja_14"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_15.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/oreja_15.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="oreja_15"></span></label></li>
+							<li class="lst_piezas"><label><input data-sel="oreja_sel" 
+								data-adorno="<?php echo $urlSitio; ?>/img/svg/oreja_16.svg" 
+								data-d="<?php echo $urlSitio; ?>/img/svg/oreja_16.svg" class="inputradioPieza" type="radio">
+								<span  class="inputPieza" id="oreja_16"></span></label></li>
+						</ul>
 					</div>
+					<div class="colorFond">
+						<div class="tituloTexto">
+							<h5>Colores de crema</h5>
+						</div>
+						<ul class="contenedorinputs" id="color_fondo">
+							<li><label><input data-color-cr="#daa40a" class="inputradioColorPie" type="radio" name="color" value="amarilloFnd">
+								<span class="inputColorFondo" id="amarilloFondo"></span></label></li>
+							<li><label><input data-color-cr="#e86e08" class="inputradioColorPie" type="radio" name="color" value="naranjaFnd" >
+								<span class="inputColorFondo" id="naranjaFondo"></span></label></li>
+							<li><label><input data-color-cr="#e60909" class="inputradioColorPie" type="radio" name="color" value="rojoFnd" >
+								<span class="inputColorFondo" id="rojoFondo"></span></label></li>
+							<li><label><input data-color-cr="#d80675" class="inputradioColorPie" type="radio" name="color" value="fucsiaFnd" >
+								<span class="inputColorFondo" id="fucsiaFondo"></span></label></li>
+							<li><label><input data-color-cr="#750173" class="inputradioColorPie" type="radio" name="color" value="moradoFnd" >
+								<span class="inputColorFondo" id="moradoFondo"></span></label></li>
+							<li><label><input data-color-cr="#031658" class="inputradioColorPie" type="radio" name="color" value="azulOscuroFnd" >
+								<span class="inputColorFondo" id="azulOscuroFondo"></span></label></li>
+							<li><label><input data-color-cr="#0c488e" class="inputradioColorPie" type="radio" name="color" value="azulFnd" >
+								<span class="inputColorFondo" id="azulFondo"></span></label></li>
+							<li><label><input data-color-cr="#068fb9" class="inputradioColorPie" type="radio" name="color" value="azulClaroFnd" >
+								<span class="inputColorFondo" id="azulClaroFondo"></span></label></li>
+							<li><label><input data-color-cr="#028262" class="inputradioColorPie" type="radio" name="color" value="verdeClaroFnd" >
+								<span class="inputColorFondo" id="verdeClaroFondo"></span></label></li>
+							<li><label><input data-color-cr="#148440" class="inputradioColorPie" type="radio" name="color" value="verdeOscuroFnd" >
+								<span class="inputColorFondo" id="verdeOscuroFondo"></span></label></li>
+							<li><label><input data-color-cr="#8eb916" class="inputradioColorPie" type="radio" name="color" value="verdeFnd" >
+								<span class="inputColorFondo" id="verdeFondo"></span></label></li>
+							<li><label><input data-color-cr="#d8cc1e" class="inputradioColorPie" type="radio" name="color" value="amarilloClaroFnd" >
+								<span class="inputColorFondo" id="amarilloClaroFondo"></span></label></li>
+							<li><label><input data-color-cr="#383737" class="inputradioColorPie" type="radio" name="color" value="negroFnd" >
+								<span class="inputColorFondo" id="negroFondo"></span></label></li>
+							<li><label><input data-color-cr="#ccc" class="inputradioColorPie" type="radio" name="color" value="blancoFnd" >
+								<span class="inputColorFondo" id="blancoFondo"></span></label></li>
+							<li><label><input data-color-cr="#bbbaba" class="inputradioColorPie" type="radio" name="color" value="grisFnd" >
+								<span class="inputColorFondo" id="grisFondo"></span></label></li>
+							<li><label><input data-color-cr="#a06832" class="inputradioColorPie" type="radio" name="color" value="cafeFnd" >
+								<span class="inputColorFondo" id="cafeFondo"></span></label></li>
+						</ul>
+					</div>
+				</div>
 				<div id="sel_cremas">
 					<div class="cremas">
 						<div class="tituloTexto">
@@ -692,6 +755,98 @@
 									<span class="inputCremas" id="crema17"></span></label></li>
 							<li><label><input data-adorno="<?php echo $urlSitio; ?>/img/svg/crema18.png" data-cr1="#FCF8A9" data-cr="#29A7DE" class="inputradioCremas" type="radio">
 									<span class="inputCremas" id="crema18"></span></label></li>
+
+							
+						</ul>
+					</div>
+					<div class="adicionales">
+						<div class="tituloTexto">
+							<h5>
+								Seleccione adicional
+							</h5>
+						</div>
+						<ul>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/barquillo_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/barquillo_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="barquillo"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/cereza_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/cereza_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="cereza"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/choco_jet_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/choco_jet_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="choco_jet"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/copo_nieve_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/copo_nieve_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="copo_nieve"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/festival_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/festival_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="festival"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/fresa_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/fresa_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="fresa"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/fresa_chocolate_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/fresa_chocolate_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="fresa_chocolate"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/mini_jumbo_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/mini_jumbo_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="mini_jumbo"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/waffer_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/waffer_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="waffer"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/corazon_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/corazon_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="corazon"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/estrella_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/estrella_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="estrella"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/flor_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/flor_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="flor"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/mariposa_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/mariposa_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="mariposa"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/mini_mouse_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/mini_mouse_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="mini_mouse"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/piña_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/piña_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="pinia"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/bolas_azules_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/bolas_azules_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="bolas_azules"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/bolas_azules_claras_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/bolas_azules_claras_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="bolas_azules_claras"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/bolas_blancas_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/bolas_blancas_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="bolas_blancas"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/bolas_colores_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/bolas_colores_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="bolas_colores"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/bolas_colores1_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/bolas_colores1_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="bolas_colores1"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/bolas_colores2_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/bolas_colores2_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="bolas_colores2"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/bolas_colores3_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/bolas_colores3_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="bolas_colores3"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/bolas_colores4_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/bolas_colores4_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="bolas_colores4"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/bolas_colores5_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/bolas_colores5_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="bolas_colores5"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/bolas_fucsias_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/bolas_fucsias_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="bolas_fucsias"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/bolas_grises_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/bolas_grises_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="bolas_grises"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/bolas_rosadas_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/bolas_rosadas_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="bolas_rosadas"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/bolas_verdes_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/bolas_verdes_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="bolas_verdes"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/bolas_verdes_claras_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/bolas_verdes_claras_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="bolas_verdes_claras"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/chocolate_rallado_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/chocolate_rallado_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="chocolate_rallado"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/corazones_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/corazones_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="corazones"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/cumpleaños_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/cumpleaños_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="cumpleanios"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/estrellas_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/estrellas_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="estrellas"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/feliz_dia_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/feliz_dia_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="feliz_dia"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/m&m_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/m&m_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="mym"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/minichips_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/minichips_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="minichips"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/nips_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/nips_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="nips"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/sparkies_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/sparkies_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="sparkies"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/sparkies1_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/sparkies1_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="sparkies1"></span></label></li>
+							<li><label><input data-d="<?php echo $urlSitio; ?>/img/svg/sparkies2_crema.svg" data-adorno="<?php echo $urlSitio; ?>/img/svg/sparkies2_crema.svg" class="inputradioAdicional" type="radio">
+									<span class="inputCremasAdicional" id="sparkies2"></span></label></li>
+							
 						</ul>
 					</div>
 				</div>

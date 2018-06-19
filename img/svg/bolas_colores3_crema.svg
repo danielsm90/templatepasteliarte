@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 602">
+	<defs>
+		<style>
+			.colorcls-1{fill:#ff0;}
+			.colorcls-2{fill:#fcf8a9;}
+			.bocol3cls-3{fill:#feeeff;}
+			.bocol3cls-4{fill:#ff0068;}
+			.bocol3cls-5{fill:#39b44a;}
+			.bocol3cls-6{fill:none;}
+		</style>
+	</defs>
+	<title>
+		Recurso 234
+	</title>
+	<g id="Capa_2" data-name="Capa 2">
+		<g id="Capa_3" data-name="Capa 3">
+			<path class="colorcls-1" d="M504.27,292.14c0,100-95.9,77.22-214.19,77.22S75.89,392.14,75.89,292.14s95.9-181.07,214.19-181.07S504.27,192.13,504.27,292.14Z"/>
+			<path class="colorcls-2" d="M333.3,155.81l-75.74,6c-33.58,2.65-63.56-16.47-67-42.73l-1.52-11.77C185.68,81,257.16,9.56,290.75,6.9L319.48,49c33.58-2.65,63.56,16.47,67,42.73L388,103.47C391.35,129.72,366.88,153.15,333.3,155.81Z"/>
+			<path class="colorcls-1" d="M414.5,215l-238.15,21.5c-33.58,3-63.56-18.81-67-48.79l-1.52-13.44c-3.4-30,21.07-56.73,54.66-59.76L400.68,93c33.58-3,63.56,18.81,67,48.79l1.52,13.44C472.56,185.19,448.09,211.95,414.5,215Z"/>
+			<path class="colorcls-2" d="M456.36,287.88,134.49,316.94c-33.58,3-63.56-18.81-67-48.79L66,254.71c-3.4-30,21.07-56.73,54.66-59.76l321.87-29.05c33.58-3,63.56,18.81,67,48.79L511,228.12C514.42,258.09,489.95,284.85,456.36,287.88Z"/>
+		</g>
+		<g id="Capa_1-2" data-name="Capa 1">
+			<circle class="bocol3cls-3" cx="237.54" cy="205.35" r="12.42"/>
+			<circle class="bocol3cls-4" cx="270.76" cy="228.32" r="12.42"/>
+			<circle class="bocol3cls-3" cx="314.64" cy="257.57" r="12.42"/>
+			<circle class="bocol3cls-3" cx="224.98" cy="257.57" r="12.42"/>
+			<circle class="bocol3cls-5" cx="346" cy="229.78" r="12.42"/>
+			<circle class="bocol3cls-4" cx="383.14" cy="202.42" r="12.42"/>
+			<circle class="bocol3cls-5" cx="401.58" cy="248.21" r="12.42"/>
+			<circle class="bocol3cls-5" cx="184.77" cy="219.04" r="12.42"/>
+			<circle class="bocol3cls-3" cx="164.42" cy="259.73" r="12.42"/>
+			<circle class="bocol3cls-4" cx="189.17" cy="180.93" r="12.42"/>
+			<circle class="bocol3cls-4" cx="95.77" cy="231.04" r="12.42"/>
+			<circle class="bocol3cls-3" cx="105.42" cy="280.73" r="12.42"/>
+			<circle class="bocol3cls-3" cx="142.17" cy="201.93" r="12.42"/>
+			<circle class="bocol3cls-3" cx="220.9" cy="139.18" r="12.42"/>
+			<circle class="bocol3cls-5" cx="270.66" cy="131.71" r="12.42"/>
+			<circle class="bocol3cls-4" cx="278.81" cy="167.43" r="12.42"/>
+			<circle class="bocol3cls-3" cx="314.92" cy="138.31" r="12.42"/>
+			<circle class="bocol3cls-4" cx="345.59" cy="174.03" r="12.42"/>
+			<circle class="bocol3cls-3" cx="314.92" cy="201.21" r="12.42"/>
+			<circle class="bocol3cls-5" cx="448.14" cy="202.42" r="12.42"/>
+			<circle class="bocol3cls-3" cx="466.58" cy="248.21" r="12.42"/>
+			<circle class="bocol3cls-3" cx="410.59" cy="164.03" r="12.42"/>
+			<circle class="bocol3cls-4" cx="344.64" cy="304.57" r="12.42"/>
+			<circle class="bocol3cls-5" cx="254.98" cy="304.57" r="12.42"/>
+			<circle class="bocol3cls-4" cx="431.58" cy="295.21" r="12.42"/>
+			<circle class="bocol3cls-5" cx="194.42" cy="306.73" r="12.42"/>
+			<circle class="bocol3cls-4" cx="135.42" cy="327.73" r="12.42"/>
+			<circle class="bocol3cls-4" cx="496.58" cy="295.21" r="12.42"/>
+			<circle class="bocol3cls-3" cx="389.64" cy="343.57" r="12.42"/>
+			<circle class="bocol3cls-3" cx="299.98" cy="343.57" r="12.42"/>
+			<circle class="bocol3cls-4" cx="239.42" cy="345.73" r="12.42"/>
+			<circle class="bocol3cls-5" cx="261.66" cy="72.71" r="12.42"/>
+			<circle class="bocol3cls-3" cx="310.92" cy="58.31" r="12.42"/>
+			<circle class="bocol3cls-4" cx="358.59" cy="102.03" r="12.42"/>
+			<rect class="bocol3cls-6" width="576" height="602"/>
+		</g>
+	</g>
+</svg>

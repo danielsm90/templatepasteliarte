@@ -6,7 +6,7 @@
 			<img id="pastelLogo1" class="pasteles" src="imagenes/Pasteliarte/cupcake logo1.png" />
 			<img class="fondo" src="imagenes/Pasteliarte/fondoInicio.png" />
 			<div id="encabezado1">
-				<h1 class="titulo">pasteliarte</h1>
+				<h1 class="titulo">pasteliartess</h1>
 				<img class="imagen1" src="imagenes/Pasteliarte/cupcake recuadro.png" />
 			</div>
 			

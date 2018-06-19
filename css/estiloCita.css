@@ -27,9 +27,9 @@
 
 #formularioCampos
 {
-	width: 60%;
+	/*width: 60%;*/
 	padding: 45px 70px;
-	margin-left: 10px;
+	/*margin-left: 10px;*/
 }
 .campos
 {
@@ -61,7 +61,7 @@
 	margin-left: 50px;
 }
 
-.inputRadio
+.inputRadio input
 {
     border: 2px solid #dedede;
     border-radius: 50%;
@@ -70,4 +70,58 @@
     left: 0px;
     width: 21px;
     z-index: 2;
+}
+
+.form-control
+{
+	border-left: none;
+	border-right: none;
+	border-color: black;
+}
+
+#cita_txt
+{
+	padding: 50px;
+}
+
+.pedir, .pregutas_frec
+{
+	border: 3px solid #26ada0;
+	text-align: center;
+	padding: 20px;
+}
+
+.pedir
+{
+	margin-top: 4%;
+}
+
+#enviar
+{
+	cursor: pointer;
+	width: 80%;
+    height: 50px;
+    left: 31px;
+    background: #ff3960;
+    color: #eeeeee;
+    border: none;
+    font-size: 20px;
+}
+
+.card-header
+{
+	padding: 0;
+	border: 2px solid #26ada0;
+}
+
+.mb-0 .btn-link
+{
+	width: 100%;
+	text-decoration: none;
+	color: black;
+}
+
+.wpcf7-list-item
+{
+	display: block !important;
 }
