@@ -1,6 +1,18 @@
 <?php
 
 require_once('walker_menu.php');
+require_once('inc/create-custom-post.php');
+require_once('inc/options-template.php');
+require_once('inc/custom-metaboxes.php');
+
+
+$cupcakes = [];
+$slugs = array(
+	'conocenos',
+	'manizales-cakes',
+	'manizales-cupcakes',
+	'resto-del-pais'
+);
 
 // Registrar Menu y Widgets
 	register_nav_menus (array(
@@ -22,12 +34,14 @@ require_once('walker_menu.php');
 
 	if(!function_exists('insertar_css')){
 		function insertar_css(){
+			wp_enqueue_style( 'fontawesome-css-pasteliarte', get_bloginfo('template_url') . '/css/all.css', false, false, 'screen' );
 			wp_enqueue_style( 'bootstrap-css-pasteliarte', get_bloginfo('template_url') . '/css/bootstrap.min.css', false, false, 'screen' );
 			wp_enqueue_style( 'styles-cita', get_bloginfo('template_url') . '/css/estiloCita.css', array( 'bootstrap-css-pasteliarte' ), false, 'screen' );
 			wp_enqueue_style( 'styles-exp', get_bloginfo('template_url') . '/css/estilosXpressarte.css', array( 'bootstrap-css-pasteliarte' ), false, 'screen' );
 			wp_enqueue_style( 'styles-expCup', get_bloginfo('template_url') . '/css/estilosXpressarteCupcake.css', array( 'styles-exp' ), false, 'screen' );
 
 			wp_enqueue_style( 'styles-expCake', get_bloginfo('template_url') . '/css/estilosXpressarteCake.css', array( 'styles-exp' ), false, 'screen' );
+			wp_enqueue_style( 'styles-expPayU', get_bloginfo('template_url') . '/css/jquery-ui.css', array( 'styles-exp' ), false, 'screen' );
 			wp_enqueue_style( 'styles', get_bloginfo('stylesheet_url'), array( 'styles-expCake' ), false, 'screen' );
 		}
 	}
@@ -43,6 +57,8 @@ require_once('walker_menu.php');
 
 			wp_enqueue_script( 'xCake-pasteliarte', get_bloginfo('template_url') . '/js/xpressarteCake.js', array( 'jquery-pasteliarte' ), false, true );
 			wp_enqueue_script( 'xCup-pasteliarte', get_bloginfo('template_url') . '/js/xpressarteCupcake.js', array( 'jquery-pasteliarte' ), false, true );
+			wp_enqueue_script( 'xCup-pago', get_bloginfo('template_url') . '/js/md5.js', array( 'jquery-pasteliarte' ), false, true );
+			wp_enqueue_script( 'xCup-payU', get_bloginfo('template_url') . '/js/jquery-ui.min.js', array( 'jquery-pasteliarte' ), false, true );
 		}
 	}
 

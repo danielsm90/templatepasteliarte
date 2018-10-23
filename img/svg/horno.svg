@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 665 651">
+	<defs>
+		<style>
+			.cls-1{fill:#310070;}
+			.cls-3{opacity:0.5;}
+			.cls-2{fill:#7b4aba;}
+			.cls-4{fill:#cbbae5;}
+			.cls-5{fill:#1b1464;}
+			.cls-6{opacity:0.4;}
+			.cls-7{fill:#51424e;}
+			.cls-8{fill:none;stroke:#fffafc;stroke-miterlimit:10;stroke-width:4px;}
+			.cls-9{fill:#fc6387;}
+			.cls-10{fill:#dd2853;}
+			.cls-11{fill:#99143a;}
+		</style>
+	</defs>
+	<title>
+		Recurso 3
+	</title>
+	<g id="Capa_2" data-name="Capa 2">
+		<g id="Capa_1-2" data-name="Capa 1">
+			<rect class="cls-1" width="665" height="651" rx="32.36" ry="32.36"/>
+			<path class="cls-2" d="M573.81,583a35.39,35.39,0,0,0,35.38-35.38V254.3a35.38,35.38,0,0,0-35.38-35.38H91.19A35.38,35.38,0,0,0,55.81,254.3V547.62A35.38,35.38,0,0,0,91.19,583Z"/>
+			<g class="cls-3">
+				<path class="cls-4" d="M609.19,547.62V254.3a35.38,35.38,0,0,0-35.38-35.38H526L257.7,583H573.81A35.39,35.39,0,0,0,609.19,547.62Z"/>
+			</g>
+			<g class="cls-3">
+				<path class="cls-4" d="M378.76,219.18,110.49,583h81L459.41,219.18C457.49,218.86,378.76,219.18,378.76,219.18Z"/>
+			</g>
+			<rect class="cls-5" x="101.58" y="264.69" width="457.68" height="24.96" rx="9.38" ry="9.38"/>
+			<g class="cls-6">
+				<rect class="cls-7" x="112.93" y="280.94" width="457.68" height="24.96" rx="9.38" ry="9.38"/>
+			</g>
+			<g class="cls-3">
+				<path class="cls-8" d="M91.19,34.82A35.38,35.38,0,0,0,55.81,70.2v62.38A35.38,35.38,0,0,0,91.19,168H573.81a35.38,35.38,0,0,0,35.38-35.38V70.2a35.38,35.38,0,0,0-35.38-35.38Z"/>
+			</g>
+			<circle class="cls-9" cx="143.19" cy="101.39" r="29.13" transform="translate(-31.83 113.67) rotate(-39.32)">
+				<animate attributeName="fill" values="red;blue;red" dur="1s" repeatCount="finite" />
+			</circle>
+			<circle class="cls-9" cx="226.4" cy="101.39" r="29.12">
+				<animate attributeName="fill" values="red;blue;red" dur="2s" repeatCount="finite" />
+			</circle>
+
+			<circle class="cls-10" cx="309.62" cy="101.39" r="29.13">
+				<animate attributeName="fill" values="red;blue;red" dur="3s" repeatCount="finite" />
+			</circle>
+			<circle class="cls-11" cx="392.83" cy="101.39" r="29.12">
+				<animate attributeName="fill" values="red;blue;red" dur="4s" repeatCount="finite" />
+			</circle>
+			<circle class="cls-11" cx="550.94" cy="101.39" r="29.13">
+				<animate attributeName="fill" values="red;blue;red" dur="5s" repeatCount="finite" />
+			</circle>
+		</g>
+	</g>
+</svg>

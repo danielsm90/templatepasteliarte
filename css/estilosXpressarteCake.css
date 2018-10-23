@@ -42,7 +42,7 @@ button:focus{
 
 #nav
 {
-	z-index: 1;
+	z-index: 999;
 	box-shadow: 0px -8px 50px black;
 }
 
@@ -87,7 +87,7 @@ button:focus{
 
 .listo#al_horno{
 	position: absolute;
-	bottom: -5%;
+	bottom: 13%;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -133,7 +133,7 @@ button:focus{
 .contenedorinputs 
 {
     position: relative;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .saboresRellenosCake div ul
@@ -144,7 +144,7 @@ button:focus{
 
 .saboresCake
 {
-	width: auto;
+	width: 100%;
 	height: auto;
 	background: #eeeeee00;
 	border: 3px solid white;
@@ -201,6 +201,7 @@ ul li
 {
 	width: 47%;
 	display: flex;
+	padding: 2px;
 }
 
 .saboresRellenosCake div ul li input[type='radio']
@@ -216,11 +217,17 @@ ul li
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
 }
 
 .saboresRellenosCake div ul li span label
 {
 	margin-bottom: 0;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
 }
 
 .inputradio
@@ -302,7 +309,7 @@ ul li
 .rellenosCake
 {
 	margin-top: 2%;
-	width: auto;
+	width: 100%;
 	height: auto;
 	background: #eeeeee00;
 	border: 3px solid white;
@@ -454,14 +461,14 @@ ul li
 {
 }
 
-#imagen
+/*#imagen
 {
     background: #ff3960;
     text-align: center;
     height: 100vh;
     position: relative;
 }
-
+*/
 #imagen img
 {
 	position: absolute;
@@ -536,7 +543,7 @@ ul li
 .cakeAdorno #cakeSel
 {
 	height: auto;
-    position: absolute;
+    position: sticky;
     top: 1%;
     left: 50%;
     transform: translateX(-50%);

@@ -65,7 +65,7 @@ button:focus{
 }
 
 #nav{
-	z-index: 1;
+	z-index: 999;
 	box-shadow: 0px -8px 50px black;
 	overflow: hidden;
 	animation-name: changeOver;
@@ -221,7 +221,7 @@ button:focus{
 
 .listo#al_horno{
 	position: absolute;
-	bottom: -5%;
+	bottom: 13%;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -288,15 +288,15 @@ button:focus{
 	padding: 0;
 }
 
-.cantidad > div .cantidadSeleccionada:hover, .tamanioSeleccionado:hover, 
+.cantidad > div .cantidadSeleccionada:hover, .tamanioSeleccionado:hover,
 .cantidad > div .cantidadSeleccionada:focus, .tamanioSeleccionado:focus{
-	text-shadow: 2px 2px 0 black;
+	text-shadow: 2px 2px 0 red;
 }
 
 .contenedorinputs 
 {
     position: relative;
-    padding-left: 20px;
+    padding-left: 10px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -311,9 +311,10 @@ button:focus{
 	flex-wrap: wrap;
 }
 
-.sabores{
+.sabores
+{
 	opacity: 0;
-	width: auto;
+	width: 100%;
 	height: auto;
 	background: #eeeeee00;
 	border: 3px solid white;
@@ -333,8 +334,11 @@ button:focus{
 
 .xpressArte h5
 {
-	color: white;
-	font-weight: 600;
+	color: white!important;
+	font-weight: 600!important;
+	font-size: 19px;
+	border-color: transparent;
+	width: 100%;
 }
 
 .xpressArte h6
@@ -429,9 +433,13 @@ ul li
     transform: translateY(85%);
 }
 
+.decorar .col-decorar{
+	text-align: center;
+}
+
 #info
 {
-	 transform: translateY(95%);	
+	margin-top: 25px;
 }
 
 .inputradioPersonaje, .inputradioCremas, .inputradioPieza, .inputradioAdicional
@@ -491,6 +499,11 @@ ul li
 .inputColor#negro
 {
 	background: #000000;
+}
+
+.inputColor#blanco
+{
+	background: #ffffff;
 }
 .colores input[type="radio"]:checked + span {
 	border: 2px solid white;
@@ -587,7 +600,7 @@ ul li
 .rellenos{
 	opacity: 0;
 	margin-top: 2%;
-	width: auto;
+	width: 100%;
 	height: auto;
 	background: #eeeeee00;
 	border: 3px solid white;
@@ -754,6 +767,7 @@ ul li
     text-align: center;
     height: 100vh;
     position: relative;
+    display: none;
 }
 
 @keyframes rotar{
@@ -765,18 +779,19 @@ ul li
 	}
 }
 
-#imagen img
+#imagen embed
 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	height: 90vh;
 	max-width: 100%;
 	transform: translate(-50%, -50%);
-	animation-name: rotar;
+/*	animation-name: rotar;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 	animation-timing-function: linear;
-	animation-duration: 2s;
+	animation-duration: 2s;*/
 }
 
 #imagen1
@@ -837,8 +852,8 @@ ul li
 .cupcakeAdorno #cup1
 {
 	height: auto;
-    position: absolute;
-    top: 1%;
+    position: sticky;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
@@ -858,7 +873,7 @@ ul li
 {
 	background: transparent;
 	border: none;
-	width: 24%;
+	padding: 0;
 }
 
 .seccion h6
@@ -912,24 +927,31 @@ ul li
 	background: #eeeeee54;
 	height: auto;
 	width: auto;
-	padding-left: 1%;
-	padding-right: 1%;
+	padding-left: 3px;
+	padding-right: 3px;
 	padding-top: 2%;
 	margin-top: 20px;
 }
 
 .tituloPiezas
 {
-	background: #eeeeee54;
+	background-color: #eeeeee54;
 	margin-top: 2%;
 	border-radius: 10px;
+	height: 55px;
+}
+
+.pie
+{
+	background-color: transparent;
+	border: none;
 }
 
 .tituloPiezas h5
 {
-	color: #45008e;
+	color: #45008e !important;
 	font-weight: bold;
-	transform: translateX(-33%);
+	transform: translateX(-3%);
 
 }
 
@@ -966,7 +988,7 @@ ul li
 {
 	display: none;
 	position: absolute;
-	top: 1%;
+	top: 16%;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 350px;
@@ -994,21 +1016,18 @@ ul li
 
 .sel_per_pie ul, .cremas ul, .adicionales ul
 {
-	padding-left: 0%;
-	padding-bottom: 4%;
-	padding-right: 0;
-	justify-content: center;
+	padding: 10px 0;
 
 }
 
-.cremas ul, .adicionales ul
-{
-	padding-bottom: 11%;
+.cremas ul, .adicionales ul{
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .colorCrema ul li, .colorLetra ul li, .sel_per_pie ul li, .colores ul li, .colorFond ul li
 {
-	margin-top: 4%;
+	margin-top: 10px;
 	flex: 0 0 14%;
 }
 .sel_per_pie ul li.lst_piezas{
@@ -1020,8 +1039,8 @@ ul li
 
 .cremas ul li, .adicionales ul li
 {
-	margin-left: 8%;
-	margin-top: 6%;
+	padding: 15px;
+	flex: 0 1 20%;
 }
 
 .colorCrema ul li span, .colorLetra ul li span, .colorFond ul li span
@@ -1032,8 +1051,8 @@ ul li
 
 .sel_per_pie ul li span
 {
-	width: 35px;
-	height: 35px;
+	width: 100%;
+	height: 100%;
 }
 
 .cremas ul li span, .adicionales ul li span
@@ -1727,6 +1746,12 @@ ul li
 	background-repeat: no-repeat;
 }
 
+.inputPieza#oreja_17
+{
+	background: url('../img/Despiece/oreja_17.png');
+	background-repeat: no-repeat;
+}
+
 #mini
 {
 	width: 40%;
@@ -2012,4 +2037,88 @@ ul li
 {
 	background: url('../img/svg/sparkies2_crema.svg');
 	background-repeat: no-repeat;					
+}
+
+#adic
+{
+	transform: translateY(-145%);
+}
+
+#info_sel
+{
+	display: none;
+}
+
+#dec
+{
+	display: none;
+}
+
+#formulario_pago
+{
+	text-align: center;
+	background-color: rgb(243,45,84);
+	color: white;
+	font-weight: 600;
+}
+
+#formularioP div input[type='text'], #formularioP div input[type='email'], #formularioP div input[type='date']
+{
+	background: transparent;
+	border-color: white;
+	border-bottom-width: 4px;
+	border-top: none;
+	font-weight: 600;
+	color: white;
+
+}
+
+.txt_crema
+{
+	display: none;
+}
+
+#pasarela
+{
+	background: white;
+	border-radius: 30px;
+	color: rgb(243,45,84);
+	font-weight: 600;
+	text-align: center;
+	justify-content: center;
+	border: none;
+	width: 150px;
+}
+
+.loader {
+	display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: #45008e94;
+    /*opacity: .8;*/
+}
+
+#horno_img
+{
+	width: 70%;
+	height: 70%;
+	transform: translate(18%,30%);
+}
+
+.card
+{
+	border: none!important;
+	background-color: transparent!important;
+}
+
+#titulo
+{
+	position: sticky;
+	top: 14%;
+	color: white;
+	text-align: center;
 }

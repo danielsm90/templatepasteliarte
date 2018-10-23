@@ -34,16 +34,14 @@
 				?>
 				 <div class="navbar-text">
 			      	<ul class="navbar-nav">
-			      		<li><a href="https://www.youtube.com"><img src="<?php echo get_template_directory_uri(); ?>/img/Pasteliarte/youtube.png" /></a></li>
-			      		<li><a href="https://www.facebook.com"><img src="<?php echo get_template_directory_uri(); ?>/img/Pasteliarte/facebook.png" /></a></li>
-			      		<li><a href="https://twitter.com"><img src="<?php echo get_template_directory_uri(); ?>/img/Pasteliarte/twitter.png" /></a></li>
-			      		<li><a href="https://co.pinterest.com"><img src="<?php echo get_template_directory_uri(); ?>/img/Pasteliarte/pinterest.png" /></a></li>
+			      		<?php
+			      		show_social_header('social_facebook', 'facebook-square');
+			      		show_social_header('social_instagram', 'instagram');
+			      		show_social_header('social_youtube', 'youtube');
+			      		show_whatsapp_header('social_twitter', 'whatsapp');
+			      		?>
+			      		<li id="carrito"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/Pasteliarte/carrito.png" /></a></li>
 			      	</ul>
-			    </div>
-			    <div class="navbar-carrito">
-			    	<ul class="navbar-nav">
-			    		<li id="carrito"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/Pasteliarte/carrito.png" /></a></li>
-			    	</ul>
 			    </div>
 			</div>
 		</nav>

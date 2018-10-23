@@ -3,11 +3,11 @@
 	<div id="paginaEntera">
 	<div class="container-fluid">
 		<div class="row xpressArte">
-			<div class="col-10 cake">
+			<div class=" col-sm-12 col-10 cake">
 				<embed id="cake_1" src="<?php echo $urlSitio; ?>/img/svg/Torta.svg" width="50%" height="50%" />
 				<a href="#cake1" class="listo" id="bt_sup_listo">listo para hornear</a>
 			</div>
-			<div class="saboresRellenosCake col-2">
+			<div class="saboresRellenosCake col-sm-12 col-2">
 				<div class="saboresCake">
 					<h5>Sabores</h5>
 					<div class="saborNormal">
@@ -137,7 +137,7 @@
 	</div>
 	<div class="container-fluid">
 		<div class="row decorar">
-			<div class="col-2">
+			<div class="col-12 col-lg-2">
 				<div class="cantidadCakes">
 					<h5>Tus pasteles</h5>
 					<p>Selecciona los pasteles que tendran este diseño</p>
@@ -152,13 +152,13 @@
 					<button class="aplicar" id="aplicar_dis_cake">Aplicar Diseño</button>
 				</div>
 			</div>
-			<div class="col-7 cakeAdorno">
+			<div class="col-12 col-lg-7 cakeAdorno">
 
 				<embed id="cakeSel" src="<?php echo $urlSitio; ?>/img/svg/TortaCrema.svg" width="50%" height="50%">
 				</embed>
 				
 			</div>
-			<div class="col-3">
+			<div class="col-12 col-lg-3">
 				<div class="seccionCake">
 					<h6>Elige una opción</h6>
 					<button id="btn_personaje" data-sel="Fondand.svg" class="btn_adornos_cake"><img src="<?php echo $urlSitio; ?>/img/Despiece/personaje_cupcake.png" /></button>

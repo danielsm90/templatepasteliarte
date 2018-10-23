@@ -568,9 +568,11 @@
 	.orj1cls-1{fill:none;}
 	.orj1cls-2{fill:#1fb59f;}
 	.orj1cls-3{fill:#c6bb8d;}
-	.orj2cls-1{fill:#fbed21;}
-	.orj2cls-2{fill:#ccc27f;}
-	.orj2cls-3{fill:none;}
+	.orj2cls-1{fill:none;}
+	.orj2cls-2{fill:#1fb59f;}
+	.orj2cls-3{fill:#c6bb8d;}
+	.orj2cls-4{fill:#fbed21;}
+	.orj2cls-5{fill:#ccc27f;}
 	.orj3cls-1{fill:#c98fc1;}
 	.orj3cls-2{fill:#e0aad6;}
 	.orj3cls-3{fill:none;}
@@ -590,9 +592,10 @@
 	.orj8cls-3{fill:none;}
 	.orj9cls-1{fill:#fbfbe2;}
 	.orj9cls-2{fill:none;}
-	.orj10cls-1{fill:#c61a4b;}
-	.orj10cls-2{fill:#ff3960;}
-	.orj10cls-3{fill:none;}
+	.orj10cls-1{fill:#fbfbe2;}
+	.orj10cls-2{fill:#c61a4b;}
+	.orj10cls-3{fill:#ff3960;}
+	.orj10cls-4{fill:none;}
 	.orj11cls-1{fill:#fbfbe2;stroke:#c0be98;stroke-miterlimit:10;stroke-width:4px;}
 	.orj11cls-2{fill:#ff7bab;}
 	.orj11cls-3{fill:none;}
@@ -607,6 +610,10 @@
 	.orj15cls-2{fill:#fbfbe2;}
 	.orj16cls-1{fill:#3d8090;}
 	.orj16cls-2{fill:none;}
+	.orj17cls-1{fill:#fbfbe2;}
+	.orj17cls-2{fill:#266772;}
+	.orj17cls-3{fill:#3d8090;}
+	.orj17cls-4{fill:none;}
 	.barcls-1{fill:#ffd071;}
 	.barcls-2,.barcls-4{fill:none;}
 	.barcls-2{stroke:#603813;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}
@@ -832,6 +839,10 @@
 				
 			</g>
 			<g id="adicional1">
+				
+			</g>
+
+			<g id="texto">
 				
 			</g>
 		</g>

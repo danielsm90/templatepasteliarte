@@ -7,6 +7,7 @@
 			.cls-4{fill:#e2a1bf;}
 			.cls-5{fill:#edd9b2;}
 			.cls-6{fill:#fff3d7;}
+			.cls-16{fill:#fff3d7;}
 			.cls-7{fill:none;}
 			.cls-11{fill:#e7be58;}
 		</style>
@@ -29,7 +30,7 @@
 			<ellipse class="cls-1" cx="280.59" cy="174.38" rx="11.42" ry="14.26" transform="matrix(0.08, -1, 1, 0.08, 84.5, 440.24)"/>
 			<ellipse class="cls-1" cx="241.11" cy="222.88" rx="9.1" ry="6.17"/>
 			<path class="cls-5" d="M501.35,199.37c0,50.58-95.33,86.11-212.93,86.11S75.49,248.13,75.49,197.55,99.41,88.64,293.88,98.7C487,108.69,501.35,148.8,501.35,199.37Z"/>
-			<ellipse class="cls-6" cx="288.42" cy="179.36" rx="212.93" ry="91.57"/>
+			<ellipse class="cls-16" cx="288.42" cy="179.36" rx="212.93" ry="91.57"/>
 			<ellipse class="cls-6" cx="171.95" cy="166.88" rx="16.38" ry="12.48"/>
 			<ellipse class="cls-6" cx="280.59" cy="148.9" rx="11.42" ry="14.26" transform="translate(109.89 416.79) rotate(-85.45)"/>
 			<ellipse class="cls-6" cx="241.11" cy="197.41" rx="9.1" ry="6.17"/>
